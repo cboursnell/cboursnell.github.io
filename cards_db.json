@@ -1,3654 +1,4399 @@
-[{
-    "card_tag": "Alms", 
-    "cardset_tags": [
-        "adventures"
-    ], 
-    "cost": "0", 
-    "group_tag": "adventures events", 
-    "types": [
-        "Event"
-    ]
-},{
-    "card_tag": "Amulet", 
-    "cardset_tags": [
-        "adventures"
-    ], 
-    "cost": "3", 
-    "types": [
-        "Action", 
-        "Duration"
-    ]
-},{
-    "card_tag": "Artificer", 
-    "cardset_tags": [
-        "adventures"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Ball", 
-    "cardset_tags": [
-        "adventures"
-    ], 
-    "cost": "5", 
-    "group_tag": "adventures events", 
-    "types": [
-        "Event"
-    ]
-},{
-    "card_tag": "Bonfire", 
-    "cardset_tags": [
-        "adventures"
-    ], 
-    "cost": "3", 
-    "group_tag": "adventures events", 
-    "types": [
-        "Event"
-    ]
-},{
-    "card_tag": "Borrow", 
-    "cardset_tags": [
-        "adventures"
-    ], 
-    "cost": "0", 
-    "group_tag": "adventures events", 
-    "types": [
-        "Event"
-    ]
-},{
-    "card_tag": "Bridge Troll", 
-    "cardset_tags": [
-        "adventures"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action", 
-        "Attack", 
-        "Duration"
-    ]
-},{
-    "card_tag": "Caravan Guard", 
-    "cardset_tags": [
-        "adventures"
-    ], 
-    "cost": "3", 
-    "types": [
-        "Action", 
-        "Duration", 
-        "Reaction"
-    ]
-},{
-    "card_tag": "Champion", 
-    "cardset_tags": [
-        "adventures"
-    ], 
-    "cost": "6*", 
-    "count": "5", 
-    "group_tag": "Page -> Champion", 
-    "types": [
-        "Action", 
-        "Duration"
-    ]
-},{
-    "card_tag": "Coin of the Realm", 
-    "cardset_tags": [
-        "adventures"
-    ], 
-    "cost": "2", 
-    "types": [
-        "Treasure", 
-        "Reserve"
-    ]
-},{
-    "card_tag": "Disciple", 
-    "cardset_tags": [
-        "adventures"
-    ], 
-    "cost": "5*", 
-    "group_tag": "Peasant -> Teacher", 
-    "types": [
-        "Action", 
-        "Traveller"
-    ]
-},{
-    "card_tag": "Distant Lands", 
-    "cardset_tags": [
-        "adventures"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action", 
-        "Reserve", 
-        "Victory"
-    ]
-},{
-    "card_tag": "Dungeon", 
-    "cardset_tags": [
-        "adventures"
-    ], 
-    "cost": "3", 
-    "types": [
-        "Action", 
-        "Duration"
-    ]
-},{
-    "card_tag": "Duplicate", 
-    "cardset_tags": [
-        "adventures"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Action", 
-        "Reserve"
-    ]
-},{
-    "card_tag": "Expedition", 
-    "cardset_tags": [
-        "adventures"
-    ], 
-    "cost": "3", 
-    "group_tag": "adventures events", 
-    "types": [
-        "Event"
-    ]
-},{
-    "card_tag": "Ferry", 
-    "cardset_tags": [
-        "adventures"
-    ], 
-    "cost": "3", 
-    "group_tag": "adventures events", 
-    "types": [
-        "Event"
-    ]
-},{
-    "card_tag": "Fugitive", 
-    "cardset_tags": [
-        "adventures"
-    ], 
-    "cost": "4*", 
-    "group_tag": "Peasant -> Teacher", 
-    "types": [
-        "Action", 
-        "Traveller"
-    ]
-},{
-    "card_tag": "Gear", 
-    "cardset_tags": [
-        "adventures"
-    ], 
-    "cost": "3", 
-    "types": [
-        "Action", 
-        "Duration"
-    ]
-},{
-    "card_tag": "Giant", 
-    "cardset_tags": [
-        "adventures"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action", 
-        "Attack"
-    ]
-},{
-    "card_tag": "Guide", 
-    "cardset_tags": [
-        "adventures"
-    ], 
-    "cost": "3", 
-    "types": [
-        "Action", 
-        "Reserve"
-    ]
-},{
-    "card_tag": "Haunted Woods", 
-    "cardset_tags": [
-        "adventures"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action", 
-        "Attack", 
-        "Duration"
-    ]
-},{
-    "card_tag": "Hero", 
-    "cardset_tags": [
-        "adventures"
-    ], 
-    "cost": "5*", 
-    "group_tag": "Page -> Champion", 
-    "types": [
-        "Action", 
-        "Traveller"
-    ]
-},{
-    "card_tag": "Hireling", 
-    "cardset_tags": [
-        "adventures"
-    ], 
-    "cost": "6", 
-    "types": [
-        "Action", 
-        "Duration"
-    ]
-},{
-    "card_tag": "Inheritance", 
-    "cardset_tags": [
-        "adventures"
-    ], 
-    "cost": "7", 
-    "group_tag": "adventures events", 
-    "types": [
-        "Event"
-    ]
-},{
-    "card_tag": "Lost Arts", 
-    "cardset_tags": [
-        "adventures"
-    ], 
-    "cost": "6", 
-    "group_tag": "adventures events", 
-    "types": [
-        "Event"
-    ]
-},{
-    "card_tag": "Lost City", 
-    "cardset_tags": [
-        "adventures"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Magpie", 
-    "cardset_tags": [
-        "adventures"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Messenger", 
-    "cardset_tags": [
-        "adventures"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Miser", 
-    "cardset_tags": [
-        "adventures"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Mission", 
-    "cardset_tags": [
-        "adventures"
-    ], 
-    "cost": "4", 
-    "group_tag": "adventures events", 
-    "types": [
-        "Event"
-    ]
-},{
-    "card_tag": "Page", 
-    "cardset_tags": [
-        "adventures"
-    ], 
-    "cost": "2", 
-    "count": "10", 
-    "group_tag": "Page -> Champion", 
-    "group_top": true, 
-    "types": [
-        "Action", 
-        "Traveller"
-    ]
-},{
-    "card_tag": "Pathfinding", 
-    "cardset_tags": [
-        "adventures"
-    ], 
-    "cost": "8", 
-    "group_tag": "adventures events", 
-    "types": [
-        "Event"
-    ]
-},{
-    "card_tag": "Peasant", 
-    "cardset_tags": [
-        "adventures"
-    ], 
-    "cost": "2", 
-    "count": "10", 
-    "group_tag": "Peasant -> Teacher", 
-    "group_top": true, 
-    "types": [
-        "Action", 
-        "Traveller"
-    ]
-},{
-    "card_tag": "Pilgrimage", 
-    "cardset_tags": [
-        "adventures"
-    ], 
-    "cost": "4", 
-    "group_tag": "adventures events", 
-    "types": [
-        "Event"
-    ]
-},{
-    "card_tag": "Plan", 
-    "cardset_tags": [
-        "adventures"
-    ], 
-    "cost": "3", 
-    "group_tag": "adventures events", 
-    "types": [
-        "Event"
-    ]
-},{
-    "card_tag": "Port", 
-    "cardset_tags": [
-        "adventures"
-    ], 
-    "cost": "4", 
-    "count": "12", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Quest", 
-    "cardset_tags": [
-        "adventures"
-    ], 
-    "cost": "0", 
-    "group_tag": "adventures events", 
-    "types": [
-        "Event"
-    ]
-},{
-    "card_tag": "Raid", 
-    "cardset_tags": [
-        "adventures"
-    ], 
-    "cost": "5", 
-    "group_tag": "adventures events", 
-    "types": [
-        "Event"
-    ]
-},{
-    "card_tag": "Ranger", 
-    "cardset_tags": [
-        "adventures"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Ratcatcher", 
-    "cardset_tags": [
-        "adventures"
-    ], 
-    "cost": "2", 
-    "types": [
-        "Action", 
-        "Reserve"
-    ]
-},{
-    "card_tag": "Raze", 
-    "cardset_tags": [
-        "adventures"
-    ], 
-    "cost": "2", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Relic", 
-    "cardset_tags": [
-        "adventures"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Treasure", 
-        "Attack"
-    ]
-},{
-    "card_tag": "Royal Carriage", 
-    "cardset_tags": [
-        "adventures"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action", 
-        "Reserve"
-    ]
-},{
-    "card_tag": "Save", 
-    "cardset_tags": [
-        "adventures"
-    ], 
-    "cost": "1", 
-    "group_tag": "adventures events", 
-    "types": [
-        "Event"
-    ]
-},{
-    "card_tag": "Scouting Party", 
-    "cardset_tags": [
-        "adventures"
-    ], 
-    "cost": "2", 
-    "group_tag": "adventures events", 
-    "types": [
-        "Event"
-    ]
-},{
-    "card_tag": "Seaway", 
-    "cardset_tags": [
-        "adventures"
-    ], 
-    "cost": "5", 
-    "group_tag": "adventures events", 
-    "types": [
-        "Event"
-    ]
-},{
-    "card_tag": "Soldier", 
-    "cardset_tags": [
-        "adventures"
-    ], 
-    "cost": "3*", 
-    "group_tag": "Peasant -> Teacher", 
-    "types": [
-        "Action", 
-        "Attack", 
-        "Traveller"
-    ]
-},{
-    "card_tag": "Storyteller", 
-    "cardset_tags": [
-        "adventures"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Swamp Hag", 
-    "cardset_tags": [
-        "adventures"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action", 
-        "Attack", 
-        "Duration"
-    ]
-},{
-    "card_tag": "Teacher", 
-    "cardset_tags": [
-        "adventures"
-    ], 
-    "cost": "6*", 
-    "count": "5", 
-    "group_tag": "Peasant -> Teacher", 
-    "types": [
-        "Action", 
-        "Reserve"
-    ]
-},{
-    "card_tag": "Trade", 
-    "cardset_tags": [
-        "adventures"
-    ], 
-    "cost": "5", 
-    "group_tag": "adventures events", 
-    "types": [
-        "Event"
-    ]
-},{
-    "card_tag": "Training", 
-    "cardset_tags": [
-        "adventures"
-    ], 
-    "cost": "6", 
-    "group_tag": "adventures events", 
-    "types": [
-        "Event"
-    ]
-},{
-    "card_tag": "Transmogrify", 
-    "cardset_tags": [
-        "adventures"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Action", 
-        "Reserve"
-    ]
-},{
-    "card_tag": "Travelling Fair", 
-    "cardset_tags": [
-        "adventures"
-    ], 
-    "cost": "2", 
-    "group_tag": "adventures events", 
-    "types": [
-        "Event"
-    ]
-},{
-    "card_tag": "Treasure Hunter", 
-    "cardset_tags": [
-        "adventures"
-    ], 
-    "cost": "3*", 
-    "group_tag": "Page -> Champion", 
-    "types": [
-        "Action", 
-        "Traveller"
-    ]
-},{
-    "card_tag": "Treasure Trove", 
-    "cardset_tags": [
-        "adventures"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Treasure"
-    ]
-},{
-    "card_tag": "Warrior", 
-    "cardset_tags": [
-        "adventures"
-    ], 
-    "cost": "4*", 
-    "group_tag": "Page -> Champion", 
-    "types": [
-        "Action", 
-        "Attack", 
-        "Traveller"
-    ]
-},{
-    "card_tag": "Wine Merchant", 
-    "cardset_tags": [
-        "adventures"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action", 
-        "Reserve"
-    ]
-},{
-    "card_tag": "Alchemist", 
-    "cardset_tags": [
-        "alchemy"
-    ], 
-    "cost": "3", 
-    "potcost": "1", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Apothecary", 
-    "cardset_tags": [
-        "alchemy"
-    ], 
-    "cost": "2", 
-    "potcost": "1", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Apprentice", 
-    "cardset_tags": [
-        "alchemy"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Familiar", 
-    "cardset_tags": [
-        "alchemy"
-    ], 
-    "cost": "3", 
-    "potcost": "1", 
-    "types": [
-        "Action", 
-        "Attack"
-    ]
-},{
-    "card_tag": "Golem", 
-    "cardset_tags": [
-        "alchemy"
-    ], 
-    "cost": "4", 
-    "potcost": "1", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Herbalist", 
-    "cardset_tags": [
-        "alchemy"
-    ], 
-    "cost": "2", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Philosopher's Stone", 
-    "cardset_tags": [
-        "alchemy"
-    ], 
-    "cost": "3", 
-    "potcost": "1", 
-    "types": [
-        "Treasure"
-    ]
-},{
-    "card_tag": "Possession", 
-    "cardset_tags": [
-        "alchemy"
-    ], 
-    "cost": "6", 
-    "potcost": "1", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Scrying Pool", 
-    "cardset_tags": [
-        "alchemy"
-    ], 
-    "cost": "2", 
-    "potcost": "1", 
-    "types": [
-        "Action", 
-        "Attack"
-    ]
-},{
-    "card_tag": "Transmute", 
-    "cardset_tags": [
-        "alchemy"
-    ], 
-    "cost": "", 
-    "potcost": "1", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "University", 
-    "cardset_tags": [
-        "alchemy"
-    ], 
-    "cost": "2", 
-    "potcost": "1", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Vineyard", 
-    "cardset_tags": [
-        "alchemy"
-    ], 
-    "cost": "", 
-    "potcost": "1", 
-    "types": [
-        "Victory"
-    ]
-},{
-    "card_tag": "Potion", 
-    "cardset_tags": [
-        "base", 
-        "alchemy"
-    ], 
-    "cost": "4", 
-    "count": "16", 
-    "types": [
-        "Treasure"
-    ]
-},{
-    "card_tag": "Copper", 
-    "cardset_tags": [
-        "base", 
-        "dominion1stEdition", 
-        "dominion2ndEdition", 
-        "intrigue1stEdition"
-    ], 
-    "cost": "0", 
-    "count": "60", 
-    "types": [
-        "Treasure"
-    ]
-},{
-    "card_tag": "Curse", 
-    "cardset_tags": [
-        "base", 
-        "dominion1stEdition", 
-        "dominion2ndEdition", 
-        "intrigue1stEdition"
-    ], 
-    "cost": "0", 
-    "count": "30", 
-    "types": [
-        "Curse"
-    ]
-},{
-    "card_tag": "Duchy", 
-    "cardset_tags": [
-        "base", 
-        "dominion1stEdition", 
-        "dominion2ndEdition", 
-        "intrigue1stEdition"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Victory"
-    ]
-},{
-    "card_tag": "Estate", 
-    "cardset_tags": [
-        "base", 
-        "dominion1stEdition", 
-        "dominion2ndEdition", 
-        "intrigue1stEdition"
-    ], 
-    "cost": "2", 
-    "count": "24", 
-    "types": [
-        "Victory"
-    ]
-},{
-    "card_tag": "Gold", 
-    "cardset_tags": [
-        "base", 
-        "dominion1stEdition", 
-        "dominion2ndEdition", 
-        "intrigue1stEdition"
-    ], 
-    "cost": "6", 
-    "count": "30", 
-    "types": [
-        "Treasure"
-    ]
-},{
-    "card_tag": "Province", 
-    "cardset_tags": [
-        "base", 
-        "dominion1stEdition", 
-        "dominion2ndEdition", 
-        "intrigue1stEdition"
-    ], 
-    "cost": "8", 
-    "types": [
-        "Victory"
-    ]
-},{
-    "card_tag": "Silver", 
-    "cardset_tags": [
-        "base", 
-        "dominion1stEdition", 
-        "dominion2ndEdition", 
-        "intrigue1stEdition"
-    ], 
-    "cost": "3", 
-    "count": "40", 
-    "types": [
-        "Treasure"
-    ]
-},{
-    "card_tag": "Trash", 
-    "cardset_tags": [
-        "base", 
-        "dominion1stEdition", 
-        "intrigue1stEdition"
-    ], 
-    "cost": "", 
-    "count": "1", 
-    "types": [
-        "Trash"
-    ]
-},{
-    "card_tag": "Colony", 
-    "cardset_tags": [
-        "base", 
-        "prosperity"
-    ], 
-    "cost": "11", 
-    "types": [
-        "Victory"
-    ]
-},{
-    "card_tag": "Platinum", 
-    "cardset_tags": [
-        "base", 
-        "prosperity"
-    ], 
-    "cost": "9", 
-    "types": [
-        "Treasure"
-    ]
-},{
-    "card_tag": "Bag of Gold", 
-    "cardset_tags": [
-        "cornucopia"
-    ], 
-    "cost": "0*", 
-    "group_tag": "Tournament and Prizes", 
-    "types": [
-        "Action", 
-        "Prize"
-    ]
-},{
-    "card_tag": "Diadem", 
-    "cardset_tags": [
-        "cornucopia"
-    ], 
-    "cost": "0*", 
-    "group_tag": "Tournament and Prizes", 
-    "types": [
-        "Treasure", 
-        "Prize"
-    ]
-},{
-    "card_tag": "Fairgrounds", 
-    "cardset_tags": [
-        "cornucopia"
-    ], 
-    "cost": "6", 
-    "types": [
-        "Victory"
-    ]
-},{
-    "card_tag": "Farming Village", 
-    "cardset_tags": [
-        "cornucopia"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Followers", 
-    "cardset_tags": [
-        "cornucopia"
-    ], 
-    "cost": "0*", 
-    "group_tag": "Tournament and Prizes", 
-    "types": [
-        "Action", 
-        "Attack", 
-        "Prize"
-    ]
-},{
-    "card_tag": "Fortune Teller", 
-    "cardset_tags": [
-        "cornucopia"
-    ], 
-    "cost": "3", 
-    "types": [
-        "Action", 
-        "Attack"
-    ]
-},{
-    "card_tag": "Hamlet", 
-    "cardset_tags": [
-        "cornucopia"
-    ], 
-    "cost": "2", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Harvest", 
-    "cardset_tags": [
-        "cornucopia"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Horn of Plenty", 
-    "cardset_tags": [
-        "cornucopia"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Treasure"
-    ]
-},{
-    "card_tag": "Horse Traders", 
-    "cardset_tags": [
-        "cornucopia"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Action", 
-        "Reaction"
-    ]
-},{
-    "card_tag": "Hunting Party", 
-    "cardset_tags": [
-        "cornucopia"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Jester", 
-    "cardset_tags": [
-        "cornucopia"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action", 
-        "Attack"
-    ]
-},{
-    "card_tag": "Menagerie", 
-    "cardset_tags": [
-        "cornucopia"
-    ], 
-    "cost": "3", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Princess", 
-    "cardset_tags": [
-        "cornucopia"
-    ], 
-    "cost": "0*", 
-    "group_tag": "Tournament and Prizes", 
-    "types": [
-        "Action", 
-        "Prize"
-    ]
-},{
-    "card_tag": "Remake", 
-    "cardset_tags": [
-        "cornucopia"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Tournament", 
-    "cardset_tags": [
-        "cornucopia"
-    ], 
-    "cost": "4", 
-    "group_tag": "Tournament and Prizes", 
-    "group_top": true, 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Trusty Steed", 
-    "cardset_tags": [
-        "cornucopia"
-    ], 
-    "cost": "0*", 
-    "group_tag": "Tournament and Prizes", 
-    "types": [
-        "Action", 
-        "Prize"
-    ]
-},{
-    "card_tag": "Young Witch", 
-    "cardset_tags": [
-        "cornucopia"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Action", 
-        "Attack"
-    ]
-},{
-    "card_tag": "Altar", 
-    "cardset_tags": [
-        "dark ages"
-    ], 
-    "cost": "6", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Armory", 
-    "cardset_tags": [
-        "dark ages"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Band of Misfits", 
-    "cardset_tags": [
-        "dark ages"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Bandit Camp", 
-    "cardset_tags": [
-        "dark ages"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Beggar", 
-    "cardset_tags": [
-        "dark ages"
-    ], 
-    "cost": "2", 
-    "types": [
-        "Action", 
-        "Reaction"
-    ]
-},{
-    "card_tag": "Catacombs", 
-    "cardset_tags": [
-        "dark ages"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Count", 
-    "cardset_tags": [
-        "dark ages"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Counterfeit", 
-    "cardset_tags": [
-        "dark ages"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Treasure"
-    ]
-},{
-    "card_tag": "Cultist", 
-    "cardset_tags": [
-        "dark ages"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action", 
-        "Attack", 
-        "Looter"
-    ]
-},{
-    "card_tag": "Death Cart", 
-    "cardset_tags": [
-        "dark ages"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Action", 
-        "Looter"
-    ]
-},{
-    "card_tag": "Feodum", 
-    "cardset_tags": [
-        "dark ages"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Victory"
-    ]
-},{
-    "card_tag": "Forager", 
-    "cardset_tags": [
-        "dark ages"
-    ], 
-    "cost": "3", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Fortress", 
-    "cardset_tags": [
-        "dark ages"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Graverobber", 
-    "cardset_tags": [
-        "dark ages"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Hermit", 
-    "cardset_tags": [
-        "dark ages"
-    ], 
-    "cost": "3", 
-    "group_tag": "Hermit - Madman", 
-    "group_top": true, 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Hovel", 
-    "cardset_tags": [
-        "dark ages"
-    ], 
-    "cost": "1", 
-    "group_tag": "Shelters", 
-    "group_top": true, 
-    "types": [
-        "Reaction", 
-        "Shelter"
-    ]
-},{
-    "card_tag": "Hunting Grounds", 
-    "cardset_tags": [
-        "dark ages"
-    ], 
-    "cost": "6", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Ironmonger", 
-    "cardset_tags": [
-        "dark ages"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Junk Dealer", 
-    "cardset_tags": [
-        "dark ages"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Knights", 
-    "cardset_tags": [
-        "dark ages"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Madman", 
-    "cardset_tags": [
-        "dark ages"
-    ], 
-    "cost": "0*", 
-    "group_tag": "Hermit - Madman", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Marauder", 
-    "cardset_tags": [
-        "dark ages"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Action",
-        "Attack",
-        "Looter"
-    ]
-},{
-    "card_tag": "Market Square", 
-    "cardset_tags": [
-        "dark ages"
-    ], 
-    "cost": "3", 
-    "types": [
-        "Action", 
-        "Reaction"
-    ]
-},{
-    "card_tag": "Mercenary", 
-    "cardset_tags": [
-        "dark ages"
-    ], 
-    "cost": "0*", 
-    "group_tag": "Urchin - Mercenary", 
-    "types": [
-        "Action", 
-        "Attack"
-    ]
-},{
-    "card_tag": "Mystic", 
-    "cardset_tags": [
-        "dark ages"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Necropolis", 
-    "cardset_tags": [
-        "dark ages"
-    ], 
-    "cost": "1", 
-    "group_tag": "Shelters", 
-    "types": [
-        "Action", 
-        "Shelter"
-    ]
-},{
-    "card_tag": "Overgrown Estate", 
-    "cardset_tags": [
-        "dark ages"
-    ], 
-    "cost": "1", 
-    "group_tag": "Shelters", 
-    "types": [
-        "Victory", 
-        "Shelter"
-    ]
-},{
-    "card_tag": "Pillage", 
-    "cardset_tags": [
-        "dark ages"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action", 
-        "Attack"
-    ]
-},{
-    "card_tag": "Poor House", 
-    "cardset_tags": [
-        "dark ages"
-    ], 
-    "cost": "1", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Procession", 
-    "cardset_tags": [
-        "dark ages"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Rats", 
-    "cardset_tags": [
-        "dark ages"
-    ], 
-    "cost": "4", 
-    "count": "20", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Rebuild", 
-    "cardset_tags": [
-        "dark ages"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Rogue", 
-    "cardset_tags": [
-        "dark ages"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action", 
-        "Attack"
-    ]
-},{
-    "card_tag": "Ruins", 
-    "cardset_tags": [
-        "dark ages"
-    ], 
-    "cost": "0", 
-    "count": "50", 
-    "types": [
-        "Action", 
-        "Ruins"
-    ]
-},{
-    "card_tag": "Sage", 
-    "cardset_tags": [
-        "dark ages"
-    ], 
-    "cost": "3", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Scavenger", 
-    "cardset_tags": [
-        "dark ages"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Spoils", 
-    "cardset_tags": [
-        "dark ages"
-    ], 
-    "cost": "0*", 
-    "count": "15", 
-    "types": [
-        "Treasure"
-    ]
-},{
-    "card_tag": "Squire", 
-    "cardset_tags": [
-        "dark ages"
-    ], 
-    "cost": "2", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Storeroom", 
-    "cardset_tags": [
-        "dark ages"
-    ], 
-    "cost": "3", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Urchin", 
-    "cardset_tags": [
-        "dark ages"
-    ], 
-    "cost": "3", 
-    "group_tag": "Urchin - Mercenary", 
-    "group_top": true, 
-    "types": [
-        "Action", 
-        "Attack"
-    ]
-},{
-    "card_tag": "Vagrant", 
-    "cardset_tags": [
-        "dark ages"
-    ], 
-    "cost": "2", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Wandering Minstrel", 
-    "cardset_tags": [
-        "dark ages"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Adventurer", 
-    "cardset_tags": [
-        "dominion1stEdition"
-    ], 
-    "cost": "6", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Chancellor", 
-    "cardset_tags": [
-        "dominion1stEdition"
-    ], 
-    "cost": "3", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Feast", 
-    "cardset_tags": [
-        "dominion1stEdition"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Spy", 
-    "cardset_tags": [
-        "dominion1stEdition"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Action", 
-        "Attack"
-    ]
-},{
-    "card_tag": "Thief", 
-    "cardset_tags": [
-        "dominion1stEdition"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Action", 
-        "Attack"
-    ]
-},{
-    "card_tag": "Woodcutter", 
-    "cardset_tags": [
-        "dominion1stEdition"
-    ], 
-    "cost": "3", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Bureaucrat", 
-    "cardset_tags": [
-        "dominion1stEdition", 
-        "dominion2ndEdition"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Action", 
-        "Attack"
-    ]
-},{
-    "card_tag": "Cellar", 
-    "cardset_tags": [
-        "dominion1stEdition", 
-        "dominion2ndEdition"
-    ], 
-    "cost": "2", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Chapel", 
-    "cardset_tags": [
-        "dominion1stEdition", 
-        "dominion2ndEdition"
-    ], 
-    "cost": "2", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Council Room", 
-    "cardset_tags": [
-        "dominion1stEdition", 
-        "dominion2ndEdition"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Festival", 
-    "cardset_tags": [
-        "dominion1stEdition", 
-        "dominion2ndEdition"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Gardens", 
-    "cardset_tags": [
-        "dominion1stEdition", 
-        "dominion2ndEdition"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Victory"
-    ]
-},{
-    "card_tag": "Laboratory", 
-    "cardset_tags": [
-        "dominion1stEdition", 
-        "dominion2ndEdition"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Library", 
-    "cardset_tags": [
-        "dominion1stEdition", 
-        "dominion2ndEdition"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Market", 
-    "cardset_tags": [
-        "dominion1stEdition", 
-        "dominion2ndEdition"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Militia", 
-    "cardset_tags": [
-        "dominion1stEdition", 
-        "dominion2ndEdition"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Action", 
-        "Attack"
-    ]
-},{
-    "card_tag": "Mine", 
-    "cardset_tags": [
-        "dominion1stEdition", 
-        "dominion2ndEdition"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Moat", 
-    "cardset_tags": [
-        "dominion1stEdition", 
-        "dominion2ndEdition"
-    ], 
-    "cost": "2", 
-    "types": [
-        "Action", 
-        "Reaction"
-    ]
-},{
-    "card_tag": "Moneylender", 
-    "cardset_tags": [
-        "dominion1stEdition", 
-        "dominion2ndEdition"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Remodel", 
-    "cardset_tags": [
-        "dominion1stEdition", 
-        "dominion2ndEdition"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Smithy", 
-    "cardset_tags": [
-        "dominion1stEdition", 
-        "dominion2ndEdition"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Throne Room", 
-    "cardset_tags": [
-        "dominion1stEdition", 
-        "dominion2ndEdition"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Village", 
-    "cardset_tags": [
-        "dominion1stEdition", 
-        "dominion2ndEdition"
-    ], 
-    "cost": "3", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Witch", 
-    "cardset_tags": [
-        "dominion1stEdition", 
-        "dominion2ndEdition"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action", 
-        "Attack"
-    ]
-},{
-    "card_tag": "Workshop", 
-    "cardset_tags": [
-        "dominion1stEdition", 
-        "dominion2ndEdition"
-    ], 
-    "cost": "3", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Artisan", 
-    "cardset_tags": [
-        "dominion2ndEdition", 
-        "dominion2ndEditionUpgrade"
-    ], 
-    "cost": "6", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Bandit", 
-    "cardset_tags": [
-        "dominion2ndEdition", 
-        "dominion2ndEditionUpgrade"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action", 
-        "Attack"
-    ]
-},{
-    "card_tag": "Harbinger", 
-    "cardset_tags": [
-        "dominion2ndEdition", 
-        "dominion2ndEditionUpgrade"
-    ], 
-    "cost": "3", 
-    "count": "10", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Merchant", 
-    "cardset_tags": [
-        "dominion2ndEdition", 
-        "dominion2ndEditionUpgrade"
-    ], 
-    "cost": "3", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Poacher", 
-    "cardset_tags": [
-        "dominion2ndEdition", 
-        "dominion2ndEditionUpgrade"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Sentry", 
-    "cardset_tags": [
-        "dominion2ndEdition", 
-        "dominion2ndEditionUpgrade"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Vassal", 
-    "cardset_tags": [
-        "dominion2ndEdition", 
-        "dominion2ndEditionUpgrade"
-    ], 
-    "cost": "3", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Advance", 
-    "cardset_tags": [
-        "empires"
-    ], 
-    "cost": "0", 
-    "group_tag": "empires events", 
-    "types": [
-        "Event"
-    ]
-},{
-    "card_tag": "Annex", 
-    "cardset_tags": [
-        "empires"
-    ], 
-    "cost": "0", 
-    "debtcost": "8", 
-    "group_tag": "empires events", 
-    "types": [
-        "Event"
-    ]
-},{
-    "card_tag": "Aqueduct", 
-    "cardset_tags": [
-        "empires"
-    ], 
-    "cost": "", 
-    "group_tag": "empires landmarks", 
-    "types": [
-        "Landmark"
-    ]
-},{
-    "card_tag": "Archive", 
-    "cardset_tags": [
-        "empires"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action", 
-        "Duration"
-    ]
-},{
-    "card_tag": "Arena", 
-    "cardset_tags": [
-        "empires"
-    ], 
-    "cost": "", 
-    "group_tag": "empires landmarks", 
-    "types": [
-        "Landmark"
-    ]
-},{
-    "card_tag": "Bandit Fort", 
-    "cardset_tags": [
-        "empires"
-    ], 
-    "cost": "", 
-    "group_tag": "empires landmarks", 
-    "types": [
-        "Landmark"
-    ]
-},{
-    "card_tag": "Banquet", 
-    "cardset_tags": [
-        "empires"
-    ], 
-    "cost": "3", 
-    "group_tag": "empires events", 
-    "types": [
-        "Event"
-    ]
-},{
-    "card_tag": "Basilica", 
-    "cardset_tags": [
-        "empires"
-    ], 
-    "cost": "", 
-    "group_tag": "empires landmarks", 
-    "types": [
-        "Landmark"
-    ]
-},{
-    "card_tag": "Baths", 
-    "cardset_tags": [
-        "empires"
-    ], 
-    "cost": "", 
-    "group_tag": "empires landmarks", 
-    "types": [
-        "Landmark"
-    ]
-},{
-    "card_tag": "Battlefield", 
-    "cardset_tags": [
-        "empires"
-    ], 
-    "cost": "", 
-    "group_tag": "empires landmarks", 
-    "types": [
-        "Landmark"
-    ]
-},{
-    "card_tag": "Bustling Village", 
-    "cardset_tags": [
-        "empires"
-    ], 
-    "cost": "5", 
-    "count": "5", 
-    "group_tag": "Settlers - Bustling Village", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Capital", 
-    "cardset_tags": [
-        "empires"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Treasure"
-    ]
-},{
-    "card_tag": "Castles", 
-    "cardset_tags": [
-        "empires"
-    ], 
-    "cost": "3", 
-    "count": "12", 
-    "types": [
-        "Victory", 
-        "Castle"
-    ]
-},{
-    "card_tag": "Catapult", 
-    "cardset_tags": [
-        "empires"
-    ], 
-    "cost": "3", 
-    "count": "5", 
-    "group_tag": "Catapult - Rocks", 
-    "group_top": true, 
-    "types": [
-        "Action", 
-        "Attack"
-    ]
-},{
-    "card_tag": "Chariot Race", 
-    "cardset_tags": [
-        "empires"
-    ], 
-    "cost": "3", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Charm", 
-    "cardset_tags": [
-        "empires"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Treasure"
-    ]
-},{
-    "card_tag": "City Quarter", 
-    "cardset_tags": [
-        "empires"
-    ], 
-    "cost": "0", 
-    "debtcost": "8", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Colonnade", 
-    "cardset_tags": [
-        "empires"
-    ], 
-    "cost": "", 
-    "group_tag": "empires landmarks", 
-    "types": [
-        "Landmark"
-    ]
-},{
-    "card_tag": "Conquest", 
-    "cardset_tags": [
-        "empires"
-    ], 
-    "cost": "6", 
-    "group_tag": "empires events", 
-    "types": [
-        "Event"
-    ]
-},{
-    "card_tag": "Crown", 
-    "cardset_tags": [
-        "empires"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action", 
-        "Treasure"
-    ]
-},{
-    "card_tag": "Defiled Shrine", 
-    "cardset_tags": [
-        "empires"
-    ], 
-    "cost": "", 
-    "group_tag": "empires landmarks", 
-    "types": [
-        "Landmark"
-    ]
-},{
-    "card_tag": "Delve", 
-    "cardset_tags": [
-        "empires"
-    ], 
-    "cost": "2", 
-    "group_tag": "empires events", 
-    "types": [
-        "Event"
-    ]
-},{
-    "card_tag": "Dominate", 
-    "cardset_tags": [
-        "empires"
-    ], 
-    "cost": "14", 
-    "group_tag": "empires events", 
-    "types": [
-        "Event"
-    ]
-},{
-    "card_tag": "Donate", 
-    "cardset_tags": [
-        "empires"
-    ], 
-    "cost": "0", 
-    "debtcost": "8", 
-    "group_tag": "empires events", 
-    "types": [
-        "Event"
-    ]
-},{
-    "card_tag": "Emporium", 
-    "cardset_tags": [
-        "empires"
-    ], 
-    "cost": "5", 
-    "count": "5", 
-    "group_tag": "Patrician - Emporium", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Encampment", 
-    "cardset_tags": [
-        "empires"
-    ], 
-    "cost": "2", 
-    "count": "5", 
-    "group_tag": "Encampment - Plunder", 
-    "group_top": true, 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Enchantress", 
-    "cardset_tags": [
-        "empires"
-    ], 
-    "cost": "3", 
-    "types": [
-        "Action", 
-        "Attack", 
-        "Duration"
-    ]
-},{
-    "card_tag": "Engineer", 
-    "cardset_tags": [
-        "empires"
-    ], 
-    "cost": "0", 
-    "debtcost": "4", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Farmers' Market", 
-    "cardset_tags": [
-        "empires"
-    ], 
-    "cost": "3", 
-    "types": [
-        "Action", 
-        "Gathering"
-    ]
-},{
-    "card_tag": "Fortune", 
-    "cardset_tags": [
-        "empires"
-    ], 
-    "cost": "8", 
-    "count": "5", 
-    "debtcost": "8", 
-    "group_tag": "Gladiator - Fortune", 
-    "types": [
-        "Treasure"
-    ]
-},{
-    "card_tag": "Forum", 
-    "cardset_tags": [
-        "empires"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Fountain", 
-    "cardset_tags": [
-        "empires"
-    ], 
-    "cost": "", 
-    "group_tag": "empires landmarks", 
-    "types": [
-        "Landmark"
-    ]
-},{
-    "card_tag": "Gladiator", 
-    "cardset_tags": [
-        "empires"
-    ], 
-    "cost": "3", 
-    "count": "5", 
-    "group_tag": "Gladiator - Fortune", 
-    "group_top": true, 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Groundskeeper", 
-    "cardset_tags": [
-        "empires"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Keep", 
-    "cardset_tags": [
-        "empires"
-    ], 
-    "cost": "", 
-    "group_tag": "empires landmarks", 
-    "types": [
-        "Landmark"
-    ]
-},{
-    "card_tag": "Labyrinth", 
-    "cardset_tags": [
-        "empires"
-    ], 
-    "cost": "", 
-    "group_tag": "empires landmarks", 
-    "types": [
-        "Landmark"
-    ]
-},{
-    "card_tag": "Legionary", 
-    "cardset_tags": [
-        "empires"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action", 
-        "Attack"
-    ]
-},{
-    "card_tag": "Mountain Pass", 
-    "cardset_tags": [
-        "empires"
-    ], 
-    "cost": "", 
-    "group_tag": "empires landmarks", 
-    "types": [
-        "Landmark"
-    ]
-},{
-    "card_tag": "Museum", 
-    "cardset_tags": [
-        "empires"
-    ], 
-    "cost": "", 
-    "group_tag": "empires landmarks", 
-    "types": [
-        "Landmark"
-    ]
-},{
-    "card_tag": "Obelisk", 
-    "cardset_tags": [
-        "empires"
-    ], 
-    "cost": "", 
-    "group_tag": "empires landmarks", 
-    "types": [
-        "Landmark"
-    ]
-},{
-    "card_tag": "Orchard", 
-    "cardset_tags": [
-        "empires"
-    ], 
-    "cost": "", 
-    "group_tag": "empires landmarks", 
-    "types": [
-        "Landmark"
-    ]
-},{
-    "card_tag": "Overlord", 
-    "cardset_tags": [
-        "empires"
-    ], 
-    "cost": "0", 
-    "debtcost": "8", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Palace", 
-    "cardset_tags": [
-        "empires"
-    ], 
-    "cost": "", 
-    "group_tag": "empires landmarks", 
-    "types": [
-        "Landmark"
-    ]
-},{
-    "card_tag": "Patrician", 
-    "cardset_tags": [
-        "empires"
-    ], 
-    "cost": "2", 
-    "count": "5", 
-    "group_tag": "Patrician - Emporium", 
-    "group_top": true, 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Plunder", 
-    "cardset_tags": [
-        "empires"
-    ], 
-    "cost": "5", 
-    "count": "5", 
-    "group_tag": "Encampment - Plunder", 
-    "types": [
-        "Treasure"
-    ]
-},{
-    "card_tag": "Ritual", 
-    "cardset_tags": [
-        "empires"
-    ], 
-    "cost": "4", 
-    "group_tag": "empires events", 
-    "types": [
-        "Event"
-    ]
-},{
-    "card_tag": "Rocks", 
-    "cardset_tags": [
-        "empires"
-    ], 
-    "cost": "4", 
-    "count": "5", 
-    "group_tag": "Catapult - Rocks", 
-    "types": [
-        "Treasure"
-    ]
-},{
-    "card_tag": "Royal Blacksmith", 
-    "cardset_tags": [
-        "empires"
-    ], 
-    "cost": "0", 
-    "debtcost": "8", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Sacrifice", 
-    "cardset_tags": [
-        "empires"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Salt the Earth", 
-    "cardset_tags": [
-        "empires"
-    ], 
-    "cost": "4", 
-    "group_tag": "empires events", 
-    "types": [
-        "Event"
-    ]
-},{
-    "card_tag": "Settlers", 
-    "cardset_tags": [
-        "empires"
-    ], 
-    "cost": "2", 
-    "count": "5", 
-    "group_tag": "Settlers - Bustling Village", 
-    "group_top": true, 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Tax", 
-    "cardset_tags": [
-        "empires"
-    ], 
-    "cost": "2", 
-    "group_tag": "empires events", 
-    "types": [
-        "Event"
-    ]
-},{
-    "card_tag": "Temple", 
-    "cardset_tags": [
-        "empires"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Action", 
-        "Gathering"
-    ]
-},{
-    "card_tag": "Tomb", 
-    "cardset_tags": [
-        "empires"
-    ], 
-    "cost": "", 
-    "group_tag": "empires landmarks", 
-    "types": [
-        "Landmark"
-    ]
-},{
-    "card_tag": "Tower", 
-    "cardset_tags": [
-        "empires"
-    ], 
-    "cost": "", 
-    "group_tag": "empires landmarks", 
-    "types": [
-        "Landmark"
-    ]
-},{
-    "card_tag": "Triumph", 
-    "cardset_tags": [
-        "empires"
-    ], 
-    "cost": "0", 
-    "debtcost": "5", 
-    "group_tag": "empires events", 
-    "types": [
-        "Event"
-    ]
-},{
-    "card_tag": "Triumphal Arch", 
-    "cardset_tags": [
-        "empires"
-    ], 
-    "cost": "", 
-    "group_tag": "empires landmarks", 
-    "types": [
-        "Landmark"
-    ]
-},{
-    "card_tag": "Villa", 
-    "cardset_tags": [
-        "empires"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Wall", 
-    "cardset_tags": [
-        "empires"
-    ], 
-    "cost": "", 
-    "group_tag": "empires landmarks", 
-    "types": [
-        "Landmark"
-    ]
-},{
-    "card_tag": "Wedding", 
-    "cardset_tags": [
-        "empires"
-    ], 
-    "cost": "4", 
-    "debtcost": "3", 
-    "group_tag": "empires events", 
-    "types": [
-        "Event"
-    ]
-},{
-    "card_tag": "Wild Hunt", 
-    "cardset_tags": [
-        "empires"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action", 
-        "Gathering"
-    ]
-},{
-    "card_tag": "Windfall", 
-    "cardset_tags": [
-        "empires"
-    ], 
-    "cost": "5", 
-    "group_tag": "empires events", 
-    "types": [
-        "Event"
-    ]
-},{
-    "card_tag": "Wolf Den", 
-    "cardset_tags": [
-        "empires"
-    ], 
-    "cost": "", 
-    "group_tag": "empires landmarks", 
-    "types": [
-        "Landmark"
-    ]
-},{
-    "card_tag": "Advisor", 
-    "cardset_tags": [
-        "guilds"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Baker", 
-    "cardset_tags": [
-        "guilds"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Butcher", 
-    "cardset_tags": [
-        "guilds"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Candlestick Maker", 
-    "cardset_tags": [
-        "guilds"
-    ], 
-    "cost": "2", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Doctor", 
-    "cardset_tags": [
-        "guilds"
-    ], 
-    "cost": "3+", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Herald", 
-    "cardset_tags": [
-        "guilds"
-    ], 
-    "cost": "4+", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Journeyman", 
-    "cardset_tags": [
-        "guilds"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Masterpiece", 
-    "cardset_tags": [
-        "guilds"
-    ], 
-    "cost": "3+", 
-    "types": [
-        "Treasure"
-    ]
-},{
-    "card_tag": "Merchant Guild", 
-    "cardset_tags": [
-        "guilds"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Plaza", 
-    "cardset_tags": [
-        "guilds"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Soothsayer", 
-    "cardset_tags": [
-        "guilds"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action", 
-        "Attack"
-    ]
-},{
-    "card_tag": "Stonemason", 
-    "cardset_tags": [
-        "guilds"
-    ], 
-    "cost": "2+", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Taxman", 
-    "cardset_tags": [
-        "guilds"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Action", 
-        "Attack"
-    ]
-},{
-    "card_tag": "Border Village", 
-    "cardset_tags": [
-        "hinterlands"
-    ], 
-    "cost": "6", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Cache", 
-    "cardset_tags": [
-        "hinterlands"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Treasure"
-    ]
-},{
-    "card_tag": "Cartographer", 
-    "cardset_tags": [
-        "hinterlands"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Crossroads", 
-    "cardset_tags": [
-        "hinterlands"
-    ], 
-    "cost": "2", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Develop", 
-    "cardset_tags": [
-        "hinterlands"
-    ], 
-    "cost": "3", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Duchess", 
-    "cardset_tags": [
-        "hinterlands"
-    ], 
-    "cost": "2", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Embassy", 
-    "cardset_tags": [
-        "hinterlands"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Farmland", 
-    "cardset_tags": [
-        "hinterlands"
-    ], 
-    "cost": "6", 
-    "types": [
-        "Victory"
-    ]
-},{
-    "card_tag": "Fool's Gold", 
-    "cardset_tags": [
-        "hinterlands"
-    ], 
-    "cost": "2", 
-    "types": [
-        "Treasure", 
-        "Reaction"
-    ]
-},{
-    "card_tag": "Haggler", 
-    "cardset_tags": [
-        "hinterlands"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Highway", 
-    "cardset_tags": [
-        "hinterlands"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Ill-Gotten Gains", 
-    "cardset_tags": [
-        "hinterlands"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Treasure"
-    ]
-},{
-    "card_tag": "Inn", 
-    "cardset_tags": [
-        "hinterlands"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Jack of all Trades", 
-    "cardset_tags": [
-        "hinterlands"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Mandarin", 
-    "cardset_tags": [
-        "hinterlands"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Margrave", 
-    "cardset_tags": [
-        "hinterlands"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action", 
-        "Attack"
-    ]
-},{
-    "card_tag": "Noble Brigand", 
-    "cardset_tags": [
-        "hinterlands"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Action", 
-        "Attack"
-    ]
-},{
-    "card_tag": "Nomad Camp", 
-    "cardset_tags": [
-        "hinterlands"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Oasis", 
-    "cardset_tags": [
-        "hinterlands"
-    ], 
-    "cost": "3", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Oracle", 
-    "cardset_tags": [
-        "hinterlands"
-    ], 
-    "cost": "3", 
-    "types": [
-        "Action", 
-        "Attack"
-    ]
-},{
-    "card_tag": "Scheme", 
-    "cardset_tags": [
-        "hinterlands"
-    ], 
-    "cost": "3", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Silk Road", 
-    "cardset_tags": [
-        "hinterlands"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Victory"
-    ]
-},{
-    "card_tag": "Spice Merchant", 
-    "cardset_tags": [
-        "hinterlands"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Stables", 
-    "cardset_tags": [
-        "hinterlands"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Trader", 
-    "cardset_tags": [
-        "hinterlands"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Action", 
-        "Reaction"
-    ]
-},{
-    "card_tag": "Tunnel", 
-    "cardset_tags": [
-        "hinterlands"
-    ], 
-    "cost": "3", 
-    "types": [
-        "Victory", 
-        "Reaction"
-    ]
-},{
-    "card_tag": "Coppersmith", 
-    "cardset_tags": [
-        "intrigue1stEdition"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Great Hall", 
-    "cardset_tags": [
-        "intrigue1stEdition"
-    ], 
-    "cost": "3", 
-    "types": [
-        "Action", 
-        "Victory"
-    ]
-},{
-    "card_tag": "Saboteur", 
-    "cardset_tags": [
-        "intrigue1stEdition"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action", 
-        "Attack"
-    ]
-},{
-    "card_tag": "Scout", 
-    "cardset_tags": [
-        "intrigue1stEdition"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Secret Chamber", 
-    "cardset_tags": [
-        "intrigue1stEdition"
-    ], 
-    "cost": "2", 
-    "types": [
-        "Action", 
-        "Reaction"
-    ]
-},{
-    "card_tag": "Tribute", 
-    "cardset_tags": [
-        "intrigue1stEdition"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Baron", 
-    "cardset_tags": [
-        "intrigue1stEdition", 
-        "intrigue2ndEdition"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Bridge", 
-    "cardset_tags": [
-        "intrigue1stEdition", 
-        "intrigue2ndEdition"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Conspirator", 
-    "cardset_tags": [
-        "intrigue1stEdition", 
-        "intrigue2ndEdition"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Courtyard", 
-    "cardset_tags": [
-        "intrigue1stEdition", 
-        "intrigue2ndEdition"
-    ], 
-    "cost": "2", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Duke", 
-    "cardset_tags": [
-        "intrigue1stEdition", 
-        "intrigue2ndEdition"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Victory"
-    ]
-},{
-    "card_tag": "Harem", 
-    "cardset_tags": [
-        "intrigue1stEdition", 
-        "intrigue2ndEdition"
-    ], 
-    "cost": "6", 
-    "types": [
-        "Treasure", 
-        "Victory"
-    ]
-},{
-    "card_tag": "Ironworks", 
-    "cardset_tags": [
-        "intrigue1stEdition", 
-        "intrigue2ndEdition"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Masquerade", 
-    "cardset_tags": [
-        "intrigue1stEdition", 
-        "intrigue2ndEdition"
-    ], 
-    "cost": "3", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Mining Village", 
-    "cardset_tags": [
-        "intrigue1stEdition", 
-        "intrigue2ndEdition"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Minion", 
-    "cardset_tags": [
-        "intrigue1stEdition", 
-        "intrigue2ndEdition"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action", 
-        "Attack"
-    ]
-},{
-    "card_tag": "Nobles", 
-    "cardset_tags": [
-        "intrigue1stEdition", 
-        "intrigue2ndEdition"
-    ], 
-    "cost": "6", 
-    "types": [
-        "Action", 
-        "Victory"
-    ]
-},{
-    "card_tag": "Pawn", 
-    "cardset_tags": [
-        "intrigue1stEdition", 
-        "intrigue2ndEdition"
-    ], 
-    "cost": "2", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Shanty Town", 
-    "cardset_tags": [
-        "intrigue1stEdition", 
-        "intrigue2ndEdition"
-    ], 
-    "cost": "3", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Steward", 
-    "cardset_tags": [
-        "intrigue1stEdition", 
-        "intrigue2ndEdition"
-    ], 
-    "cost": "3", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Swindler", 
-    "cardset_tags": [
-        "intrigue1stEdition", 
-        "intrigue2ndEdition"
-    ], 
-    "cost": "3", 
-    "types": [
-        "Action", 
-        "Attack"
-    ]
-},{
-    "card_tag": "Torturer", 
-    "cardset_tags": [
-        "intrigue1stEdition", 
-        "intrigue2ndEdition"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action", 
-        "Attack"
-    ]
-},{
-    "card_tag": "Trading Post", 
-    "cardset_tags": [
-        "intrigue1stEdition", 
-        "intrigue2ndEdition"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Upgrade", 
-    "cardset_tags": [
-        "intrigue1stEdition", 
-        "intrigue2ndEdition"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Wishing Well", 
-    "cardset_tags": [
-        "intrigue1stEdition", 
-        "intrigue2ndEdition"
-    ], 
-    "cost": "3", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Courtier", 
-    "cardset_tags": [
-        "intrigue2ndEdition", 
-        "intrigue2ndEditionUpgrade"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Diplomat", 
-    "cardset_tags": [
-        "intrigue2ndEdition", 
-        "intrigue2ndEditionUpgrade"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Action", 
-        "Reaction"
-    ]
-},{
-    "card_tag": "Lurker", 
-    "cardset_tags": [
-        "intrigue2ndEdition", 
-        "intrigue2ndEditionUpgrade"
-    ], 
-    "cost": "2", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Mill", 
-    "cardset_tags": [
-        "intrigue2ndEdition", 
-        "intrigue2ndEditionUpgrade"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Action", 
-        "Victory"
-    ]
-},{
-    "card_tag": "Patrol", 
-    "cardset_tags": [
-        "intrigue2ndEdition", 
-        "intrigue2ndEditionUpgrade"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Replace", 
-    "cardset_tags": [
-        "intrigue2ndEdition", 
-        "intrigue2ndEditionUpgrade"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action", 
-        "Attack"
-    ]
-},{
-    "card_tag": "Secret Passage", 
-    "cardset_tags": [
-        "intrigue2ndEdition", 
-        "intrigue2ndEditionUpgrade"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Avanto", 
-    "cardset_tags": [
-        "promo"
-    ], 
-    "cost": "5", 
-    "count": "5", 
-    "group_tag": "Sauna - Avanto", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Black Market", 
-    "cardset_tags": [
-        "promo"
-    ], 
-    "cost": "3", 
-    "image": "black_market_set.png", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Envoy", 
-    "cardset_tags": [
-        "promo"
-    ], 
-    "cost": "4", 
-    "image": "envoy_set.png", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Governor", 
-    "cardset_tags": [
-        "promo"
-    ], 
-    "cost": "5", 
-    "image": "governor_set.png", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Prince", 
-    "cardset_tags": [
-        "promo"
-    ], 
-    "cost": "8", 
-    "image": "prince_set.png", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Sauna", 
-    "cardset_tags": [
-        "promo"
-    ], 
-    "cost": "4", 
-    "count": "5", 
-    "group_tag": "Sauna - Avanto", 
-    "group_top": true, 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Stash", 
-    "cardset_tags": [
-        "promo"
-    ], 
-    "cost": "5", 
-    "image": "stash_set.png", 
-    "types": [
-        "Treasure"
-    ]
-},{
-    "card_tag": "Summon", 
-    "cardset_tags": [
-        "promo"
-    ], 
-    "cost": "5", 
-    "group_tag": "promo events", 
-    "types": [
-        "Event"
-    ]
-},{
-    "card_tag": "Walled Village", 
-    "cardset_tags": [
-        "promo"
-    ], 
-    "cost": "4", 
-    "image": "walled_village_set.png", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Bank", 
-    "cardset_tags": [
-        "prosperity"
-    ], 
-    "cost": "7", 
-    "types": [
-        "Treasure"
-    ]
-},{
-    "card_tag": "Bishop", 
-    "cardset_tags": [
-        "prosperity"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "City", 
-    "cardset_tags": [
-        "prosperity"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Contraband", 
-    "cardset_tags": [
-        "prosperity"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Treasure"
-    ]
-},{
-    "card_tag": "Counting House", 
-    "cardset_tags": [
-        "prosperity"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Expand", 
-    "cardset_tags": [
-        "prosperity"
-    ], 
-    "cost": "7", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Forge", 
-    "cardset_tags": [
-        "prosperity"
-    ], 
-    "cost": "7", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Goons", 
-    "cardset_tags": [
-        "prosperity"
-    ], 
-    "cost": "6", 
-    "types": [
-        "Action", 
-        "Attack"
-    ]
-},{
-    "card_tag": "Grand Market", 
-    "cardset_tags": [
-        "prosperity"
-    ], 
-    "cost": "6", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Hoard", 
-    "cardset_tags": [
-        "prosperity"
-    ], 
-    "cost": "6", 
-    "types": [
-        "Treasure"
-    ]
-},{
-    "card_tag": "King's Court", 
-    "cardset_tags": [
-        "prosperity"
-    ], 
-    "cost": "7", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Loan", 
-    "cardset_tags": [
-        "prosperity"
-    ], 
-    "cost": "3", 
-    "types": [
-        "Treasure"
-    ]
-},{
-    "card_tag": "Mint", 
-    "cardset_tags": [
-        "prosperity"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Monument", 
-    "cardset_tags": [
-        "prosperity"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Mountebank", 
-    "cardset_tags": [
-        "prosperity"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action", 
-        "Attack"
-    ]
-},{
-    "card_tag": "Peddler", 
-    "cardset_tags": [
-        "prosperity"
-    ], 
-    "cost": "8*", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Quarry", 
-    "cardset_tags": [
-        "prosperity"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Treasure"
-    ]
-},{
-    "card_tag": "Rabble", 
-    "cardset_tags": [
-        "prosperity"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action", 
-        "Attack"
-    ]
-},{
-    "card_tag": "Royal Seal", 
-    "cardset_tags": [
-        "prosperity"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Treasure"
-    ]
-},{
-    "card_tag": "Talisman", 
-    "cardset_tags": [
-        "prosperity"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Treasure"
-    ]
-},{
-    "card_tag": "Trade Route", 
-    "cardset_tags": [
-        "prosperity"
-    ], 
-    "cost": "3", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Vault", 
-    "cardset_tags": [
-        "prosperity"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Venture", 
-    "cardset_tags": [
-        "prosperity"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Treasure"
-    ]
-},{
-    "card_tag": "Watchtower", 
-    "cardset_tags": [
-        "prosperity"
-    ], 
-    "cost": "3", 
-    "types": [
-        "Reaction"
-    ]
-},{
-    "card_tag": "Worker's Village", 
-    "cardset_tags": [
-        "prosperity"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Ambassador", 
-    "cardset_tags": [
-        "seaside"
-    ], 
-    "cost": "3", 
-    "types": [
-        "Action", 
-        "Attack"
-    ]
-},{
-    "card_tag": "Bazaar", 
-    "cardset_tags": [
-        "seaside"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Caravan", 
-    "cardset_tags": [
-        "seaside"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Action", 
-        "Duration"
-    ]
-},{
-    "card_tag": "Cutpurse", 
-    "cardset_tags": [
-        "seaside"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Action", 
-        "Attack"
-    ]
-},{
-    "card_tag": "Embargo", 
-    "cardset_tags": [
-        "seaside"
-    ], 
-    "cost": "2", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Explorer", 
-    "cardset_tags": [
-        "seaside"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Fishing Village", 
-    "cardset_tags": [
-        "seaside"
-    ], 
-    "cost": "3", 
-    "types": [
-        "Action", 
-        "Duration"
-    ]
-},{
-    "card_tag": "Ghost Ship", 
-    "cardset_tags": [
-        "seaside"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action", 
-        "Attack"
-    ]
-},{
-    "card_tag": "Haven", 
-    "cardset_tags": [
-        "seaside"
-    ], 
-    "cost": "2", 
-    "types": [
-        "Action", 
-        "Duration"
-    ]
-},{
-    "card_tag": "Island", 
-    "cardset_tags": [
-        "seaside"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Action", 
-        "Victory"
-    ]
-},{
-    "card_tag": "Lighthouse", 
-    "cardset_tags": [
-        "seaside"
-    ], 
-    "cost": "2", 
-    "types": [
-        "Action", 
-        "Duration"
-    ]
-},{
-    "card_tag": "Lookout", 
-    "cardset_tags": [
-        "seaside"
-    ], 
-    "cost": "3", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Merchant Ship", 
-    "cardset_tags": [
-        "seaside"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action", 
-        "Duration"
-    ]
-},{
-    "card_tag": "Native Village", 
-    "cardset_tags": [
-        "seaside"
-    ], 
-    "cost": "2", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Navigator", 
-    "cardset_tags": [
-        "seaside"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Outpost", 
-    "cardset_tags": [
-        "seaside"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action", 
-        "Duration"
-    ]
-},{
-    "card_tag": "Pearl Diver", 
-    "cardset_tags": [
-        "seaside"
-    ], 
-    "cost": "2", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Pirate Ship", 
-    "cardset_tags": [
-        "seaside"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Action", 
-        "Attack"
-    ]
-},{
-    "card_tag": "Salvager", 
-    "cardset_tags": [
-        "seaside"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Sea Hag", 
-    "cardset_tags": [
-        "seaside"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Action", 
-        "Attack"
-    ]
-},{
-    "card_tag": "Smugglers", 
-    "cardset_tags": [
-        "seaside"
-    ], 
-    "cost": "3", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Tactician", 
-    "cardset_tags": [
-        "seaside"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action", 
-        "Duration"
-    ]
-},{
-    "card_tag": "Treasure Map", 
-    "cardset_tags": [
-        "seaside"
-    ], 
-    "cost": "4", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Treasury", 
-    "cardset_tags": [
-        "seaside"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Warehouse", 
-    "cardset_tags": [
-        "seaside"
-    ], 
-    "cost": "3", 
-    "types": [
-        "Action"
-    ]
-},{
-    "card_tag": "Wharf", 
-    "cardset_tags": [
-        "seaside"
-    ], 
-    "cost": "5", 
-    "types": [
-        "Action", 
-        "Duration"
-    ]
-}
+[
+  {
+    "card_tag": "Alms",
+    "cardset_tags": [
+      "adventures"
+    ],
+    "cost": "0",
+    "group_tag": "adventures events",
+    "types": [
+      "Event"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/a/ac/Alms.jpg/320px-Alms.jpg"
+  },
+  {
+    "card_tag": "Amulet",
+    "cardset_tags": [
+      "adventures"
+    ],
+    "cost": "3",
+    "types": [
+      "Action",
+      "Duration"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/5/50/Amulet.jpg/200px-Amulet.jpg"
+  },
+  {
+    "card_tag": "Artificer",
+    "cardset_tags": [
+      "adventures"
+    ],
+    "cost": "5",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/0/01/Artificer.jpg/200px-Artificer.jpg"
+  },
+  {
+    "card_tag": "Ball",
+    "cardset_tags": [
+      "adventures"
+    ],
+    "cost": "5",
+    "group_tag": "adventures events",
+    "types": [
+      "Event"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/d/df/Ball.jpg/320px-Ball.jpg"
+  },
+  {
+    "card_tag": "Bonfire",
+    "cardset_tags": [
+      "adventures"
+    ],
+    "cost": "3",
+    "group_tag": "adventures events",
+    "types": [
+      "Event"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/9/90/Bonfire.jpg/320px-Bonfire.jpg"
+  },
+  {
+    "card_tag": "Borrow",
+    "cardset_tags": [
+      "adventures"
+    ],
+    "cost": "0",
+    "group_tag": "adventures events",
+    "types": [
+      "Event"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/8/88/Borrow.jpg/320px-Borrow.jpg"
+  },
+  {
+    "card_tag": "Bridge_Troll",
+    "cardset_tags": [
+      "adventures"
+    ],
+    "cost": "5",
+    "types": [
+      "Action",
+      "Attack",
+      "Duration"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/7/77/Bridge_Troll.jpg/200px-Bridge_Troll.jpg"
+  },
+  {
+    "card_tag": "Caravan_Guard",
+    "cardset_tags": [
+      "adventures"
+    ],
+    "cost": "3",
+    "types": [
+      "Action",
+      "Duration",
+      "Reaction"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/f/fa/Caravan_Guard.jpg/200px-Caravan_Guard.jpg"
+  },
+  {
+    "card_tag": "Champion",
+    "cardset_tags": [
+      "adventures"
+    ],
+    "cost": "6*",
+    "count": "5",
+    "group_tag": "Page -> Champion",
+    "types": [
+      "Action",
+      "Duration"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/4/41/Champion.jpg/200px-Champion.jpg"
+  },
+  {
+    "card_tag": "Coin_of_the_Realm",
+    "cardset_tags": [
+      "adventures"
+    ],
+    "cost": "2",
+    "types": [
+      "Treasure",
+      "Reserve"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/7/76/Coin_of_the_Realm.jpg/200px-Coin_of_the_Realm.jpg"
+  },
+  {
+    "card_tag": "Disciple",
+    "cardset_tags": [
+      "adventures"
+    ],
+    "cost": "5*",
+    "count": "5",
+    "group_tag": "Peasant -> Teacher",
+    "types": [
+      "Action",
+      "Traveller"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/9/92/Disciple.jpg/200px-Disciple.jpg"
+  },
+  {
+    "card_tag": "Distant_Lands",
+    "cardset_tags": [
+      "adventures"
+    ],
+    "cost": "5",
+    "types": [
+      "Action",
+      "Reserve",
+      "Victory"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/3/3e/Distant_Lands.jpg/200px-Distant_Lands.jpg"
+  },
+  {
+    "card_tag": "Dungeon",
+    "cardset_tags": [
+      "adventures"
+    ],
+    "cost": "3",
+    "types": [
+      "Action",
+      "Duration"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/1/1e/Dungeon.jpg/200px-Dungeon.jpg"
+  },
+  {
+    "card_tag": "Duplicate",
+    "cardset_tags": [
+      "adventures"
+    ],
+    "cost": "4",
+    "types": [
+      "Action",
+      "Reserve"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/5/59/Duplicate.jpg/200px-Duplicate.jpg"
+  },
+  {
+    "card_tag": "Expedition",
+    "cardset_tags": [
+      "adventures"
+    ],
+    "cost": "3",
+    "group_tag": "adventures events",
+    "types": [
+      "Event"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/e/e3/Expedition.jpg/320px-Expedition.jpg"
+  },
+  {
+    "card_tag": "Ferry",
+    "cardset_tags": [
+      "adventures"
+    ],
+    "cost": "3",
+    "group_tag": "adventures events",
+    "types": [
+      "Event"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/d/d9/Ferry.jpg/320px-Ferry.jpg"
+  },
+  {
+    "card_tag": "Fugitive",
+    "cardset_tags": [
+      "adventures"
+    ],
+    "cost": "4*",
+    "count": "5",
+    "group_tag": "Peasant -> Teacher",
+    "types": [
+      "Action",
+      "Traveller"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/b/bd/Fugitive.jpg/200px-Fugitive.jpg"
+  },
+  {
+    "card_tag": "Gear",
+    "cardset_tags": [
+      "adventures"
+    ],
+    "cost": "3",
+    "types": [
+      "Action",
+      "Duration"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/e/ec/Gear.jpg/200px-Gear.jpg"
+  },
+  {
+    "card_tag": "Giant",
+    "cardset_tags": [
+      "adventures"
+    ],
+    "cost": "5",
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/4/4c/Giant.jpg/200px-Giant.jpg"
+  },
+  {
+    "card_tag": "Guide",
+    "cardset_tags": [
+      "adventures"
+    ],
+    "cost": "3",
+    "types": [
+      "Action",
+      "Reserve"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/e/e1/Guide.jpg/200px-Guide.jpg"
+  },
+  {
+    "card_tag": "Haunted_Woods",
+    "cardset_tags": [
+      "adventures"
+    ],
+    "cost": "5",
+    "types": [
+      "Action",
+      "Attack",
+      "Duration"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/5/54/Haunted_Woods.jpg/200px-Haunted_Woods.jpg"
+  },
+  {
+    "card_tag": "Hero",
+    "cardset_tags": [
+      "adventures"
+    ],
+    "cost": "5*",
+    "count": "5",
+    "group_tag": "Page -> Champion",
+    "types": [
+      "Action",
+      "Traveller"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/2/26/Hero.jpg/200px-Hero.jpg"
+  },
+  {
+    "card_tag": "Hireling",
+    "cardset_tags": [
+      "adventures"
+    ],
+    "cost": "6",
+    "types": [
+      "Action",
+      "Duration"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/9/91/Hireling.jpg/200px-Hireling.jpg"
+  },
+  {
+    "card_tag": "Inheritance",
+    "cardset_tags": [
+      "adventures"
+    ],
+    "cost": "7",
+    "group_tag": "adventures events",
+    "types": [
+      "Event"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/0/02/Inheritance.jpg/320px-Inheritance.jpg"
+  },
+  {
+    "card_tag": "Lost_Arts",
+    "cardset_tags": [
+      "adventures"
+    ],
+    "cost": "6",
+    "group_tag": "adventures events",
+    "types": [
+      "Event"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/4/4b/Lost_Arts.jpg/320px-Lost_Arts.jpg"
+  },
+  {
+    "card_tag": "Lost_City",
+    "cardset_tags": [
+      "adventures"
+    ],
+    "cost": "5",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/9/9a/Lost_City.jpg/200px-Lost_City.jpg"
+  },
+  {
+    "card_tag": "Magpie",
+    "cardset_tags": [
+      "adventures"
+    ],
+    "cost": "4",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/1/10/Magpie.jpg/200px-Magpie.jpg"
+  },
+  {
+    "card_tag": "Messenger",
+    "cardset_tags": [
+      "adventures"
+    ],
+    "cost": "4",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/3/3c/Messenger.jpg/200px-Messenger.jpg"
+  },
+  {
+    "card_tag": "Miser",
+    "cardset_tags": [
+      "adventures"
+    ],
+    "cost": "4",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/f/f6/Miser.jpg/200px-Miser.jpg"
+  },
+  {
+    "card_tag": "Mission",
+    "cardset_tags": [
+      "adventures"
+    ],
+    "cost": "4",
+    "group_tag": "adventures events",
+    "types": [
+      "Event"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/3/34/Mission.jpg/320px-Mission.jpg"
+  },
+  {
+    "card_tag": "Page",
+    "cardset_tags": [
+      "adventures"
+    ],
+    "cost": "2",
+    "count": "10",
+    "group_tag": "Page -> Champion",
+    "group_top": true,
+    "types": [
+      "Action",
+      "Traveller"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/6/60/Page.jpg/200px-Page.jpg"
+  },
+  {
+    "card_tag": "Pathfinding",
+    "cardset_tags": [
+      "adventures"
+    ],
+    "cost": "8",
+    "group_tag": "adventures events",
+    "types": [
+      "Event"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/2/28/Pathfinding.jpg/320px-Pathfinding.jpg"
+  },
+  {
+    "card_tag": "Peasant",
+    "cardset_tags": [
+      "adventures"
+    ],
+    "cost": "2",
+    "count": "10",
+    "group_tag": "Peasant -> Teacher",
+    "group_top": true,
+    "types": [
+      "Action",
+      "Traveller"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/7/70/Peasant.jpg/200px-Peasant.jpg"
+  },
+  {
+    "card_tag": "Pilgrimage",
+    "cardset_tags": [
+      "adventures"
+    ],
+    "cost": "4",
+    "group_tag": "adventures events",
+    "types": [
+      "Event"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/e/ee/Pilgrimage.jpg/320px-Pilgrimage.jpg"
+  },
+  {
+    "card_tag": "Plan",
+    "cardset_tags": [
+      "adventures"
+    ],
+    "cost": "3",
+    "group_tag": "adventures events",
+    "types": [
+      "Event"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/2/2c/Plan.jpg/320px-Plan.jpg"
+  },
+  {
+    "card_tag": "Port",
+    "cardset_tags": [
+      "adventures"
+    ],
+    "cost": "4",
+    "count": "12",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/d/d0/Port.jpg/200px-Port.jpg"
+  },
+  {
+    "card_tag": "Quest",
+    "cardset_tags": [
+      "adventures"
+    ],
+    "cost": "0",
+    "group_tag": "adventures events",
+    "types": [
+      "Event"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/3/36/Quest.jpg/320px-Quest.jpg"
+  },
+  {
+    "card_tag": "Raid",
+    "cardset_tags": [
+      "adventures"
+    ],
+    "cost": "5",
+    "group_tag": "adventures events",
+    "types": [
+      "Event"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/8/89/Raid.jpg/320px-Raid.jpg"
+  },
+  {
+    "card_tag": "Ranger",
+    "cardset_tags": [
+      "adventures"
+    ],
+    "cost": "4",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/3/37/Ranger.jpg/200px-Ranger.jpg"
+  },
+  {
+    "card_tag": "Ratcatcher",
+    "cardset_tags": [
+      "adventures"
+    ],
+    "cost": "2",
+    "types": [
+      "Action",
+      "Reserve"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/1/1d/Ratcatcher.jpg/200px-Ratcatcher.jpg"
+  },
+  {
+    "card_tag": "Raze",
+    "cardset_tags": [
+      "adventures"
+    ],
+    "cost": "2",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/d/d3/Raze.jpg/200px-Raze.jpg"
+  },
+  {
+    "card_tag": "Relic",
+    "cardset_tags": [
+      "adventures"
+    ],
+    "cost": "5",
+    "types": [
+      "Treasure",
+      "Attack"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/d/d3/Relic.jpg/200px-Relic.jpg"
+  },
+  {
+    "card_tag": "Royal_Carriage",
+    "cardset_tags": [
+      "adventures"
+    ],
+    "cost": "5",
+    "types": [
+      "Action",
+      "Reserve"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/c/cf/Royal_Carriage.jpg/200px-Royal_Carriage.jpg"
+  },
+  {
+    "card_tag": "Save",
+    "cardset_tags": [
+      "adventures"
+    ],
+    "cost": "1",
+    "group_tag": "adventures events",
+    "types": [
+      "Event"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/2/2e/Save.jpg/320px-Save.jpg"
+  },
+  {
+    "card_tag": "Scouting_Party",
+    "cardset_tags": [
+      "adventures"
+    ],
+    "cost": "2",
+    "group_tag": "adventures events",
+    "types": [
+      "Event"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/b/b2/Scouting_Party.jpg/320px-Scouting_Party.jpg"
+  },
+  {
+    "card_tag": "Seaway",
+    "cardset_tags": [
+      "adventures"
+    ],
+    "cost": "5",
+    "group_tag": "adventures events",
+    "types": [
+      "Event"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/d/df/Seaway.jpg/320px-Seaway.jpg"
+  },
+  {
+    "card_tag": "Soldier",
+    "cardset_tags": [
+      "adventures"
+    ],
+    "cost": "3*",
+    "count": "5",
+    "group_tag": "Peasant -> Teacher",
+    "types": [
+      "Action",
+      "Attack",
+      "Traveller"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/e/e3/Soldier.jpg/200px-Soldier.jpg"
+  },
+  {
+    "card_tag": "Storyteller",
+    "cardset_tags": [
+      "adventures"
+    ],
+    "cost": "5",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/6/6a/Storyteller.jpg/200px-Storyteller.jpg"
+  },
+  {
+    "card_tag": "Swamp_Hag",
+    "cardset_tags": [
+      "adventures"
+    ],
+    "cost": "5",
+    "types": [
+      "Action",
+      "Attack",
+      "Duration"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/d/db/Swamp_Hag.jpg/200px-Swamp_Hag.jpg"
+  },
+  {
+    "card_tag": "Teacher",
+    "cardset_tags": [
+      "adventures"
+    ],
+    "cost": "6*",
+    "count": "5",
+    "group_tag": "Peasant -> Teacher",
+    "types": [
+      "Action",
+      "Reserve"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/2/27/Teacher.jpg/200px-Teacher.jpg"
+  },
+  {
+    "card_tag": "Trade",
+    "cardset_tags": [
+      "adventures"
+    ],
+    "cost": "5",
+    "group_tag": "adventures events",
+    "types": [
+      "Event"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/9/9d/Trade.jpg/320px-Trade.jpg"
+  },
+  {
+    "card_tag": "Training",
+    "cardset_tags": [
+      "adventures"
+    ],
+    "cost": "6",
+    "group_tag": "adventures events",
+    "types": [
+      "Event"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/9/99/Training.jpg/320px-Training.jpg"
+  },
+  {
+    "card_tag": "Transmogrify",
+    "cardset_tags": [
+      "adventures"
+    ],
+    "cost": "4",
+    "types": [
+      "Action",
+      "Reserve"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/a/a9/Transmogrify.jpg/200px-Transmogrify.jpg"
+  },
+  {
+    "card_tag": "Travelling_Fair",
+    "cardset_tags": [
+      "adventures"
+    ],
+    "cost": "2",
+    "group_tag": "adventures events",
+    "types": [
+      "Event"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/b/be/Travelling_Fair.jpg/320px-Travelling_Fair.jpg"
+  },
+  {
+    "card_tag": "Treasure_Hunter",
+    "cardset_tags": [
+      "adventures"
+    ],
+    "cost": "3*",
+    "count": "5",
+    "group_tag": "Page -> Champion",
+    "types": [
+      "Action",
+      "Traveller"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/c/ce/Treasure_Hunter.jpg/200px-Treasure_Hunter.jpg"
+  },
+  {
+    "card_tag": "Treasure_Trove",
+    "cardset_tags": [
+      "adventures"
+    ],
+    "cost": "5",
+    "types": [
+      "Treasure"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/2/22/Treasure_Trove.jpg/200px-Treasure_Trove.jpg"
+  },
+  {
+    "card_tag": "Warrior",
+    "cardset_tags": [
+      "adventures"
+    ],
+    "cost": "4*",
+    "count": "5",
+    "group_tag": "Page -> Champion",
+    "types": [
+      "Action",
+      "Attack",
+      "Traveller"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/9/95/Warrior.jpg/200px-Warrior.jpg"
+  },
+  {
+    "card_tag": "Wine_Merchant",
+    "cardset_tags": [
+      "adventures"
+    ],
+    "cost": "5",
+    "types": [
+      "Action",
+      "Reserve"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/b/b2/Wine_Merchant.jpg/200px-Wine_Merchant.jpg"
+  },
+  {
+    "card_tag": "Alchemist",
+    "cardset_tags": [
+      "alchemy"
+    ],
+    "cost": "3",
+    "potcost": "1",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/2/22/Alchemist.jpg/200px-Alchemist.jpg"
+  },
+  {
+    "card_tag": "Apothecary",
+    "cardset_tags": [
+      "alchemy"
+    ],
+    "cost": "2",
+    "potcost": "1",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/6/69/Apothecary.jpg/200px-Apothecary.jpg"
+  },
+  {
+    "card_tag": "Apprentice",
+    "cardset_tags": [
+      "alchemy"
+    ],
+    "cost": "5",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/2/20/Apprentice.jpg/200px-Apprentice.jpg"
+  },
+  {
+    "card_tag": "Familiar",
+    "cardset_tags": [
+      "alchemy"
+    ],
+    "cost": "3",
+    "potcost": "1",
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/4/48/Familiar.jpg/200px-Familiar.jpg"
+  },
+  {
+    "card_tag": "Golem",
+    "cardset_tags": [
+      "alchemy"
+    ],
+    "cost": "4",
+    "potcost": "1",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/d/dc/Golem.jpg/200px-Golem.jpg"
+  },
+  {
+    "card_tag": "Herbalist",
+    "cardset_tags": [
+      "alchemy"
+    ],
+    "cost": "2",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/2/26/Herbalist.jpg/200px-Herbalist.jpg"
+  },
+  {
+    "card_tag": "Philosopher%27s_Stone",
+    "cardset_tags": [
+      "alchemy"
+    ],
+    "cost": "3",
+    "potcost": "1",
+    "types": [
+      "Treasure"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/3/32/Philosopher%27s_Stone.jpg/200px-Philosopher%27s_Stone.jpg"
+  },
+  {
+    "card_tag": "Possession",
+    "cardset_tags": [
+      "alchemy"
+    ],
+    "cost": "6",
+    "potcost": "1",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/3/3b/Possession.jpg/200px-Possession.jpg"
+  },
+  {
+    "card_tag": "Scrying_Pool",
+    "cardset_tags": [
+      "alchemy"
+    ],
+    "cost": "2",
+    "potcost": "1",
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/7/79/Scrying_Pool.jpg/200px-Scrying_Pool.jpg"
+  },
+  {
+    "card_tag": "Transmute",
+    "cardset_tags": [
+      "alchemy"
+    ],
+    "cost": "",
+    "potcost": "1",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/2/22/Transmute.jpg/200px-Transmute.jpg"
+  },
+  {
+    "card_tag": "University",
+    "cardset_tags": [
+      "alchemy"
+    ],
+    "cost": "2",
+    "potcost": "1",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/9/9b/University.jpg/200px-University.jpg"
+  },
+  {
+    "card_tag": "Vineyard",
+    "cardset_tags": [
+      "alchemy"
+    ],
+    "cost": "",
+    "potcost": "1",
+    "types": [
+      "Victory"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/c/c8/Vineyard.jpg/200px-Vineyard.jpg"
+  },
+  {
+    "card_tag": "Potion",
+    "cardset_tags": [
+      "base",
+      "alchemy"
+    ],
+    "cost": "4",
+    "count": "16",
+    "types": [
+      "Treasure"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/7/7a/Potion.png/10px-Potion.png"
+  },
+  {
+    "card_tag": "Copper",
+    "cardset_tags": [
+      "base",
+      "dominion1stEdition",
+      "dominion2ndEdition",
+      "intrigue1stEdition"
+    ],
+    "cost": "0",
+    "count": "60",
+    "types": [
+      "Treasure"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/f/fb/Copper.jpg/200px-Copper.jpg"
+  },
+  {
+    "card_tag": "Curse",
+    "cardset_tags": [
+      "base",
+      "dominion1stEdition",
+      "dominion2ndEdition",
+      "intrigue1stEdition"
+    ],
+    "cost": "0",
+    "count": "30",
+    "types": [
+      "Curse"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/9/97/Curse.jpg/200px-Curse.jpg"
+  },
+  {
+    "card_tag": "Duchy",
+    "cardset_tags": [
+      "base",
+      "dominion1stEdition",
+      "dominion2ndEdition",
+      "intrigue1stEdition"
+    ],
+    "cost": "5",
+    "types": [
+      "Victory"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/4/4a/Duchy.jpg/200px-Duchy.jpg"
+  },
+  {
+    "card_tag": "Estate",
+    "cardset_tags": [
+      "base",
+      "dominion1stEdition",
+      "dominion2ndEdition",
+      "intrigue1stEdition"
+    ],
+    "cost": "2",
+    "count": "24",
+    "types": [
+      "Victory"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/9/91/Estate.jpg/200px-Estate.jpg"
+  },
+  {
+    "card_tag": "Gold",
+    "cardset_tags": [
+      "base",
+      "dominion1stEdition",
+      "dominion2ndEdition",
+      "intrigue1stEdition"
+    ],
+    "cost": "6",
+    "count": "30",
+    "types": [
+      "Treasure"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/e/ed/Fool%27s_Gold.jpg/200px-Fool%27s_Gold.jpg"
+  },
+  {
+    "card_tag": "Province",
+    "cardset_tags": [
+      "base",
+      "dominion1stEdition",
+      "dominion2ndEdition",
+      "intrigue1stEdition"
+    ],
+    "cost": "8",
+    "types": [
+      "Victory"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/8/81/Province.jpg/200px-Province.jpg"
+  },
+  {
+    "card_tag": "Silver",
+    "cardset_tags": [
+      "base",
+      "dominion1stEdition",
+      "dominion2ndEdition",
+      "intrigue1stEdition"
+    ],
+    "cost": "3",
+    "count": "40",
+    "types": [
+      "Treasure"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/5/5d/Silver.jpg/200px-Silver.jpg"
+  },
+  {
+    "card_tag": "Trash",
+    "cardset_tags": [
+      "base",
+      "dominion1stEdition",
+      "intrigue1stEdition"
+    ],
+    "cost": "",
+    "count": "1",
+    "types": [
+      "Trash"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/e/ef/Trash.jpg/200px-Trash.jpg"
+  },
+  {
+    "card_tag": "Colony",
+    "cardset_tags": [
+      "base",
+      "prosperity"
+    ],
+    "cost": "11",
+    "types": [
+      "Victory"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/6/60/Colony.jpg/200px-Colony.jpg"
+  },
+  {
+    "card_tag": "Platinum",
+    "cardset_tags": [
+      "base",
+      "prosperity"
+    ],
+    "cost": "9",
+    "types": [
+      "Treasure"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/7/72/Platinum.jpg/200px-Platinum.jpg"
+  },
+  {
+    "card_tag": "Bag_of_Gold",
+    "cardset_tags": [
+      "cornucopia"
+    ],
+    "cost": "0*",
+    "count": "1",
+    "group_tag": "Tournament and Prizes",
+    "types": [
+      "Action",
+      "Prize"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/b/b4/Bag_of_Gold.jpg/200px-Bag_of_Gold.jpg"
+  },
+  {
+    "card_tag": "Diadem",
+    "cardset_tags": [
+      "cornucopia"
+    ],
+    "cost": "0*",
+    "count": "1",
+    "group_tag": "Tournament and Prizes",
+    "types": [
+      "Treasure",
+      "Prize"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/3/35/Diadem.jpg/200px-Diadem.jpg"
+  },
+  {
+    "card_tag": "Fairgrounds",
+    "cardset_tags": [
+      "cornucopia"
+    ],
+    "cost": "6",
+    "types": [
+      "Victory"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/7/7e/Fairgrounds.jpg/200px-Fairgrounds.jpg"
+  },
+  {
+    "card_tag": "Farming_Village",
+    "cardset_tags": [
+      "cornucopia"
+    ],
+    "cost": "4",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/5/51/Farming_Village.jpg/200px-Farming_Village.jpg"
+  },
+  {
+    "card_tag": "Followers",
+    "cardset_tags": [
+      "cornucopia"
+    ],
+    "cost": "0*",
+    "count": "1",
+    "group_tag": "Tournament and Prizes",
+    "types": [
+      "Action",
+      "Attack",
+      "Prize"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/1/12/Followers.jpg/200px-Followers.jpg"
+  },
+  {
+    "card_tag": "Fortune_Teller",
+    "cardset_tags": [
+      "cornucopia"
+    ],
+    "cost": "3",
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/5/55/Fortune_Teller.jpg/200px-Fortune_Teller.jpg"
+  },
+  {
+    "card_tag": "Hamlet",
+    "cardset_tags": [
+      "cornucopia"
+    ],
+    "cost": "2",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/d/df/Hamlet.jpg/200px-Hamlet.jpg"
+  },
+  {
+    "card_tag": "Harvest",
+    "cardset_tags": [
+      "cornucopia"
+    ],
+    "cost": "5",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/1/1c/Harvest.jpg/200px-Harvest.jpg"
+  },
+  {
+    "card_tag": "Horn_of_Plenty",
+    "cardset_tags": [
+      "cornucopia"
+    ],
+    "cost": "5",
+    "types": [
+      "Treasure"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/2/20/Horn_of_Plenty.jpg/200px-Horn_of_Plenty.jpg"
+  },
+  {
+    "card_tag": "Horse_Traders",
+    "cardset_tags": [
+      "cornucopia"
+    ],
+    "cost": "4",
+    "types": [
+      "Action",
+      "Reaction"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/c/c8/Horse_Traders.jpg/200px-Horse_Traders.jpg"
+  },
+  {
+    "card_tag": "Hunting_Party",
+    "cardset_tags": [
+      "cornucopia"
+    ],
+    "cost": "5",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/a/ab/Hunting_Party.jpg/200px-Hunting_Party.jpg"
+  },
+  {
+    "card_tag": "Jester",
+    "cardset_tags": [
+      "cornucopia"
+    ],
+    "cost": "5",
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/1/1b/Jester.jpg/200px-Jester.jpg"
+  },
+  {
+    "card_tag": "Menagerie",
+    "cardset_tags": [
+      "cornucopia"
+    ],
+    "cost": "3",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/7/71/Menagerie.jpg/200px-Menagerie.jpg"
+  },
+  {
+    "card_tag": "Princess",
+    "cardset_tags": [
+      "cornucopia"
+    ],
+    "cost": "0*",
+    "count": "1",
+    "group_tag": "Tournament and Prizes",
+    "types": [
+      "Action",
+      "Prize"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/4/42/Princess.jpg/200px-Princess.jpg"
+  },
+  {
+    "card_tag": "Remake",
+    "cardset_tags": [
+      "cornucopia"
+    ],
+    "cost": "4",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/2/2b/Remake.jpg/200px-Remake.jpg"
+  },
+  {
+    "card_tag": "Tournament",
+    "cardset_tags": [
+      "cornucopia"
+    ],
+    "cost": "4",
+    "count": "10",
+    "group_tag": "Tournament and Prizes",
+    "group_top": true,
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/c/c4/Tournament.jpg/200px-Tournament.jpg"
+  },
+  {
+    "card_tag": "Trusty_Steed",
+    "cardset_tags": [
+      "cornucopia"
+    ],
+    "cost": "0*",
+    "count": "1",
+    "group_tag": "Tournament and Prizes",
+    "types": [
+      "Action",
+      "Prize"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/1/12/Trusty_Steed.jpg/200px-Trusty_Steed.jpg"
+  },
+  {
+    "card_tag": "Young_Witch",
+    "cardset_tags": [
+      "cornucopia"
+    ],
+    "cost": "4",
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/9/9e/Young_Witch.jpg/200px-Young_Witch.jpg"
+  },
+  {
+    "card_tag": "Altar",
+    "cardset_tags": [
+      "dark ages"
+    ],
+    "cost": "6",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/b/b3/Altar.jpg/200px-Altar.jpg"
+  },
+  {
+    "card_tag": "Armory",
+    "cardset_tags": [
+      "dark ages"
+    ],
+    "cost": "4",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/a/a7/Armory.jpg/200px-Armory.jpg"
+  },
+  {
+    "card_tag": "Band_of_Misfits",
+    "cardset_tags": [
+      "dark ages"
+    ],
+    "cost": "5",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/5/51/Band_of_Misfits.jpg/200px-Band_of_Misfits.jpg"
+  },
+  {
+    "card_tag": "Bandit_Camp",
+    "cardset_tags": [
+      "dark ages"
+    ],
+    "cost": "5",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/4/43/Bandit_Camp.jpg/200px-Bandit_Camp.jpg"
+  },
+  {
+    "card_tag": "Beggar",
+    "cardset_tags": [
+      "dark ages"
+    ],
+    "cost": "2",
+    "types": [
+      "Action",
+      "Reaction"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/2/2f/Beggar.jpg/200px-Beggar.jpg"
+  },
+  {
+    "card_tag": "Catacombs",
+    "cardset_tags": [
+      "dark ages"
+    ],
+    "cost": "5",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/c/cd/Catacombs.jpg/200px-Catacombs.jpg"
+  },
+  {
+    "card_tag": "Count",
+    "cardset_tags": [
+      "dark ages"
+    ],
+    "cost": "5",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/a/a1/Count.jpg/200px-Count.jpg"
+  },
+  {
+    "card_tag": "Counterfeit",
+    "cardset_tags": [
+      "dark ages"
+    ],
+    "cost": "5",
+    "types": [
+      "Treasure"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/2/28/Counterfeit.jpg/200px-Counterfeit.jpg"
+  },
+  {
+    "card_tag": "Cultist",
+    "cardset_tags": [
+      "dark ages"
+    ],
+    "cost": "5",
+    "types": [
+      "Action",
+      "Attack",
+      "Looter"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/1/18/Cultist.jpg/200px-Cultist.jpg"
+  },
+  {
+    "card_tag": "Death_Cart",
+    "cardset_tags": [
+      "dark ages"
+    ],
+    "cost": "4",
+    "types": [
+      "Action",
+      "Looter"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/5/50/Death_Cart.jpg/200px-Death_Cart.jpg"
+  },
+  {
+    "card_tag": "Feodum",
+    "cardset_tags": [
+      "dark ages"
+    ],
+    "cost": "4",
+    "types": [
+      "Victory"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/1/1f/Feodum.jpg/200px-Feodum.jpg"
+  },
+  {
+    "card_tag": "Forager",
+    "cardset_tags": [
+      "dark ages"
+    ],
+    "cost": "3",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/e/e6/Forager.jpg/200px-Forager.jpg"
+  },
+  {
+    "card_tag": "Fortress",
+    "cardset_tags": [
+      "dark ages"
+    ],
+    "cost": "4",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/8/8a/Fortress.jpg/200px-Fortress.jpg"
+  },
+  {
+    "card_tag": "Graverobber",
+    "cardset_tags": [
+      "dark ages"
+    ],
+    "cost": "5",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/1/13/Graverobber.jpg/200px-Graverobber.jpg"
+  },
+  {
+    "card_tag": "Hermit",
+    "cardset_tags": [
+      "dark ages"
+    ],
+    "cost": "3",
+    "group_tag": "Hermit - Madman",
+    "group_top": true,
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/8/8e/Hermit.jpg/200px-Hermit.jpg"
+  },
+  {
+    "card_tag": "Hovel",
+    "cardset_tags": [
+      "dark ages"
+    ],
+    "cost": "1",
+    "group_tag": "Shelters",
+    "group_top": true,
+    "types": [
+      "Reaction",
+      "Shelter"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/f/f0/Hovel.jpg/200px-Hovel.jpg"
+  },
+  {
+    "card_tag": "Hunting_Grounds",
+    "cardset_tags": [
+      "dark ages"
+    ],
+    "cost": "6",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/6/6a/Hunting_Grounds.jpg/200px-Hunting_Grounds.jpg"
+  },
+  {
+    "card_tag": "Ironmonger",
+    "cardset_tags": [
+      "dark ages"
+    ],
+    "cost": "4",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/9/93/Ironmonger.jpg/200px-Ironmonger.jpg"
+  },
+  {
+    "card_tag": "Junk_Dealer",
+    "cardset_tags": [
+      "dark ages"
+    ],
+    "cost": "5",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/c/c2/Junk_Dealer.jpg/200px-Junk_Dealer.jpg"
+  },
+  {
+    "card_tag": "Knights",
+    "cardset_tags": [
+      "dark ages"
+    ],
+    "cost": "5",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/9/9a/Knights.jpg/200px-Knights.jpg"
+  },
+  {
+    "card_tag": "Madman",
+    "cardset_tags": [
+      "dark ages"
+    ],
+    "cost": "0*",
+    "group_tag": "Hermit - Madman",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/1/19/Madman.jpg/200px-Madman.jpg"
+  },
+  {
+    "card_tag": "Marauder",
+    "cardset_tags": [
+      "dark ages"
+    ],
+    "cost": "4",
+    "types": [
+      "Action",
+      "Attack",
+      "Looter"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/5/5e/Marauder.jpg/200px-Marauder.jpg"
+  },
+  {
+    "card_tag": "Market_Square",
+    "cardset_tags": [
+      "dark ages"
+    ],
+    "cost": "3",
+    "types": [
+      "Action",
+      "Reaction"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/f/f1/Market_Square.jpg/200px-Market_Square.jpg"
+  },
+  {
+    "card_tag": "Mercenary",
+    "cardset_tags": [
+      "dark ages"
+    ],
+    "cost": "0*",
+    "group_tag": "Urchin - Mercenary",
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/c/c5/Mercenary.jpg/200px-Mercenary.jpg"
+  },
+  {
+    "card_tag": "Mystic",
+    "cardset_tags": [
+      "dark ages"
+    ],
+    "cost": "5",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/3/37/Mystic.jpg/200px-Mystic.jpg"
+  },
+  {
+    "card_tag": "Necropolis",
+    "cardset_tags": [
+      "dark ages"
+    ],
+    "cost": "1",
+    "group_tag": "Shelters",
+    "types": [
+      "Action",
+      "Shelter"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/6/69/Necropolis.jpg/200px-Necropolis.jpg"
+  },
+  {
+    "card_tag": "Overgrown_Estate",
+    "cardset_tags": [
+      "dark ages"
+    ],
+    "cost": "1",
+    "group_tag": "Shelters",
+    "types": [
+      "Victory",
+      "Shelter"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/3/36/Overgrown_Estate.jpg/200px-Overgrown_Estate.jpg"
+  },
+  {
+    "card_tag": "Pillage",
+    "cardset_tags": [
+      "dark ages"
+    ],
+    "cost": "5",
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/7/74/Pillage.jpg/200px-Pillage.jpg"
+  },
+  {
+    "card_tag": "Poor_House",
+    "cardset_tags": [
+      "dark ages"
+    ],
+    "cost": "1",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/d/d6/Poor_House.jpg/200px-Poor_House.jpg"
+  },
+  {
+    "card_tag": "Procession",
+    "cardset_tags": [
+      "dark ages"
+    ],
+    "cost": "4",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/7/7a/Procession.jpg/200px-Procession.jpg"
+  },
+  {
+    "card_tag": "Rats",
+    "cardset_tags": [
+      "dark ages"
+    ],
+    "cost": "4",
+    "count": "20",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/7/70/Rats.jpg/200px-Rats.jpg"
+  },
+  {
+    "card_tag": "Rebuild",
+    "cardset_tags": [
+      "dark ages"
+    ],
+    "cost": "5",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/f/f8/Rebuild.jpg/200px-Rebuild.jpg"
+  },
+  {
+    "card_tag": "Rogue",
+    "cardset_tags": [
+      "dark ages"
+    ],
+    "cost": "5",
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/f/f6/Rogue.jpg/200px-Rogue.jpg"
+  },
+  {
+    "card_tag": "Ruins",
+    "cardset_tags": [
+      "dark ages"
+    ],
+    "cost": "0",
+    "count": "50",
+    "types": [
+      "Action",
+      "Ruins"
+    ]
+  },
+  {
+    "card_tag": "Sage",
+    "cardset_tags": [
+      "dark ages"
+    ],
+    "cost": "3",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/7/70/Sage.jpg/200px-Sage.jpg"
+  },
+  {
+    "card_tag": "Scavenger",
+    "cardset_tags": [
+      "dark ages"
+    ],
+    "cost": "4",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/d/d9/Scavenger.jpg/200px-Scavenger.jpg"
+  },
+  {
+    "card_tag": "Spoils",
+    "cardset_tags": [
+      "dark ages"
+    ],
+    "cost": "0*",
+    "count": "15",
+    "types": [
+      "Treasure"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/9/9f/Spoils.jpg/200px-Spoils.jpg"
+  },
+  {
+    "card_tag": "Squire",
+    "cardset_tags": [
+      "dark ages"
+    ],
+    "cost": "2",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/7/79/Squire.jpg/200px-Squire.jpg"
+  },
+  {
+    "card_tag": "Storeroom",
+    "cardset_tags": [
+      "dark ages"
+    ],
+    "cost": "3",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/b/b4/Storeroom.jpg/200px-Storeroom.jpg"
+  },
+  {
+    "card_tag": "Urchin",
+    "cardset_tags": [
+      "dark ages"
+    ],
+    "cost": "3",
+    "group_tag": "Urchin - Mercenary",
+    "group_top": true,
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/7/74/Urchin.jpg/200px-Urchin.jpg"
+  },
+  {
+    "card_tag": "Vagrant",
+    "cardset_tags": [
+      "dark ages"
+    ],
+    "cost": "2",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/3/3f/Vagrant.jpg/200px-Vagrant.jpg"
+  },
+  {
+    "card_tag": "Wandering_Minstrel",
+    "cardset_tags": [
+      "dark ages"
+    ],
+    "cost": "4",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/f/f9/Wandering_Minstrel.jpg/200px-Wandering_Minstrel.jpg"
+  },
+  {
+    "card_tag": "Adventurer",
+    "cardset_tags": [
+      "dominion1stEdition"
+    ],
+    "cost": "6",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/7/71/Adventurer.jpg/200px-Adventurer.jpg"
+  },
+  {
+    "card_tag": "Chancellor",
+    "cardset_tags": [
+      "dominion1stEdition"
+    ],
+    "cost": "3",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/b/b7/Chancellor.jpg/200px-Chancellor.jpg"
+  },
+  {
+    "card_tag": "Feast",
+    "cardset_tags": [
+      "dominion1stEdition"
+    ],
+    "cost": "4",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/9/9c/Feast.jpg/200px-Feast.jpg"
+  },
+  {
+    "card_tag": "Spy",
+    "cardset_tags": [
+      "dominion1stEdition"
+    ],
+    "cost": "4",
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/c/cb/Spy.jpg/200px-Spy.jpg"
+  },
+  {
+    "card_tag": "Thief",
+    "cardset_tags": [
+      "dominion1stEdition"
+    ],
+    "cost": "4",
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/f/f5/Thief.jpg/200px-Thief.jpg"
+  },
+  {
+    "card_tag": "Woodcutter",
+    "cardset_tags": [
+      "dominion1stEdition"
+    ],
+    "cost": "3",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/d/d6/Woodcutter.jpg/200px-Woodcutter.jpg"
+  },
+  {
+    "card_tag": "Bureaucrat",
+    "cardset_tags": [
+      "dominion1stEdition",
+      "dominion2ndEdition"
+    ],
+    "cost": "4",
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/4/4d/Bureaucrat.jpg/62px-Bureaucrat.jpg"
+  },
+  {
+    "card_tag": "Cellar",
+    "cardset_tags": [
+      "dominion1stEdition",
+      "dominion2ndEdition"
+    ],
+    "cost": "2",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/1/1c/Cellar.jpg/200px-Cellar.jpg"
+  },
+  {
+    "card_tag": "Chapel",
+    "cardset_tags": [
+      "dominion1stEdition",
+      "dominion2ndEdition"
+    ],
+    "cost": "2",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/2/29/Chapel.jpg/200px-Chapel.jpg"
+  },
+  {
+    "card_tag": "Council_Room",
+    "cardset_tags": [
+      "dominion1stEdition",
+      "dominion2ndEdition"
+    ],
+    "cost": "5",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/e/e0/Council_Room.jpg/200px-Council_Room.jpg"
+  },
+  {
+    "card_tag": "Festival",
+    "cardset_tags": [
+      "dominion1stEdition",
+      "dominion2ndEdition"
+    ],
+    "cost": "5",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/e/ec/Festival.jpg/200px-Festival.jpg"
+  },
+  {
+    "card_tag": "Gardens",
+    "cardset_tags": [
+      "dominion1stEdition",
+      "dominion2ndEdition"
+    ],
+    "cost": "4",
+    "types": [
+      "Victory"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/8/8c/Gardens.jpg/200px-Gardens.jpg"
+  },
+  {
+    "card_tag": "Laboratory",
+    "cardset_tags": [
+      "dominion1stEdition",
+      "dominion2ndEdition"
+    ],
+    "cost": "5",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/0/0c/Laboratory.jpg/200px-Laboratory.jpg"
+  },
+  {
+    "card_tag": "Library",
+    "cardset_tags": [
+      "dominion1stEdition",
+      "dominion2ndEdition"
+    ],
+    "cost": "5",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/9/98/Library.jpg/200px-Library.jpg"
+  },
+  {
+    "card_tag": "Market",
+    "cardset_tags": [
+      "dominion1stEdition",
+      "dominion2ndEdition"
+    ],
+    "cost": "5",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/7/7e/Market.jpg/200px-Market.jpg"
+  },
+  {
+    "card_tag": "Militia",
+    "cardset_tags": [
+      "dominion1stEdition",
+      "dominion2ndEdition"
+    ],
+    "cost": "4",
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/a/a0/Militia.jpg/200px-Militia.jpg"
+  },
+  {
+    "card_tag": "Mine",
+    "cardset_tags": [
+      "dominion1stEdition",
+      "dominion2ndEdition"
+    ],
+    "cost": "5",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/8/8e/Mine.jpg/200px-Mine.jpg"
+  },
+  {
+    "card_tag": "Moat",
+    "cardset_tags": [
+      "dominion1stEdition",
+      "dominion2ndEdition"
+    ],
+    "cost": "2",
+    "types": [
+      "Action",
+      "Reaction"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/f/fe/Moat.jpg/200px-Moat.jpg"
+  },
+  {
+    "card_tag": "Moneylender",
+    "cardset_tags": [
+      "dominion1stEdition",
+      "dominion2ndEdition"
+    ],
+    "cost": "4",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/7/70/Moneylender.jpg/200px-Moneylender.jpg"
+  },
+  {
+    "card_tag": "Remodel",
+    "cardset_tags": [
+      "dominion1stEdition",
+      "dominion2ndEdition"
+    ],
+    "cost": "4",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/2/2e/Remodel.jpg/200px-Remodel.jpg"
+  },
+  {
+    "card_tag": "Smithy",
+    "cardset_tags": [
+      "dominion1stEdition",
+      "dominion2ndEdition"
+    ],
+    "cost": "4",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/3/36/Smithy.jpg/200px-Smithy.jpg"
+  },
+  {
+    "card_tag": "Throne_Room",
+    "cardset_tags": [
+      "dominion1stEdition",
+      "dominion2ndEdition"
+    ],
+    "cost": "4",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/d/d1/Throne_Room.jpg/200px-Throne_Room.jpg"
+  },
+  {
+    "card_tag": "Village",
+    "cardset_tags": [
+      "dominion1stEdition",
+      "dominion2ndEdition"
+    ],
+    "cost": "3",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/5/5a/Village.jpg/200px-Village.jpg"
+  },
+  {
+    "card_tag": "Witch",
+    "cardset_tags": [
+      "dominion1stEdition",
+      "dominion2ndEdition"
+    ],
+    "cost": "5",
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/f/f3/Witch.jpg/200px-Witch.jpg"
+  },
+  {
+    "card_tag": "Workshop",
+    "cardset_tags": [
+      "dominion1stEdition",
+      "dominion2ndEdition"
+    ],
+    "cost": "3",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/5/50/Workshop.jpg/200px-Workshop.jpg"
+  },
+  {
+    "card_tag": "Artisan",
+    "cardset_tags": [
+      "dominion2ndEdition",
+      "dominion2ndEditionUpgrade"
+    ],
+    "cost": "6",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/1/1d/Artisan.jpg/62px-Artisan.jpg"
+  },
+  {
+    "card_tag": "Bandit",
+    "cardset_tags": [
+      "dominion2ndEdition",
+      "dominion2ndEditionUpgrade"
+    ],
+    "cost": "5",
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/4/46/Bandit.jpg/62px-Bandit.jpg"
+  },
+  {
+    "card_tag": "Harbinger",
+    "cardset_tags": [
+      "dominion2ndEdition",
+      "dominion2ndEditionUpgrade"
+    ],
+    "cost": "3",
+    "count": "10",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/3/32/Harbinger.jpg/200px-Harbinger.jpg"
+  },
+  {
+    "card_tag": "Merchant",
+    "cardset_tags": [
+      "dominion2ndEdition",
+      "dominion2ndEditionUpgrade"
+    ],
+    "cost": "3",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/7/78/Merchant.jpg/200px-Merchant.jpg"
+  },
+  {
+    "card_tag": "Poacher",
+    "cardset_tags": [
+      "dominion2ndEdition",
+      "dominion2ndEditionUpgrade"
+    ],
+    "cost": "4",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/a/a0/Poacher.jpg/200px-Poacher.jpg"
+  },
+  {
+    "card_tag": "Sentry",
+    "cardset_tags": [
+      "dominion2ndEdition",
+      "dominion2ndEditionUpgrade"
+    ],
+    "cost": "5",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/4/4c/Sentry.jpg/200px-Sentry.jpg"
+  },
+  {
+    "card_tag": "Vassal",
+    "cardset_tags": [
+      "dominion2ndEdition",
+      "dominion2ndEditionUpgrade"
+    ],
+    "cost": "3",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/0/0b/Vassal.jpg/200px-Vassal.jpg"
+  },
+  {
+    "card_tag": "Advance",
+    "cardset_tags": [
+      "empires"
+    ],
+    "cost": "0",
+    "group_tag": "empires events",
+    "types": [
+      "Event"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/3/37/Advance.jpg/320px-Advance.jpg"
+  },
+  {
+    "card_tag": "Annex",
+    "cardset_tags": [
+      "empires"
+    ],
+    "cost": "0",
+    "debtcost": "8",
+    "group_tag": "empires events",
+    "types": [
+      "Event"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/b/be/Annex.jpg/320px-Annex.jpg"
+  },
+  {
+    "card_tag": "Aqueduct",
+    "cardset_tags": [
+      "empires"
+    ],
+    "cost": "",
+    "group_tag": "empires landmarks",
+    "types": [
+      "Landmark"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/3/3f/Aqueduct.jpg/320px-Aqueduct.jpg"
+  },
+  {
+    "card_tag": "Archive",
+    "cardset_tags": [
+      "empires"
+    ],
+    "cost": "5",
+    "types": [
+      "Action",
+      "Duration"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/2/26/Archive.jpg/200px-Archive.jpg"
+  },
+  {
+    "card_tag": "Arena",
+    "cardset_tags": [
+      "empires"
+    ],
+    "cost": "",
+    "group_tag": "empires landmarks",
+    "types": [
+      "Landmark"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/3/36/Arena.jpg/320px-Arena.jpg"
+  },
+  {
+    "card_tag": "Bandit_Fort",
+    "cardset_tags": [
+      "empires"
+    ],
+    "cost": "",
+    "group_tag": "empires landmarks",
+    "types": [
+      "Landmark"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/4/42/Bandit_Fort.jpg/320px-Bandit_Fort.jpg"
+  },
+  {
+    "card_tag": "Banquet",
+    "cardset_tags": [
+      "empires"
+    ],
+    "cost": "3",
+    "group_tag": "empires events",
+    "types": [
+      "Event"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/e/e4/Banquet.jpg/320px-Banquet.jpg"
+  },
+  {
+    "card_tag": "Basilica",
+    "cardset_tags": [
+      "empires"
+    ],
+    "cost": "",
+    "group_tag": "empires landmarks",
+    "types": [
+      "Landmark"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/5/54/Basilica.jpg/320px-Basilica.jpg"
+  },
+  {
+    "card_tag": "Baths",
+    "cardset_tags": [
+      "empires"
+    ],
+    "cost": "",
+    "group_tag": "empires landmarks",
+    "types": [
+      "Landmark"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/a/a9/Baths.jpg/320px-Baths.jpg"
+  },
+  {
+    "card_tag": "Battlefield",
+    "cardset_tags": [
+      "empires"
+    ],
+    "cost": "",
+    "group_tag": "empires landmarks",
+    "types": [
+      "Landmark"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/b/b0/Battlefield.jpg/320px-Battlefield.jpg"
+  },
+  {
+    "card_tag": "Bustling_Village",
+    "cardset_tags": [
+      "empires"
+    ],
+    "cost": "5",
+    "count": "5",
+    "group_tag": "Settlers - Bustling Village",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/c/c6/Bustling_Village.jpg/200px-Bustling_Village.jpg"
+  },
+  {
+    "card_tag": "Capital",
+    "cardset_tags": [
+      "empires"
+    ],
+    "cost": "5",
+    "types": [
+      "Treasure"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/e/eb/Capital.jpg/200px-Capital.jpg"
+  },
+  {
+    "card_tag": "Castles",
+    "cardset_tags": [
+      "empires"
+    ],
+    "cost": "3",
+    "count": "12",
+    "types": [
+      "Victory",
+      "Castle"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/d/df/Castles.jpg/200px-Castles.jpg"
+  },
+  {
+    "card_tag": "Catapult",
+    "cardset_tags": [
+      "empires"
+    ],
+    "cost": "3",
+    "count": "5",
+    "group_tag": "Catapult - Rocks",
+    "group_top": true,
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/2/25/Catapult.jpg/200px-Catapult.jpg"
+  },
+  {
+    "card_tag": "Chariot_Race",
+    "cardset_tags": [
+      "empires"
+    ],
+    "cost": "3",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/7/7c/Chariot_Race.jpg/200px-Chariot_Race.jpg"
+  },
+  {
+    "card_tag": "Charm",
+    "cardset_tags": [
+      "empires"
+    ],
+    "cost": "5",
+    "types": [
+      "Treasure"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/d/de/Charm.jpg/200px-Charm.jpg"
+  },
+  {
+    "card_tag": "City_Quarter",
+    "cardset_tags": [
+      "empires"
+    ],
+    "cost": "0",
+    "debtcost": "8",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/4/4e/City_Quarter.jpg/200px-City_Quarter.jpg"
+  },
+  {
+    "card_tag": "Colonnade",
+    "cardset_tags": [
+      "empires"
+    ],
+    "cost": "",
+    "group_tag": "empires landmarks",
+    "types": [
+      "Landmark"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/e/e3/Colonnade.jpg/320px-Colonnade.jpg"
+  },
+  {
+    "card_tag": "Conquest",
+    "cardset_tags": [
+      "empires"
+    ],
+    "cost": "6",
+    "group_tag": "empires events",
+    "types": [
+      "Event"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/0/08/Conquest.jpg/320px-Conquest.jpg"
+  },
+  {
+    "card_tag": "Crown",
+    "cardset_tags": [
+      "empires"
+    ],
+    "cost": "5",
+    "types": [
+      "Action",
+      "Treasure"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/9/91/Crown.jpg/200px-Crown.jpg"
+  },
+  {
+    "card_tag": "Defiled_Shrine",
+    "cardset_tags": [
+      "empires"
+    ],
+    "cost": "",
+    "group_tag": "empires landmarks",
+    "types": [
+      "Landmark"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/d/dd/Defiled_Shrine.jpg/320px-Defiled_Shrine.jpg"
+  },
+  {
+    "card_tag": "Delve",
+    "cardset_tags": [
+      "empires"
+    ],
+    "cost": "2",
+    "group_tag": "empires events",
+    "types": [
+      "Event"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/9/9d/Delve.jpg/320px-Delve.jpg"
+  },
+  {
+    "card_tag": "Dominate",
+    "cardset_tags": [
+      "empires"
+    ],
+    "cost": "14",
+    "group_tag": "empires events",
+    "types": [
+      "Event"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/c/c9/Dominate.jpg/320px-Dominate.jpg"
+  },
+  {
+    "card_tag": "Donate",
+    "cardset_tags": [
+      "empires"
+    ],
+    "cost": "0",
+    "debtcost": "8",
+    "group_tag": "empires events",
+    "types": [
+      "Event"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/4/42/Donate.jpg/320px-Donate.jpg"
+  },
+  {
+    "card_tag": "Emporium",
+    "cardset_tags": [
+      "empires"
+    ],
+    "cost": "5",
+    "count": "5",
+    "group_tag": "Patrician - Emporium",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/f/fe/Emporium.jpg/200px-Emporium.jpg"
+  },
+  {
+    "card_tag": "Encampment",
+    "cardset_tags": [
+      "empires"
+    ],
+    "cost": "2",
+    "count": "5",
+    "group_tag": "Encampment - Plunder",
+    "group_top": true,
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/4/4e/Encampment.jpg/200px-Encampment.jpg"
+  },
+  {
+    "card_tag": "Enchantress",
+    "cardset_tags": [
+      "empires"
+    ],
+    "cost": "3",
+    "types": [
+      "Action",
+      "Attack",
+      "Duration"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/b/bb/Enchantress.jpg/200px-Enchantress.jpg"
+  },
+  {
+    "card_tag": "Engineer",
+    "cardset_tags": [
+      "empires"
+    ],
+    "cost": "0",
+    "debtcost": "4",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/a/ab/Engineer.jpg/200px-Engineer.jpg"
+  },
+  {
+    "card_tag": "Farmers%27_Market",
+    "cardset_tags": [
+      "empires"
+    ],
+    "cost": "3",
+    "types": [
+      "Action",
+      "Gathering"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/3/37/Farmers%27_Market.jpg/200px-Farmers%27_Market.jpg"
+  },
+  {
+    "card_tag": "Fortune",
+    "cardset_tags": [
+      "empires"
+    ],
+    "cost": "8",
+    "count": "5",
+    "debtcost": "8",
+    "group_tag": "Gladiator - Fortune",
+    "types": [
+      "Treasure"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/0/05/Fortune.jpg/200px-Fortune.jpg"
+  },
+  {
+    "card_tag": "Forum",
+    "cardset_tags": [
+      "empires"
+    ],
+    "cost": "5",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/1/15/Forum.jpg/200px-Forum.jpg"
+  },
+  {
+    "card_tag": "Fountain",
+    "cardset_tags": [
+      "empires"
+    ],
+    "cost": "",
+    "group_tag": "empires landmarks",
+    "types": [
+      "Landmark"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/e/ee/Fountain.jpg/320px-Fountain.jpg"
+  },
+  {
+    "card_tag": "Gladiator",
+    "cardset_tags": [
+      "empires"
+    ],
+    "cost": "3",
+    "count": "5",
+    "group_tag": "Gladiator - Fortune",
+    "group_top": true,
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/e/e9/Gladiator.jpg/200px-Gladiator.jpg"
+  },
+  {
+    "card_tag": "Groundskeeper",
+    "cardset_tags": [
+      "empires"
+    ],
+    "cost": "5",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/3/33/Groundskeeper.jpg/200px-Groundskeeper.jpg"
+  },
+  {
+    "card_tag": "Keep",
+    "cardset_tags": [
+      "empires"
+    ],
+    "cost": "",
+    "group_tag": "empires landmarks",
+    "types": [
+      "Landmark"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/4/4b/Keep.jpg/320px-Keep.jpg"
+  },
+  {
+    "card_tag": "Labyrinth",
+    "cardset_tags": [
+      "empires"
+    ],
+    "cost": "",
+    "group_tag": "empires landmarks",
+    "types": [
+      "Landmark"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/c/c0/Labyrinth.jpg/320px-Labyrinth.jpg"
+  },
+  {
+    "card_tag": "Legionary",
+    "cardset_tags": [
+      "empires"
+    ],
+    "cost": "5",
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/6/64/Legionary.jpg/200px-Legionary.jpg"
+  },
+  {
+    "card_tag": "Mountain_Pass",
+    "cardset_tags": [
+      "empires"
+    ],
+    "cost": "",
+    "group_tag": "empires landmarks",
+    "types": [
+      "Landmark"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/d/d5/Mountain_Pass.jpg/320px-Mountain_Pass.jpg"
+  },
+  {
+    "card_tag": "Museum",
+    "cardset_tags": [
+      "empires"
+    ],
+    "cost": "",
+    "group_tag": "empires landmarks",
+    "types": [
+      "Landmark"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/b/b2/Museum.jpg/320px-Museum.jpg"
+  },
+  {
+    "card_tag": "Obelisk",
+    "cardset_tags": [
+      "empires"
+    ],
+    "cost": "",
+    "group_tag": "empires landmarks",
+    "types": [
+      "Landmark"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/c/c6/Obelisk.jpg/320px-Obelisk.jpg"
+  },
+  {
+    "card_tag": "Orchard",
+    "cardset_tags": [
+      "empires"
+    ],
+    "cost": "",
+    "group_tag": "empires landmarks",
+    "types": [
+      "Landmark"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/8/80/Orchard.jpg/320px-Orchard.jpg"
+  },
+  {
+    "card_tag": "Overlord",
+    "cardset_tags": [
+      "empires"
+    ],
+    "cost": "0",
+    "debtcost": "8",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/5/5e/Overlord.jpg/200px-Overlord.jpg"
+  },
+  {
+    "card_tag": "Palace",
+    "cardset_tags": [
+      "empires"
+    ],
+    "cost": "",
+    "group_tag": "empires landmarks",
+    "types": [
+      "Landmark"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/c/c4/Palace.jpg/320px-Palace.jpg"
+  },
+  {
+    "card_tag": "Patrician",
+    "cardset_tags": [
+      "empires"
+    ],
+    "cost": "2",
+    "count": "5",
+    "group_tag": "Patrician - Emporium",
+    "group_top": true,
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/f/fb/Patrician.jpg/200px-Patrician.jpg"
+  },
+  {
+    "card_tag": "Plunder",
+    "cardset_tags": [
+      "empires"
+    ],
+    "cost": "5",
+    "count": "5",
+    "group_tag": "Encampment - Plunder",
+    "types": [
+      "Treasure"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/d/da/Plunder.jpg/200px-Plunder.jpg"
+  },
+  {
+    "card_tag": "Ritual",
+    "cardset_tags": [
+      "empires"
+    ],
+    "cost": "4",
+    "group_tag": "empires events",
+    "types": [
+      "Event"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/d/d1/Ritual.jpg/320px-Ritual.jpg"
+  },
+  {
+    "card_tag": "Rocks",
+    "cardset_tags": [
+      "empires"
+    ],
+    "cost": "4",
+    "count": "5",
+    "group_tag": "Catapult - Rocks",
+    "types": [
+      "Treasure"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/2/2e/Rocks.jpg/200px-Rocks.jpg"
+  },
+  {
+    "card_tag": "Royal_Blacksmith",
+    "cardset_tags": [
+      "empires"
+    ],
+    "cost": "0",
+    "debtcost": "8",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/c/cb/Royal_Blacksmith.jpg/200px-Royal_Blacksmith.jpg"
+  },
+  {
+    "card_tag": "Sacrifice",
+    "cardset_tags": [
+      "empires"
+    ],
+    "cost": "4",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/5/51/Sacrifice.jpg/200px-Sacrifice.jpg"
+  },
+  {
+    "card_tag": "Salt_the_Earth",
+    "cardset_tags": [
+      "empires"
+    ],
+    "cost": "4",
+    "group_tag": "empires events",
+    "types": [
+      "Event"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/6/66/Salt_the_Earth.jpg/320px-Salt_the_Earth.jpg"
+  },
+  {
+    "card_tag": "Settlers",
+    "cardset_tags": [
+      "empires"
+    ],
+    "cost": "2",
+    "count": "5",
+    "group_tag": "Settlers - Bustling Village",
+    "group_top": true,
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/1/14/Settlers.jpg/200px-Settlers.jpg"
+  },
+  {
+    "card_tag": "Tax",
+    "cardset_tags": [
+      "empires"
+    ],
+    "cost": "2",
+    "group_tag": "empires events",
+    "types": [
+      "Event"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/9/9d/Tax.jpg/320px-Tax.jpg"
+  },
+  {
+    "card_tag": "Temple",
+    "cardset_tags": [
+      "empires"
+    ],
+    "cost": "4",
+    "types": [
+      "Action",
+      "Gathering"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/9/9f/Temple.jpg/200px-Temple.jpg"
+  },
+  {
+    "card_tag": "Tomb",
+    "cardset_tags": [
+      "empires"
+    ],
+    "cost": "",
+    "group_tag": "empires landmarks",
+    "types": [
+      "Landmark"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/7/71/Tomb.jpg/320px-Tomb.jpg"
+  },
+  {
+    "card_tag": "Tower",
+    "cardset_tags": [
+      "empires"
+    ],
+    "cost": "",
+    "group_tag": "empires landmarks",
+    "types": [
+      "Landmark"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/2/29/Tower.jpg/320px-Tower.jpg"
+  },
+  {
+    "card_tag": "Triumph",
+    "cardset_tags": [
+      "empires"
+    ],
+    "cost": "0",
+    "debtcost": "5",
+    "group_tag": "empires events",
+    "types": [
+      "Event"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/c/c9/Triumph.jpg/320px-Triumph.jpg"
+  },
+  {
+    "card_tag": "Triumphal_Arch",
+    "cardset_tags": [
+      "empires"
+    ],
+    "cost": "",
+    "group_tag": "empires landmarks",
+    "types": [
+      "Landmark"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/7/7a/Triumphal_Arch.jpg/320px-Triumphal_Arch.jpg"
+  },
+  {
+    "card_tag": "Villa",
+    "cardset_tags": [
+      "empires"
+    ],
+    "cost": "4",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/f/f7/Villa.jpg/200px-Villa.jpg"
+  },
+  {
+    "card_tag": "Wall",
+    "cardset_tags": [
+      "empires"
+    ],
+    "cost": "",
+    "group_tag": "empires landmarks",
+    "types": [
+      "Landmark"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/6/67/Wall.jpg/320px-Wall.jpg"
+  },
+  {
+    "card_tag": "Wedding",
+    "cardset_tags": [
+      "empires"
+    ],
+    "cost": "4",
+    "debtcost": "3",
+    "group_tag": "empires events",
+    "types": [
+      "Event"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/b/b6/Wedding.jpg/320px-Wedding.jpg"
+  },
+  {
+    "card_tag": "Wild_Hunt",
+    "cardset_tags": [
+      "empires"
+    ],
+    "cost": "5",
+    "types": [
+      "Action",
+      "Gathering"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/4/48/Wild_Hunt.jpg/200px-Wild_Hunt.jpg"
+  },
+  {
+    "card_tag": "Windfall",
+    "cardset_tags": [
+      "empires"
+    ],
+    "cost": "5",
+    "group_tag": "empires events",
+    "types": [
+      "Event"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/f/f8/Windfall.jpg/320px-Windfall.jpg"
+  },
+  {
+    "card_tag": "Wolf_Den",
+    "cardset_tags": [
+      "empires"
+    ],
+    "cost": "",
+    "group_tag": "empires landmarks",
+    "types": [
+      "Landmark"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/c/ca/Wolf_Den.jpg/320px-Wolf_Den.jpg"
+  },
+  {
+    "card_tag": "Advisor",
+    "cardset_tags": [
+      "guilds"
+    ],
+    "cost": "4",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/5/5e/Advisor.jpg/200px-Advisor.jpg"
+  },
+  {
+    "card_tag": "Baker",
+    "cardset_tags": [
+      "guilds"
+    ],
+    "cost": "5",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/b/b9/Baker.jpg/200px-Baker.jpg"
+  },
+  {
+    "card_tag": "Butcher",
+    "cardset_tags": [
+      "guilds"
+    ],
+    "cost": "5",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/e/ed/Butcher.jpg/200px-Butcher.jpg"
+  },
+  {
+    "card_tag": "Candlestick_Maker",
+    "cardset_tags": [
+      "guilds"
+    ],
+    "cost": "2",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/2/2c/Candlestick_Maker.jpg/200px-Candlestick_Maker.jpg"
+  },
+  {
+    "card_tag": "Doctor",
+    "cardset_tags": [
+      "guilds"
+    ],
+    "cost": "3+",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/b/b2/Doctor.jpg/200px-Doctor.jpg"
+  },
+  {
+    "card_tag": "Herald",
+    "cardset_tags": [
+      "guilds"
+    ],
+    "cost": "4+",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/c/c1/Herald.jpg/200px-Herald.jpg"
+  },
+  {
+    "card_tag": "Journeyman",
+    "cardset_tags": [
+      "guilds"
+    ],
+    "cost": "5",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/8/82/Journeyman.jpg/200px-Journeyman.jpg"
+  },
+  {
+    "card_tag": "Masterpiece",
+    "cardset_tags": [
+      "guilds"
+    ],
+    "cost": "3+",
+    "types": [
+      "Treasure"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/0/09/Masterpiece.jpg/200px-Masterpiece.jpg"
+  },
+  {
+    "card_tag": "Merchant_Guild",
+    "cardset_tags": [
+      "guilds"
+    ],
+    "cost": "5",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/a/af/Merchant_Guild.jpg/200px-Merchant_Guild.jpg"
+  },
+  {
+    "card_tag": "Plaza",
+    "cardset_tags": [
+      "guilds"
+    ],
+    "cost": "4",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/f/fc/Plaza.jpg/200px-Plaza.jpg"
+  },
+  {
+    "card_tag": "Soothsayer",
+    "cardset_tags": [
+      "guilds"
+    ],
+    "cost": "5",
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/0/01/Soothsayer.jpg/200px-Soothsayer.jpg"
+  },
+  {
+    "card_tag": "Stonemason",
+    "cardset_tags": [
+      "guilds"
+    ],
+    "cost": "2+",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/d/d2/Stonemason.jpg/200px-Stonemason.jpg"
+  },
+  {
+    "card_tag": "Taxman",
+    "cardset_tags": [
+      "guilds"
+    ],
+    "cost": "4",
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/e/e0/Taxman.jpg/200px-Taxman.jpg"
+  },
+  {
+    "card_tag": "Border_Village",
+    "cardset_tags": [
+      "hinterlands"
+    ],
+    "cost": "6",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/d/dd/Border_Village.jpg/200px-Border_Village.jpg"
+  },
+  {
+    "card_tag": "Cache",
+    "cardset_tags": [
+      "hinterlands"
+    ],
+    "cost": "5",
+    "types": [
+      "Treasure"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/6/66/Cache.jpg/200px-Cache.jpg"
+  },
+  {
+    "card_tag": "Cartographer",
+    "cardset_tags": [
+      "hinterlands"
+    ],
+    "cost": "5",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/d/d6/Cartographer.jpg/200px-Cartographer.jpg"
+  },
+  {
+    "card_tag": "Crossroads",
+    "cardset_tags": [
+      "hinterlands"
+    ],
+    "cost": "2",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/c/cd/Crossroads.jpg/200px-Crossroads.jpg"
+  },
+  {
+    "card_tag": "Develop",
+    "cardset_tags": [
+      "hinterlands"
+    ],
+    "cost": "3",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/f/f7/Develop.jpg/200px-Develop.jpg"
+  },
+  {
+    "card_tag": "Duchess",
+    "cardset_tags": [
+      "hinterlands"
+    ],
+    "cost": "2",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/d/df/Duchess.jpg/200px-Duchess.jpg"
+  },
+  {
+    "card_tag": "Embassy",
+    "cardset_tags": [
+      "hinterlands"
+    ],
+    "cost": "5",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/2/2f/Embassy.jpg/200px-Embassy.jpg"
+  },
+  {
+    "card_tag": "Farmland",
+    "cardset_tags": [
+      "hinterlands"
+    ],
+    "cost": "6",
+    "types": [
+      "Victory"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/e/ea/Farmland.jpg/200px-Farmland.jpg"
+  },
+  {
+    "card_tag": "Fool%27s_Gold",
+    "cardset_tags": [
+      "hinterlands"
+    ],
+    "cost": "2",
+    "types": [
+      "Treasure",
+      "Reaction"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/e/ed/Fool%27s_Gold.jpg/200px-Fool%27s_Gold.jpg"
+  },
+  {
+    "card_tag": "Haggler",
+    "cardset_tags": [
+      "hinterlands"
+    ],
+    "cost": "5",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/9/96/Haggler.jpg/200px-Haggler.jpg"
+  },
+  {
+    "card_tag": "Highway",
+    "cardset_tags": [
+      "hinterlands"
+    ],
+    "cost": "5",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/2/29/Highway.jpg/200px-Highway.jpg"
+  },
+  {
+    "card_tag": "Ill-Gotten_Gains",
+    "cardset_tags": [
+      "hinterlands"
+    ],
+    "cost": "5",
+    "types": [
+      "Treasure"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/9/91/Ill-Gotten_Gains.jpg/200px-Ill-Gotten_Gains.jpg"
+  },
+  {
+    "card_tag": "Inn",
+    "cardset_tags": [
+      "hinterlands"
+    ],
+    "cost": "5",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/1/1f/Inn.jpg/200px-Inn.jpg"
+  },
+  {
+    "card_tag": "Jack_of_all_Trades",
+    "cardset_tags": [
+      "hinterlands"
+    ],
+    "cost": "4",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/3/38/Jack_of_all_Trades.jpg/200px-Jack_of_all_Trades.jpg"
+  },
+  {
+    "card_tag": "Mandarin",
+    "cardset_tags": [
+      "hinterlands"
+    ],
+    "cost": "5",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/6/68/Mandarin.jpg/200px-Mandarin.jpg"
+  },
+  {
+    "card_tag": "Margrave",
+    "cardset_tags": [
+      "hinterlands"
+    ],
+    "cost": "5",
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/0/06/Margrave.jpg/200px-Margrave.jpg"
+  },
+  {
+    "card_tag": "Noble_Brigand",
+    "cardset_tags": [
+      "hinterlands"
+    ],
+    "cost": "4",
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/6/63/Noble_Brigand.jpg/200px-Noble_Brigand.jpg"
+  },
+  {
+    "card_tag": "Nomad_Camp",
+    "cardset_tags": [
+      "hinterlands"
+    ],
+    "cost": "4",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/8/89/Nomad_Camp.jpg/200px-Nomad_Camp.jpg"
+  },
+  {
+    "card_tag": "Oasis",
+    "cardset_tags": [
+      "hinterlands"
+    ],
+    "cost": "3",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/f/fc/Oasis.jpg/200px-Oasis.jpg"
+  },
+  {
+    "card_tag": "Oracle",
+    "cardset_tags": [
+      "hinterlands"
+    ],
+    "cost": "3",
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/9/97/Oracle.jpg/200px-Oracle.jpg"
+  },
+  {
+    "card_tag": "Scheme",
+    "cardset_tags": [
+      "hinterlands"
+    ],
+    "cost": "3",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/8/8d/Scheme.jpg/200px-Scheme.jpg"
+  },
+  {
+    "card_tag": "Silk_Road",
+    "cardset_tags": [
+      "hinterlands"
+    ],
+    "cost": "4",
+    "types": [
+      "Victory"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/f/f6/Silk_Road.jpg/200px-Silk_Road.jpg"
+  },
+  {
+    "card_tag": "Spice_Merchant",
+    "cardset_tags": [
+      "hinterlands"
+    ],
+    "cost": "4",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/e/e2/Spice_Merchant.jpg/200px-Spice_Merchant.jpg"
+  },
+  {
+    "card_tag": "Stables",
+    "cardset_tags": [
+      "hinterlands"
+    ],
+    "cost": "5",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/3/35/Stables.jpg/200px-Stables.jpg"
+  },
+  {
+    "card_tag": "Trader",
+    "cardset_tags": [
+      "hinterlands"
+    ],
+    "cost": "4",
+    "types": [
+      "Action",
+      "Reaction"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/1/12/Trader.jpg/200px-Trader.jpg"
+  },
+  {
+    "card_tag": "Tunnel",
+    "cardset_tags": [
+      "hinterlands"
+    ],
+    "cost": "3",
+    "types": [
+      "Victory",
+      "Reaction"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/c/c2/Tunnel.jpg/200px-Tunnel.jpg"
+  },
+  {
+    "card_tag": "Coppersmith",
+    "cardset_tags": [
+      "intrigue1stEdition"
+    ],
+    "cost": "4",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/4/40/Coppersmith.jpg/200px-Coppersmith.jpg"
+  },
+  {
+    "card_tag": "Great_Hall",
+    "cardset_tags": [
+      "intrigue1stEdition"
+    ],
+    "cost": "3",
+    "types": [
+      "Action",
+      "Victory"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/9/95/Great_Hall.jpg/200px-Great_Hall.jpg"
+  },
+  {
+    "card_tag": "Saboteur",
+    "cardset_tags": [
+      "intrigue1stEdition"
+    ],
+    "cost": "5",
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/6/60/Saboteur.jpg/200px-Saboteur.jpg"
+  },
+  {
+    "card_tag": "Scout",
+    "cardset_tags": [
+      "intrigue1stEdition"
+    ],
+    "cost": "4",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/4/46/Scout.jpg/200px-Scout.jpg"
+  },
+  {
+    "card_tag": "Secret_Chamber",
+    "cardset_tags": [
+      "intrigue1stEdition"
+    ],
+    "cost": "2",
+    "types": [
+      "Action",
+      "Reaction"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/b/b3/Secret_Chamber.jpg/200px-Secret_Chamber.jpg"
+  },
+  {
+    "card_tag": "Tribute",
+    "cardset_tags": [
+      "intrigue1stEdition"
+    ],
+    "cost": "5",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/0/00/Tribute.jpg/200px-Tribute.jpg"
+  },
+  {
+    "card_tag": "Baron",
+    "cardset_tags": [
+      "intrigue1stEdition",
+      "intrigue2ndEdition"
+    ],
+    "cost": "4",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/7/73/Baron.jpg/200px-Baron.jpg"
+  },
+  {
+    "card_tag": "Bridge",
+    "cardset_tags": [
+      "intrigue1stEdition",
+      "intrigue2ndEdition"
+    ],
+    "cost": "4",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/3/39/Bridge.jpg/200px-Bridge.jpg"
+  },
+  {
+    "card_tag": "Conspirator",
+    "cardset_tags": [
+      "intrigue1stEdition",
+      "intrigue2ndEdition"
+    ],
+    "cost": "4",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/4/42/Conspirator.jpg/200px-Conspirator.jpg"
+  },
+  {
+    "card_tag": "Courtyard",
+    "cardset_tags": [
+      "intrigue1stEdition",
+      "intrigue2ndEdition"
+    ],
+    "cost": "2",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/3/30/Courtyard.jpg/200px-Courtyard.jpg"
+  },
+  {
+    "card_tag": "Duke",
+    "cardset_tags": [
+      "intrigue1stEdition",
+      "intrigue2ndEdition"
+    ],
+    "cost": "5",
+    "types": [
+      "Victory"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/1/10/Duke.jpg/200px-Duke.jpg"
+  },
+  {
+    "card_tag": "Harem",
+    "cardset_tags": [
+      "intrigue1stEdition",
+      "intrigue2ndEdition"
+    ],
+    "cost": "6",
+    "types": [
+      "Treasure",
+      "Victory"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/9/9d/Harem.jpg/200px-Harem.jpg"
+  },
+  {
+    "card_tag": "Ironworks",
+    "cardset_tags": [
+      "intrigue1stEdition",
+      "intrigue2ndEdition"
+    ],
+    "cost": "4",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/7/76/Ironworks.jpg/200px-Ironworks.jpg"
+  },
+  {
+    "card_tag": "Masquerade",
+    "cardset_tags": [
+      "intrigue1stEdition",
+      "intrigue2ndEdition"
+    ],
+    "cost": "3",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/0/0e/Masquerade.jpg/200px-Masquerade.jpg"
+  },
+  {
+    "card_tag": "Mining_Village",
+    "cardset_tags": [
+      "intrigue1stEdition",
+      "intrigue2ndEdition"
+    ],
+    "cost": "4",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/7/7f/Mining_Village.jpg/200px-Mining_Village.jpg"
+  },
+  {
+    "card_tag": "Minion",
+    "cardset_tags": [
+      "intrigue1stEdition",
+      "intrigue2ndEdition"
+    ],
+    "cost": "5",
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/4/47/Minion.jpg/200px-Minion.jpg"
+  },
+  {
+    "card_tag": "Nobles",
+    "cardset_tags": [
+      "intrigue1stEdition",
+      "intrigue2ndEdition"
+    ],
+    "cost": "6",
+    "types": [
+      "Action",
+      "Victory"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/b/b6/Nobles.jpg/200px-Nobles.jpg"
+  },
+  {
+    "card_tag": "Pawn",
+    "cardset_tags": [
+      "intrigue1stEdition",
+      "intrigue2ndEdition"
+    ],
+    "cost": "2",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/0/0f/Pawn.jpg/200px-Pawn.jpg"
+  },
+  {
+    "card_tag": "Shanty_Town",
+    "cardset_tags": [
+      "intrigue1stEdition",
+      "intrigue2ndEdition"
+    ],
+    "cost": "3",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/8/8e/Shanty_Town.jpg/200px-Shanty_Town.jpg"
+  },
+  {
+    "card_tag": "Steward",
+    "cardset_tags": [
+      "intrigue1stEdition",
+      "intrigue2ndEdition"
+    ],
+    "cost": "3",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/8/88/Steward.jpg/200px-Steward.jpg"
+  },
+  {
+    "card_tag": "Swindler",
+    "cardset_tags": [
+      "intrigue1stEdition",
+      "intrigue2ndEdition"
+    ],
+    "cost": "3",
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/e/e7/Swindler.jpg/200px-Swindler.jpg"
+  },
+  {
+    "card_tag": "Torturer",
+    "cardset_tags": [
+      "intrigue1stEdition",
+      "intrigue2ndEdition"
+    ],
+    "cost": "5",
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/a/a9/Torturer.jpg/200px-Torturer.jpg"
+  },
+  {
+    "card_tag": "Trading_Post",
+    "cardset_tags": [
+      "intrigue1stEdition",
+      "intrigue2ndEdition"
+    ],
+    "cost": "5",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/3/36/Trading_Post.jpg/200px-Trading_Post.jpg"
+  },
+  {
+    "card_tag": "Upgrade",
+    "cardset_tags": [
+      "intrigue1stEdition",
+      "intrigue2ndEdition"
+    ],
+    "cost": "5",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/d/d3/Upgrade.jpg/200px-Upgrade.jpg"
+  },
+  {
+    "card_tag": "Wishing_Well",
+    "cardset_tags": [
+      "intrigue1stEdition",
+      "intrigue2ndEdition"
+    ],
+    "cost": "3",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/f/f7/Wishing_Well.jpg/200px-Wishing_Well.jpg"
+  },
+  {
+    "card_tag": "Courtier",
+    "cardset_tags": [
+      "intrigue2ndEdition",
+      "intrigue2ndEditionUpgrade"
+    ],
+    "cost": "5",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/7/7c/Courtier.jpg/200px-Courtier.jpg"
+  },
+  {
+    "card_tag": "Diplomat",
+    "cardset_tags": [
+      "intrigue2ndEdition",
+      "intrigue2ndEditionUpgrade"
+    ],
+    "cost": "4",
+    "types": [
+      "Action",
+      "Reaction"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/8/85/Diplomat.jpg/200px-Diplomat.jpg"
+  },
+  {
+    "card_tag": "Lurker",
+    "cardset_tags": [
+      "intrigue2ndEdition",
+      "intrigue2ndEditionUpgrade"
+    ],
+    "cost": "2",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/f/f7/Lurker.jpg/200px-Lurker.jpg"
+  },
+  {
+    "card_tag": "Mill",
+    "cardset_tags": [
+      "intrigue2ndEdition",
+      "intrigue2ndEditionUpgrade"
+    ],
+    "cost": "4",
+    "types": [
+      "Action",
+      "Victory"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/1/10/Mill.jpg/200px-Mill.jpg"
+  },
+  {
+    "card_tag": "Patrol",
+    "cardset_tags": [
+      "intrigue2ndEdition",
+      "intrigue2ndEditionUpgrade"
+    ],
+    "cost": "5",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/c/c8/Patrol.jpg/200px-Patrol.jpg"
+  },
+  {
+    "card_tag": "Replace",
+    "cardset_tags": [
+      "intrigue2ndEdition",
+      "intrigue2ndEditionUpgrade"
+    ],
+    "cost": "5",
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/2/27/Replace.jpg/200px-Replace.jpg"
+  },
+  {
+    "card_tag": "Secret_Passage",
+    "cardset_tags": [
+      "intrigue2ndEdition",
+      "intrigue2ndEditionUpgrade"
+    ],
+    "cost": "4",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/b/b4/Secret_Passage.jpg/200px-Secret_Passage.jpg"
+  },
+  {
+    "card_tag": "Avanto",
+    "cardset_tags": [
+      "promo"
+    ],
+    "cost": "5",
+    "count": "5",
+    "group_tag": "Sauna - Avanto",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/3/36/Avanto.jpg/200px-Avanto.jpg"
+  },
+  {
+    "card_tag": "Black_Market",
+    "cardset_tags": [
+      "promo"
+    ],
+    "cost": "3",
+    "image": "black_market_set.png",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/f/fa/Black_Market.jpg/200px-Black_Market.jpg"
+  },
+  {
+    "card_tag": "Envoy",
+    "cardset_tags": [
+      "promo"
+    ],
+    "cost": "4",
+    "image": "envoy_set.png",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/0/0c/Envoy.jpg/200px-Envoy.jpg"
+  },
+  {
+    "card_tag": "Governor",
+    "cardset_tags": [
+      "promo"
+    ],
+    "cost": "5",
+    "image": "governor_set.png",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/a/a2/Governor.jpg/200px-Governor.jpg"
+  },
+  {
+    "card_tag": "Prince",
+    "cardset_tags": [
+      "promo"
+    ],
+    "cost": "8",
+    "image": "prince_set.png",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/e/ea/Prince.jpg/200px-Prince.jpg"
+  },
+  {
+    "card_tag": "Sauna",
+    "cardset_tags": [
+      "promo"
+    ],
+    "cost": "4",
+    "count": "5",
+    "group_tag": "Sauna - Avanto",
+    "group_top": true,
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/3/3c/Sauna.jpg/200px-Sauna.jpg"
+  },
+  {
+    "card_tag": "Stash",
+    "cardset_tags": [
+      "promo"
+    ],
+    "cost": "5",
+    "image": "stash_set.png",
+    "types": [
+      "Treasure"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/2/23/Stash.jpg/200px-Stash.jpg"
+  },
+  {
+    "card_tag": "Summon",
+    "cardset_tags": [
+      "promo"
+    ],
+    "cost": "5",
+    "group_tag": "promo events",
+    "types": [
+      "Event"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/e/ee/Summon.jpg/320px-Summon.jpg"
+  },
+  {
+    "card_tag": "Walled_Village",
+    "cardset_tags": [
+      "promo"
+    ],
+    "cost": "4",
+    "image": "walled_village_set.png",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/6/6c/Walled_Village.jpg/200px-Walled_Village.jpg"
+  },
+  {
+    "card_tag": "Bank",
+    "cardset_tags": [
+      "prosperity"
+    ],
+    "cost": "7",
+    "types": [
+      "Treasure"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/7/78/Bank.jpg/200px-Bank.jpg"
+  },
+  {
+    "card_tag": "Bishop",
+    "cardset_tags": [
+      "prosperity"
+    ],
+    "cost": "4",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/b/b4/Bishop.jpg/200px-Bishop.jpg"
+  },
+  {
+    "card_tag": "City",
+    "cardset_tags": [
+      "prosperity"
+    ],
+    "cost": "5",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/3/30/City.jpg/200px-City.jpg"
+  },
+  {
+    "card_tag": "Contraband",
+    "cardset_tags": [
+      "prosperity"
+    ],
+    "cost": "5",
+    "types": [
+      "Treasure"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/5/58/Contraband.jpg/200px-Contraband.jpg"
+  },
+  {
+    "card_tag": "Counting_House",
+    "cardset_tags": [
+      "prosperity"
+    ],
+    "cost": "5",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/5/5d/Counting_House.jpg/200px-Counting_House.jpg"
+  },
+  {
+    "card_tag": "Expand",
+    "cardset_tags": [
+      "prosperity"
+    ],
+    "cost": "7",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/d/dc/Expand.jpg/200px-Expand.jpg"
+  },
+  {
+    "card_tag": "Forge",
+    "cardset_tags": [
+      "prosperity"
+    ],
+    "cost": "7",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/d/d7/Forge.jpg/200px-Forge.jpg"
+  },
+  {
+    "card_tag": "Goons",
+    "cardset_tags": [
+      "prosperity"
+    ],
+    "cost": "6",
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/e/e2/Goons.jpg/200px-Goons.jpg"
+  },
+  {
+    "card_tag": "Grand_Market",
+    "cardset_tags": [
+      "prosperity"
+    ],
+    "cost": "6",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/8/81/Grand_Market.jpg/200px-Grand_Market.jpg"
+  },
+  {
+    "card_tag": "Hoard",
+    "cardset_tags": [
+      "prosperity"
+    ],
+    "cost": "6",
+    "types": [
+      "Treasure"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/d/d1/Hoard.jpg/200px-Hoard.jpg"
+  },
+  {
+    "card_tag": "King%27s_Court",
+    "cardset_tags": [
+      "prosperity"
+    ],
+    "cost": "7",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/8/8d/King%27s_Court.jpg/200px-King%27s_Court.jpg"
+  },
+  {
+    "card_tag": "Loan",
+    "cardset_tags": [
+      "prosperity"
+    ],
+    "cost": "3",
+    "types": [
+      "Treasure"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/1/11/Loan.jpg/200px-Loan.jpg"
+  },
+  {
+    "card_tag": "Mint",
+    "cardset_tags": [
+      "prosperity"
+    ],
+    "cost": "5",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/b/bc/Mint.jpg/200px-Mint.jpg"
+  },
+  {
+    "card_tag": "Monument",
+    "cardset_tags": [
+      "prosperity"
+    ],
+    "cost": "4",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/a/ad/Monument.jpg/200px-Monument.jpg"
+  },
+  {
+    "card_tag": "Mountebank",
+    "cardset_tags": [
+      "prosperity"
+    ],
+    "cost": "5",
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/8/89/Mountebank.jpg/200px-Mountebank.jpg"
+  },
+  {
+    "card_tag": "Peddler",
+    "cardset_tags": [
+      "prosperity"
+    ],
+    "cost": "8*",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/6/6f/Peddler.jpg/200px-Peddler.jpg"
+  },
+  {
+    "card_tag": "Quarry",
+    "cardset_tags": [
+      "prosperity"
+    ],
+    "cost": "4",
+    "types": [
+      "Treasure"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/6/65/Quarry.jpg/200px-Quarry.jpg"
+  },
+  {
+    "card_tag": "Rabble",
+    "cardset_tags": [
+      "prosperity"
+    ],
+    "cost": "5",
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/f/f1/Rabble.jpg/200px-Rabble.jpg"
+  },
+  {
+    "card_tag": "Royal_Seal",
+    "cardset_tags": [
+      "prosperity"
+    ],
+    "cost": "5",
+    "types": [
+      "Treasure"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/d/dd/Royal_Seal.jpg/200px-Royal_Seal.jpg"
+  },
+  {
+    "card_tag": "Talisman",
+    "cardset_tags": [
+      "prosperity"
+    ],
+    "cost": "4",
+    "types": [
+      "Treasure"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/c/cf/Talisman.jpg/200px-Talisman.jpg"
+  },
+  {
+    "card_tag": "Trade_Route",
+    "cardset_tags": [
+      "prosperity"
+    ],
+    "cost": "3",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/a/a7/Trade_Route.jpg/200px-Trade_Route.jpg"
+  },
+  {
+    "card_tag": "Vault",
+    "cardset_tags": [
+      "prosperity"
+    ],
+    "cost": "5",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/6/62/Vault.jpg/200px-Vault.jpg"
+  },
+  {
+    "card_tag": "Venture",
+    "cardset_tags": [
+      "prosperity"
+    ],
+    "cost": "5",
+    "types": [
+      "Treasure"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/e/ef/Venture.jpg/200px-Venture.jpg"
+  },
+  {
+    "card_tag": "Watchtower",
+    "cardset_tags": [
+      "prosperity"
+    ],
+    "cost": "3",
+    "types": [
+      "Reaction"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/c/c2/Watchtower.jpg/200px-Watchtower.jpg"
+  },
+  {
+    "card_tag": "Worker%27s_Village",
+    "cardset_tags": [
+      "prosperity"
+    ],
+    "cost": "4",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/1/12/Worker%27s_Village.jpg/200px-Worker%27s_Village.jpg"
+  },
+  {
+    "card_tag": "Ambassador",
+    "cardset_tags": [
+      "seaside"
+    ],
+    "cost": "3",
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/7/74/Ambassador.jpg/200px-Ambassador.jpg"
+  },
+  {
+    "card_tag": "Bazaar",
+    "cardset_tags": [
+      "seaside"
+    ],
+    "cost": "5",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/f/f7/Bazaar.jpg/200px-Bazaar.jpg"
+  },
+  {
+    "card_tag": "Caravan",
+    "cardset_tags": [
+      "seaside"
+    ],
+    "cost": "4",
+    "types": [
+      "Action",
+      "Duration"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/c/c8/Caravan.jpg/200px-Caravan.jpg"
+  },
+  {
+    "card_tag": "Cutpurse",
+    "cardset_tags": [
+      "seaside"
+    ],
+    "cost": "4",
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/7/7d/Cutpurse.jpg/200px-Cutpurse.jpg"
+  },
+  {
+    "card_tag": "Embargo",
+    "cardset_tags": [
+      "seaside"
+    ],
+    "cost": "2",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/f/fb/Embargo.jpg/200px-Embargo.jpg"
+  },
+  {
+    "card_tag": "Explorer",
+    "cardset_tags": [
+      "seaside"
+    ],
+    "cost": "5",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/3/3a/Explorer.jpg/200px-Explorer.jpg"
+  },
+  {
+    "card_tag": "Fishing_Village",
+    "cardset_tags": [
+      "seaside"
+    ],
+    "cost": "3",
+    "types": [
+      "Action",
+      "Duration"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/3/3b/Fishing_Village.jpg/200px-Fishing_Village.jpg"
+  },
+  {
+    "card_tag": "Ghost_Ship",
+    "cardset_tags": [
+      "seaside"
+    ],
+    "cost": "5",
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/0/0a/Ghost_Ship.jpg/200px-Ghost_Ship.jpg"
+  },
+  {
+    "card_tag": "Haven",
+    "cardset_tags": [
+      "seaside"
+    ],
+    "cost": "2",
+    "types": [
+      "Action",
+      "Duration"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/c/c9/Haven.jpg/200px-Haven.jpg"
+  },
+  {
+    "card_tag": "Island",
+    "cardset_tags": [
+      "seaside"
+    ],
+    "cost": "4",
+    "types": [
+      "Action",
+      "Victory"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/f/fd/Island.jpg/200px-Island.jpg"
+  },
+  {
+    "card_tag": "Lighthouse",
+    "cardset_tags": [
+      "seaside"
+    ],
+    "cost": "2",
+    "types": [
+      "Action",
+      "Duration"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/4/4f/Lighthouse.jpg/200px-Lighthouse.jpg"
+  },
+  {
+    "card_tag": "Lookout",
+    "cardset_tags": [
+      "seaside"
+    ],
+    "cost": "3",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/c/c6/Lookout.jpg/200px-Lookout.jpg"
+  },
+  {
+    "card_tag": "Merchant_Ship",
+    "cardset_tags": [
+      "seaside"
+    ],
+    "cost": "5",
+    "types": [
+      "Action",
+      "Duration"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/9/92/Merchant_Ship.jpg/200px-Merchant_Ship.jpg"
+  },
+  {
+    "card_tag": "Native_Village",
+    "cardset_tags": [
+      "seaside"
+    ],
+    "cost": "2",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/6/67/Native_Village.jpg/200px-Native_Village.jpg"
+  },
+  {
+    "card_tag": "Navigator",
+    "cardset_tags": [
+      "seaside"
+    ],
+    "cost": "4",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/d/dd/Navigator.jpg/200px-Navigator.jpg"
+  },
+  {
+    "card_tag": "Outpost",
+    "cardset_tags": [
+      "seaside"
+    ],
+    "cost": "5",
+    "types": [
+      "Action",
+      "Duration"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/b/b4/Outpost.jpg/200px-Outpost.jpg"
+  },
+  {
+    "card_tag": "Pearl_Diver",
+    "cardset_tags": [
+      "seaside"
+    ],
+    "cost": "2",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/5/56/Pearl_Diver.jpg/200px-Pearl_Diver.jpg"
+  },
+  {
+    "card_tag": "Pirate_Ship",
+    "cardset_tags": [
+      "seaside"
+    ],
+    "cost": "4",
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/4/42/Pirate_Ship.jpg/200px-Pirate_Ship.jpg"
+  },
+  {
+    "card_tag": "Salvager",
+    "cardset_tags": [
+      "seaside"
+    ],
+    "cost": "4",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/8/89/Salvager.jpg/200px-Salvager.jpg"
+  },
+  {
+    "card_tag": "Sea_Hag",
+    "cardset_tags": [
+      "seaside"
+    ],
+    "cost": "4",
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/8/8d/Sea_Hag.jpg/200px-Sea_Hag.jpg"
+  },
+  {
+    "card_tag": "Smugglers",
+    "cardset_tags": [
+      "seaside"
+    ],
+    "cost": "3",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/0/05/Smugglers.jpg/200px-Smugglers.jpg"
+  },
+  {
+    "card_tag": "Tactician",
+    "cardset_tags": [
+      "seaside"
+    ],
+    "cost": "5",
+    "types": [
+      "Action",
+      "Duration"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/e/ed/Tactician.jpg/200px-Tactician.jpg"
+  },
+  {
+    "card_tag": "Treasure_Map",
+    "cardset_tags": [
+      "seaside"
+    ],
+    "cost": "4",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/6/61/Treasure_Map.jpg/200px-Treasure_Map.jpg"
+  },
+  {
+    "card_tag": "Treasury",
+    "cardset_tags": [
+      "seaside"
+    ],
+    "cost": "5",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/f/fd/Treasury.jpg/200px-Treasury.jpg"
+  },
+  {
+    "card_tag": "Warehouse",
+    "cardset_tags": [
+      "seaside"
+    ],
+    "cost": "3",
+    "types": [
+      "Action"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/6/6d/Warehouse.jpg/200px-Warehouse.jpg"
+  },
+  {
+    "card_tag": "Wharf",
+    "cardset_tags": [
+      "seaside"
+    ],
+    "cost": "5",
+    "types": [
+      "Action",
+      "Duration"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/c/cc/Wharf.jpg/200px-Wharf.jpg"
+  }
 ]
