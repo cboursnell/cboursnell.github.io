@@ -159,6 +159,7 @@ function getOwnedCards() {
   owned_cards = [];
   owned_events = [];
   // console.log(all_cards);
+  text_filter = $$("search").getValue();
   for(var i = 0 ; i < all_cards.length; i++) {
     var card = all_cards[i];
     card_count++;
@@ -194,6 +195,14 @@ function getOwnedCards() {
     }
     if (card.name === "Spoils") {
       supply = false;
+    }
+    if (text_filter.length > 0) {
+      console.log("text filter is "+text_filter);
+      if (card.name.toUpperCase().match(text_filter.toUpperCase())) {
+        console.log(card.name + " matches "+text_filter);
+      } else {
+        supply = false;
+      }
     }
     if (supply===true) {
       // console.log("  This card goes into thate owned set: "+card.name);
@@ -255,11 +264,15 @@ function addInputEvents() {
 
   $$("eventcounter").attachEvent("onChange", EventCounterChangeHandler);
 
+  // $$("search").attachEvent("onChange", TextChangeHandler);
+  $$("search").attachEvent("onTimedKeyPress", TextChangeHandler);
+
 }
 
 // var drawingTimer = null;
 // var cooldownTimer = 0;
 var canvasScroll=0;
+var scale=1.0;
 
 function drawImages() {
 
@@ -267,30 +280,55 @@ function drawImages() {
   // var y = 0;
   // var width = 200;
   // var height = 320;
+  // if (window.innerWidth < 700) {
+  //   scale = 0.40;
+  // } else if (window.innerWidth < 900) {
+  //   scale = 0.50;
+  // } else if (window.innerWidth < 1100) {
+  //   scale = 0.66;
+  // } else if (window.innerWidth < 1300) {
+  //   scale = 0.75;
+  // } else {
+  //   scale = 1.0;
+  // }
+  scale = ((window.innerWidth-232)/5)/200;
+  if (scale > 1.0) {
+    scale = 1.0;
+  }
+  if (scale < 0.5) {
+    scale = 0.5;
+  }
   var pos = {}
   pos['x']=0
   pos['y']=0
-  pos['width']=200
-  pos['height']=320
+  pos['width']=200*scale;
+  pos['height']=320*scale;
   pos['update'] = function(canvas) {
     this.x += this.width;
-    if (this.x > canvas.width-50) {
+    // if (this.x > canvas.width-50) {
+    if (this.x > window.innerWidth-this.width-230) {
       this.x = 0;
       this.y += this.height;
-      if (this.y > canvas.height) {
-        canvas.height += this.height;
-      }
+    }
+    if (this.y > canvas.height) {
+      canvas.height += this.height;
+    }
+    if (this.x+this.width > canvas.width) {
+      // canvas.width += this.width;
+      canvas.width += 10;
+      console.log("Width of canvas increased to "+canvas.width);
     }
   }
   var canvas = document.getElementById('cardCanvas');
   var context = canvas.getContext('2d');
+  // console.log("window width: "+window.innerWidth);
    
   context.save();
   context.setTransform(1, 0, 0, 1, 0, 0);
   context.clearRect(0, 0, canvas.width, canvas.height);
   context.restore();
   if (mode === "Cards") {
-    if (owned_cards.length===0) {
+    if (owned_cards.length+owned_events.length===0) {
       context.clearRect(0, 0, canvas.width, canvas.height);
       context.font = "28px Arial";
       context.fillStyle = 'black';
@@ -323,18 +361,14 @@ function drawImages() {
         context.stroke();
       }
 
-      // x += width;
-      // if (x > canvas.width-50) {
-      //   x = 0;
-      //   y += height;
-      //   if (y > canvas.height) {
-      //     canvas.height += height;
-      //   }
-      // }
       pos.update(canvas);
-    } // owned cards
-    pos.width = 320;
-    pos.height = 200;
+    } // end owned cards
+
+    if (owned_cards.length > 0 && pos.x > 0) {
+      pos.y += pos.height;
+    }
+    pos.width = 320*scale;
+    pos.height = 200*scale;
     pos.x = 0;
     for(var i = 0; i < owned_events.length; i++) {
       context.drawImage(owned_events[i].image, pos.x, pos.y, pos.width, pos.height);
@@ -382,8 +416,11 @@ function drawImages() {
       pos.update(canvas);
     }
 
-    pos.width = 320;
-    pos.height = 200;
+    if (pos.x>0) {
+      pos.y += pos.height; // for if the last row wasn't finished
+    }
+    pos.width = 320*scale;
+    pos.height = 200*scale;
     pos.x = 0;
     for(var i = 0; i < kingdom_events.length; i++) {
       context.drawImage(kingdom_events[i].image, pos.x, pos.y, pos.width, pos.height);
@@ -417,8 +454,8 @@ function drawImages() {
     context.stroke();
     pos.y+=20;
     pos.x=0;
-    pos.width = 200;
-    pos.height = 320;
+    pos.width = 200*scale;
+    pos.height = 320*scale;
     // RECOMMENDED CARDS
     if (kingdom_bane!==null) {
       // var tx=pos.x;
@@ -472,14 +509,15 @@ function drawExtra(pos, name) {
   } else {
     context.drawImage(getCard(name).image, pos.x, pos.y, pos.width, pos.height);
   }
-  pos.x += pos.width;
-  if (pos.x > canvas.width-50) {
-    pos.x = 0;
-    pos.y += pos.height;
-    if (pos.y > canvas.height) {
-      canvas.height += pos.height;
-    }
-  }
+  pos.update(canvas);
+  // pos.x += pos.width;
+  // if (pos.x > canvas.width-50) {
+  //   pos.x = 0;
+  //   pos.y += pos.height;
+  //   if (pos.y > canvas.height) {
+  //     canvas.height += pos.height;
+  //   }
+  // }
 
 }
 
@@ -548,10 +586,10 @@ function loadImages(callback) {
 function drawImagesFirst() {
   // console.log("Drawing images for the first time <266>");
   // console.log("Owned cards: "+ owned_cards.length);
-  var x = 0;
-  var y = 0;
-  var width = 200;
-  var height = 320;
+  // var x = 0;
+  // var y = 0;
+  // var width = 200*scale;
+  // var height = 320;
   var canvas = document.getElementById('cardCanvas');
   var context = canvas.getContext('2d');
 
@@ -596,7 +634,7 @@ function MouseWheelHandler(e) {
     ctx.translate(0,-canvasScroll);
     canvasScroll = 0;
   }
-  var bottom = -canvas.height+window.innerHeight-320;
+  var bottom = -canvas.height+window.innerHeight-(320*scale);
   // console.log("canvasscroll: " + canvasScroll+ "window height: "+window.innerHeight);
   if (canvasScroll < bottom) {
     ctx.translate(0,-canvasScroll+bottom);
@@ -626,7 +664,7 @@ function TouchMoveHandler(e) {
       ctx.translate(0,-canvasScroll);
       canvasScroll = 0;
     }
-    var bottom = -canvas.height+window.innerHeight-320;
+    var bottom = -canvas.height+window.innerHeight-(320*scale);
     if (canvasScroll < bottom) {
       ctx.translate(0,-canvasScroll+bottom);
       canvasScroll = bottom;
@@ -651,10 +689,10 @@ function MouseDownHandler(e) {
   console.log("Mouse down at "+offX+" "+offY);
   if (mode === "Cards") {
     for(var i = 0; i < owned_cards.length; i++) {
-      x = owned_cards[i].drawX;
-      y = owned_cards[i].drawY;
+      var x = owned_cards[i].drawX;
+      var y = owned_cards[i].drawY;
       // console.log(owned_cards[i].name + "  X:"+x+" Y:"+y);
-      if (offX > x && offX < (x+200) && offY > y && offY < (y+320)) {
+      if (offX > x && offX < x+(200*scale) && offY > y && offY < y+(320*scale)) {
         console.log("Click on "+owned_cards[i].name + " toggle:"+owned_cards[i].toggle);
         owned_cards[i].toggle++;
         owned_cards[i].toggle = owned_cards[i].toggle%3;
@@ -662,10 +700,10 @@ function MouseDownHandler(e) {
       }
     }
     for(var i = 0 ; i < owned_events.length; i++) {
-      x = owned_events[i].drawX;
-      y = owned_events[i].drawY;
+      var x = owned_events[i].drawX;
+      var y = owned_events[i].drawY;
       // console.log(owned_events[i].name + "  X:"+x+" Y:"+y);
-      if (offX > x && offX < (x+320) && offY > y && offY < (y+200)) {
+      if (offX > x && offX < x+(320*scale) && offY > y && offY < y+(200*scale)) {
         console.log("Click on "+owned_events[i].name + " toggle:"+owned_events[i].toggle);
         owned_events[i].toggle++;
         owned_events[i].toggle = owned_events[i].toggle%3;
@@ -676,10 +714,10 @@ function MouseDownHandler(e) {
   } else if (mode === "Kingdom") {
     
     for(var i = 0; i < kingdom_cards.length ; i++) {
-      x = kingdom_cards[i].drawX;
-      y = kingdom_cards[i].drawY;
+      var x = kingdom_cards[i].drawX;
+      var y = kingdom_cards[i].drawY;
       // console.log(kingdom_cards[i].name + "  X:"+x+" Y:"+y);
-      if (offX > x && offX < (x+200) && offY > y && offY < (y+320)) {
+      if (offX > x && offX < x+(200*scale) && offY > y && offY < y+(320*scale)) {
         // console.log("Click on "+kingdom_cards[i].name + " toggle:"+kingdom_cards[i].toggle);
         if (kingdom_cards[i].hasOwnProperty("selected")) {
           if (kingdom_cards[i].selected===true) {
@@ -699,10 +737,10 @@ function MouseDownHandler(e) {
     } // for in kingdom_cards
 
     for(var i = 0; i < kingdom_events.length ; i++) {
-      x = kingdom_events[i].drawX;
-      y = kingdom_events[i].drawY;
+      var x = kingdom_events[i].drawX;
+      var y = kingdom_events[i].drawY;
       // console.log(kingdom_events[i].name + "  X:"+x+" Y:"+y);
-      if (offX > x && offX < (x+320) && offY > y && offY < (y+200)) {
+      if (offX > x && offX < x+(320*scale) && offY > y && offY < y+(200*scale)) {
         // console.log("Click on "+kingdom_events[i].name + " toggle:"+kingdom_events[i].toggle);
         if (kingdom_events[i].hasOwnProperty("selected")) {
           if (kingdom_events[i].selected===true) {
@@ -784,12 +822,14 @@ function switchMode() {
     $$("generate").setValue("Show Kingdom");
     $$("generate").refresh();
     $$("redraw").hide();
+    $$("search").show();
   } else if (mode === "Cards") {
     mode = "Kingdom";
     console.log("Switched to Kingdom mode");
     $$("generate").setValue("Show Cards");
     $$("generate").refresh();
     $$("redraw").show();
+    $$("search").hide();
     if (canvasScroll < -500) {
       var canvas = document.getElementById('cardCanvas');
       var context = canvas.getContext('2d');
@@ -1263,4 +1303,9 @@ function ChangeHandler(e) {
 function EventCounterChangeHandler(e) {
   console.log("counter is now " + $$("eventcounter").getValue());
   generate();
+}
+
+function TextChangeHandler(e) {
+  console.log("text changed");
+  getOwnedCards();
 }
