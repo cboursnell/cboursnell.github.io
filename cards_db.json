@@ -828,7 +828,7 @@
     "cardset_tags": [
       "alchemy"
     ],
-    "cost": "",
+    "cost": "0",
     "potcost": "1",
     "types": [
       "Action"
@@ -852,7 +852,7 @@
     "cardset_tags": [
       "alchemy"
     ],
-    "cost": "",
+    "cost": "0",
     "potcost": "1",
     "types": [
       "Victory"
