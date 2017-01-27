@@ -1620,16 +1620,69 @@
     "url": "http://wiki.dominionstrategy.com/images/thumb/f/f6/Rogue.jpg/200px-Rogue.jpg"
   },
   {
-    "card_tag": "Ruins",
+    "card_tag": "Abandoned Mine",
     "cardset_tags": [
       "dark ages"
     ],
     "cost": "0",
-    "count": "50",
+    "count": "10",
     "types": [
       "Action",
       "Ruins"
-    ]
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/6/6d/Abandoned_Mine.jpg/200px-Abandoned_Mine.jpg"
+  },
+  {
+    "card_tag": "Ruined Library",
+    "cardset_tags": [
+      "dark ages"
+    ],
+    "cost": "0",
+    "count": "10",
+    "types": [
+      "Action",
+      "Ruins"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/f/fe/Ruined_Library.jpg/200px-Ruined_Library.jpg"
+  },
+  {
+    "card_tag": "Ruined Market",
+    "cardset_tags": [
+      "dark ages"
+    ],
+    "cost": "0",
+    "count": "10",
+    "types": [
+      "Action",
+      "Ruins"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/f/f2/Ruined_Market.jpg/200px-Ruined_Market.jpg"
+  },
+  {
+    "card_tag": "Ruined Village",
+    "cardset_tags": [
+      "dark ages"
+    ],
+    "cost": "0",
+    "count": "10",
+    "types": [
+      "Action",
+      "Ruins"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/a/ae/Ruined_Village.jpg/200px-Ruined_Village.jpg"
+  },
+  {
+    "card_tag": "Survivors",
+    "cardset_tags": [
+      "dark ages"
+    ],
+    "cost": "0",
+    "count": "10",
+    "types": [
+      "Action",
+      "Ruins"
+    ],
+    "url": "http://wiki.dominionstrategy.com/images/thumb/7/7a/Survivors.jpg/200px-Survivors.jpg"
   },
   {
     "card_tag": "Sage",
