@@ -24,15 +24,19 @@ var kingdom_events = new Array();
 var kingdom_bane = null;
 var extras = new Object();
 var mode = "Cards";
+var bottom = -1000;
+var difference = 0;
+var repeater = null;
 
 function load() {
   $$("redraw").hide();
   loadingScreen();
-  console.log("Calling load() method");
+  // console.log("Calling load() method");
 	getSets();
 	loadCards();
   addInputEvents();
-  setInterval(drawImages, 300);
+  drawXTimes(10);
+  // setInterval(drawImages, 1500);
 //   // drawImages();
 }
 
@@ -267,6 +271,8 @@ function addInputEvents() {
   // $$("search").attachEvent("onChange", TextChangeHandler);
   $$("search").attachEvent("onTimedKeyPress", TextChangeHandler);
 
+  window.addEventListener("resize", ResizeHandler);
+
 }
 
 // var drawingTimer = null;
@@ -275,22 +281,7 @@ var canvasScroll=0;
 var scale=1.0;
 
 function drawImages() {
-
-  // var x = 0;
-  // var y = 0;
-  // var width = 200;
-  // var height = 320;
-  // if (window.innerWidth < 700) {
-  //   scale = 0.40;
-  // } else if (window.innerWidth < 900) {
-  //   scale = 0.50;
-  // } else if (window.innerWidth < 1100) {
-  //   scale = 0.66;
-  // } else if (window.innerWidth < 1300) {
-  //   scale = 0.75;
-  // } else {
-  //   scale = 1.0;
-  // }
+  // console.log("Calling drawImages()");
   scale = ((window.innerWidth-232)/5)/200;
   if (scale > 1.0) {
     scale = 1.0;
@@ -310,12 +301,17 @@ function drawImages() {
       this.x = 0;
       this.y += this.height;
     }
-    if (this.y > canvas.height) {
+    if (this.y+this.height > canvas.height) {
       canvas.height += this.height;
+      console.log("Height of canvas increased to "+canvas.height);
+    }
+    if (canvas.height < window.innerHeight) {
+      canvas.height = window.innerHeight;
+      console.log("Height of canvas set to window height: " + window.innerHeight);
     }
     if (this.x+this.width > canvas.width) {
-      // canvas.width += this.width;
-      canvas.width += 10;
+      canvas.width += this.width;
+      // canvas.width += 20;
       console.log("Width of canvas increased to "+canvas.width);
     }
   }
@@ -392,6 +388,11 @@ function drawImages() {
       }
       pos.update(canvas);
     }
+    bottom = -pos.y + window.innerHeight - 250;
+    if (bottom > 0) {
+      bottom = 0;
+    }
+    // console.log("drawImages setting bottom to "+bottom);
   } else { // mode === "Kingdom"
     kingdom_cards.sort(cardCompareCost);
     for(var i = 0; i < kingdom_cards.length; i++) {
@@ -448,7 +449,9 @@ function drawImages() {
     pos.y+=20;
     context.beginPath();
     context.moveTo(20,pos.y);
-    context.lineTo(canvas.width-20,pos.y);
+    // context.lineTo(canvas.width-20,pos.y);
+    // console.log("width = "+pos.width*5);
+    context.lineTo(pos.height*5-20, pos.y);
     context.lineWidth="2";
     context.strokeStyle="black";
     context.stroke();
@@ -471,31 +474,38 @@ function drawImages() {
     drawExtra(pos, "Estate");
     drawExtra(pos, "Duchy");
     drawExtra(pos, "Province");
-    if (extras.hasOwnProperty("spoils")) {
+    drawExtra(pos, "Curse");
+    if (extras.hasOwnProperty("spoils") && extras.spoils===true) {
       drawExtra(pos,"Spoils");
     }
-    if (extras.hasOwnProperty("platinum")) {
+    if (extras.hasOwnProperty("platinum") && extras.platinum===true) {
       drawExtra(pos, "Platinum");
     }
-    if (extras.hasOwnProperty("colonies")) {
+    if (extras.hasOwnProperty("colonies") && extras.colonies===true) {
       drawExtra(pos, "Colony");
     }
-    if (extras.hasOwnProperty("potions")) {
+    if (extras.hasOwnProperty("potions") && extras.potions===true) {
       drawExtra(pos, "Potion");
     }
-    if (extras.hasOwnProperty("shelters")) {
+    if (extras.hasOwnProperty("shelters") && extras.shelters===true) {
       drawExtra(pos, "Hovel");
       drawExtra(pos, "Necropolis");
       drawExtra(pos, "Overgrown Estate");
     } // end shelters
 
-    if (extras.hasOwnProperty("ruins")) {
+    if (extras.hasOwnProperty("ruins") && extras.ruins===true) {
       drawExtra(pos, "Abandoned Mine");
       drawExtra(pos, "Ruined Library");
       drawExtra(pos, "Ruined Village");
       drawExtra(pos, "Ruined Market");
       drawExtra(pos, "Survivors");
     } //ruins
+
+    bottom = -pos.y + window.innerHeight - 280;
+    if (bottom > 0) {
+      bottom = 0;
+    }
+    // console.log("drawImages setting bottom to "+bottom);
 
   }
 }
@@ -635,7 +645,7 @@ function MouseWheelHandler(e) {
     canvasScroll = 0;
   }
   var bottom = -canvas.height+window.innerHeight-(320*scale);
-  // console.log("canvasscroll: " + canvasScroll+ "window height: "+window.innerHeight);
+  // console.log("canvasScroll: " + canvasScroll+ "window height: "+window.innerHeight);
   if (canvasScroll < bottom) {
     ctx.translate(0,-canvasScroll+bottom);
     canvasScroll = bottom;
@@ -646,29 +656,40 @@ function MouseWheelHandler(e) {
 
 var prevY=null;
 function TouchMoveHandler(e) {
+  // clearInterval(repeater);
   var canvas = document.getElementById("cardCanvas");
-  var ctx = canvas.getContext("2d");
+  var context = canvas.getContext("2d");
   var touches = e.changedTouches;
   // console.log("There are "+ touches.length +" touches");
   var y = touches[0].pageY;
-  // console.log("X: " + touches[0].pageX +" Y:"+ touches[0].pageY);
+  console.log("X: " + touches[0].pageX +" Y:"+ touches[0].pageY);
   if (prevY===null) {
+    console.log("prevY is null. setting prevY to "+touches[0].pageY);
     prevY=touches[0].pageY;
   } else {
-    // console.log("Difference: "+(y-prevY));
-    var difference = y-prevY;
-
-    ctx.translate(0, difference);
+    difference = y-prevY;
+    console.log("Difference: "+(difference));
     canvasScroll += difference;
+    // context.translate(0, difference);
+
+    console.log("difference: "+difference+" canvasScroll: "+canvasScroll+" window.innerHeight:"+window.innerHeight);
     if (canvasScroll > 0) {
-      ctx.translate(0,-canvasScroll);
+      // context.translate(0,-canvasScroll);
       canvasScroll = 0;
     }
-    var bottom = -canvas.height+window.innerHeight-(320*scale);
+    // var bottom = -canvas.height+window.innerHeight-(320*scale);
+    // var bottom = -window.innerHeight+(320*scale);
+    console.log("bottom is "+bottom);
     if (canvasScroll < bottom) {
-      ctx.translate(0,-canvasScroll+bottom);
+      // context.translate(0,-canvasScroll+bottom);
       canvasScroll = bottom;
+      console.log("setting canvasScroll to bottom: "+bottom);
     }
+
+    context.setTransform(1, 0, 0, 1, 0, 0);
+    context.translate(0, canvasScroll);
+    console.log("setting context translate to "+canvasScroll);
+
     // console.log("canvasScroll " + canvasScroll);
     drawImages();
     prevY=y;
@@ -676,6 +697,10 @@ function TouchMoveHandler(e) {
 }
 
 function TouchEndHandler(e) {
+  // var y = e.changedTouches[0].pageY;
+  // var difference = y-prevY;
+  // console.log("starting momentum with "+difference);
+  // momentum(difference);
   prevY=null;
   console.log("setting prev Y position to null");
 }
@@ -840,6 +865,7 @@ function switchMode() {
     }
     generate();
   }
+  drawXTimes(15);
 }
 
 function containsCard(listOfCards, card) {
@@ -898,6 +924,9 @@ function recommendations() {
     console.log("Use Colonies and Platinum");
     extras['platinum']=true;
     extras['colonies']=true;
+  } else {
+    extras['platinum']=false;
+    extras['colonies']=false;
   }
   // spoils // bandit camp, marauder, pillage
 
@@ -936,7 +965,6 @@ function generate() {
   if (mode === "Kingdom") {
     // CHOOSING CARDS /////////////////////
     if (kingdom_cards.length==0) {
-      // zoom to the top. 
       // generate new kingdom
       for(var i = 0 ; i < owned_cards.length; i++) {
         if (owned_cards[i].toggle === 1) { // required
@@ -997,7 +1025,7 @@ function chooseKingdomEvents() {
     if (owned_events.length === 0) {
       numEvents = 0;
     }
-    console.log("should have "+numEvents+" events");
+    // console.log("should have "+numEvents+" events");
     
     // if the number of events is less than wanted
     if (kingdom_events.length < numEvents) {
@@ -1194,6 +1222,7 @@ function redrawSelected() {
     kingdom_bane = null;
   }
   recommendations();
+  drawXTimes(3);
 }
 
 function oldredrawSelected() {
@@ -1287,6 +1316,50 @@ function oldredrawSelected() {
   drawImages();   
 }
 
+function drawXTimes(x) {
+  drawImages();
+  var callCount = 1;
+  var repeater = setInterval(function () {
+    if (callCount < x) {
+      // console.log("calling drawImages on a timer: "+callCount);
+      drawImages();
+      callCount += 1;
+    } else {
+      clearInterval(repeater);
+    }
+  }, 100);
+}
+
+function momentum(speed) {
+  console.log("starting momentum with "+speed);
+  var canvas = document.getElementById('cardCanvas');
+  var context = canvas.getContext('2d');
+  var scroll = speed;
+  repeater = setInterval(function () {
+    console.log("absolule scroll :"+Math.abs(scroll));
+    if (Math.abs(scroll) > 2) {
+      // console.log("calling drawImages on a timer: "+scroll);
+      canvasScroll += scroll;
+      if (canvasScroll > 0) {
+        canvasScroll = 0;
+      }
+      if (canvasScroll < bottom) {
+        canvasScroll = bottom;
+      }
+      console.log("momentum speed "+scroll);
+      context.setTransform(1, 0, 0, 1, 0, 0);
+      context.translate(0, canvasScroll);
+      scroll *= 0.8;
+      console.log("reducing scroll to "+scroll);
+      drawImages();
+    } else {
+      console.log("clearing momentum repeater");
+      clearInterval(repeater);
+    }
+  }, 25);
+
+}
+
 function ChangeHandler(e) {
   // console.log("Change!");
   // scroll to the top. 
@@ -1297,7 +1370,8 @@ function ChangeHandler(e) {
 
   getSets();
   getOwnedCards();
-  drawImages();
+  // drawImages();
+  drawXTimes(5);
 }
 
 function EventCounterChangeHandler(e) {
@@ -1308,4 +1382,13 @@ function EventCounterChangeHandler(e) {
 function TextChangeHandler(e) {
   console.log("text changed");
   getOwnedCards();
+}
+
+function ResizeHandler(e) {
+  var canvas = document.getElementById('cardCanvas');
+  var context = canvas.getContext('2d');
+  // context.translate(0, -canvasScroll);
+  canvasScroll = 0;
+  context.setTransform(1, 0, 0, 1, 0, 0);
+  drawXTimes(3);
 }
