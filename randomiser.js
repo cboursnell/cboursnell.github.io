@@ -15,7 +15,7 @@
 // selecting cards in the kingdom screen gives them a yellow border
 
 // globals
-var sets = new Array(); 
+var sets = new Array();
 var all_cards = new Array();
 var owned_cards = new Array();
 var owned_events = new Array();
@@ -31,14 +31,14 @@ var ctrlKey = false;
 
 function load() {
   $$("redraw").hide();
+  $$("store").hide();
   loadingScreen();
   // console.log("Calling load() method");
 	getSets();
 	loadCards();
+  loadStorage();
   addInputEvents();
   drawXTimes(10);
-  // setInterval(drawImages, 1500);
-//   // drawImages();
 }
 
 function loadingScreen() {
@@ -95,8 +95,8 @@ function getSets() {
 }
 
 function loadCards() {
-  var req = new XMLHttpRequest;  
-  req.overrideMimeType("application/json");  
+  var req = new XMLHttpRequest;
+  req.overrideMimeType("application/json");
   url = "https://raw.githubusercontent.com/cboursnell/randomiser/master/cards_db.json"
   req.open('GET', url, true);
   var target = this;
@@ -189,7 +189,7 @@ function getOwnedCards() {
       var type = card.types[j];
       if (type === "Ruins" || type === "Shelter" || type === "Prize") {
         supply = false;
-      } 
+      }
     }
     if (card.hasOwnProperty("group") && card.group.indexOf("-") >= 0) { // is a traveler or hermit/madman
       if (card.hasOwnProperty("group_top")) { // is the first traveler
@@ -306,8 +306,7 @@ function drawImages() {
   pos['height']=320*scale;
   pos['update'] = function(canvas) {
     this.x += this.width;
-    // if (this.x > canvas.width-50) {
-    if (this.x > window.innerWidth-this.width-230) {
+    if (this.x > window.innerWidth-this.width-230 ) { // start new row || this.x > this.width*4
       this.x = 0;
       this.y += this.height;
     }
@@ -321,14 +320,13 @@ function drawImages() {
     }
     if (this.x+this.width > canvas.width) {
       canvas.width += this.width;
-      // canvas.width += 20;
       console.log("Width of canvas increased to "+canvas.width);
     }
   }
   var canvas = document.getElementById('cardCanvas');
   var context = canvas.getContext('2d');
   // console.log("window width: "+window.innerWidth);
-   
+
   context.save();
   context.setTransform(1, 0, 0, 1, 0, 0);
   context.clearRect(0, 0, canvas.width, canvas.height);
@@ -399,7 +397,7 @@ function drawImages() {
       }
       pos.update(canvas);
     }
-    bottom = -pos.y + window.innerHeight - 320;
+    bottom = -pos.y + window.innerHeight - 360;
     if (bottom > 0) {
       bottom = 0;
     }
@@ -518,7 +516,7 @@ function drawImages() {
       drawExtra(pos, "Survivors");
     } //ruins
 
-    bottom = -pos.y + window.innerHeight - 320;
+    bottom = -pos.y + window.innerHeight - 360;
     if (bottom > 0) {
       bottom = 0;
     }
@@ -648,14 +646,14 @@ function drawImagesFirst() {
     // for(var i = 0; i < owned_cards.length; i++) {
     //   context.drawImage(owned_cards[i].image, x, y, width, height);
     //   // there are the same number of images as owned cards and they are in the same order
-     
+
     //   // console.log("setting "+owned_cards[i].name+" to "+x+" "+y);
     //   x += width;
     //   if (x > 850) {
     //     x = 0;
     //     y += height;
     //   }
-    // }    
+    // }
   });
 
 }
@@ -761,7 +759,7 @@ function MouseDownHandler(e) {
 
     }
   } else if (mode === "Kingdom") {
-    
+
     for(var i = 0; i < kingdom_cards.length ; i++) {
       var x = kingdom_cards[i].drawX;
       var y = kingdom_cards[i].drawY;
@@ -780,7 +778,7 @@ function MouseDownHandler(e) {
         // kingdom_cards[i].toggle++;
         // kingdom_cards[i].toggle = kingdom_cards[i].toggle%3;
         // console.log("Toggle set to " + kingdom_cards[i].toggle);
-        
+
       }
 
     } // for in kingdom_cards
@@ -808,7 +806,7 @@ function MouseDownHandler(e) {
 
     } // for in kingdom_events
     countSelected();
-    
+
     // console.log("selected count: "+selected_count);
   }
   drawImages();
@@ -872,6 +870,7 @@ function switchMode() {
     $$("generate").refresh();
     $$("redraw").hide();
     $$("search").show();
+    $$("store").hide();
   } else if (mode === "Cards") {
     mode = "Kingdom";
     console.log("Switched to Kingdom mode");
@@ -879,6 +878,7 @@ function switchMode() {
     $$("generate").refresh();
     $$("redraw").show();
     $$("search").hide();
+    $$("store").show();
     if (canvasScroll < -500) {
       var canvas = document.getElementById('cardCanvas');
       var context = canvas.getContext('2d');
@@ -920,24 +920,27 @@ function recommendations() {
   // console.log("getting recommendations");
   // var extras = {}
   // shelters
-  var rand_i = Math.floor(Math.random()*kingdom_cards.length);
-  if (kingdom_cards[rand_i].sets.includes("dark ages")) { // error here possibly
+  // var rand_i = Math.floor(Math.random()*kingdom_cards.length);
+  // if (kingdom_cards[rand_i].sets.includes("dark ages")) {
+    // extras['shelters']=true;
+  // }
+  if (chooseRandomX(kingdom_cards, false).sets.includes("dark ages")) {
     extras['shelters']=true;
+  } else {
+    extras['shelters']=false;
   }
   // ruins
-  var ruins = false;
+  extras['ruins']=false;
   for(var i = 0; i < kingdom_cards.length; i++) {
     if (kingdom_cards[i].types.includes("Looter")) {
-      ruins = true;
       extras['ruins']=true;
     }
   }
   // curses - always use curses
   // potion
-  var potions = false;
+  extras['potions']=false;
   for(var i = 0; i < kingdom_cards.length; i++) {
     if (kingdom_cards[i].sets.includes("alchemy")) {
-      potions = true;
       extras['potions']=true;
     }
   }
@@ -954,10 +957,9 @@ function recommendations() {
   }
   // spoils // bandit camp, marauder, pillage
 
-  var spoils = false;
+  extras['spoils']=false;
   for(var i = 0; i < kingdom_cards.length; i++) {
     if (kingdom_cards[i].name === "Bandit Camp" || kingdom_cards[i].name === "Marauder" || kingdom_cards[i].name === "Pillage") {
-      spoils = true
       extras['spoils']=true;
     }
   }
@@ -977,12 +979,6 @@ function generate() {
   //   pick cards randomly from owned_cards (ignoring any with toggle===2)
   //   and add them to the kingdom
 
-  // if the sets are changed at a later point then keep the kingdom of 10
-  // don't draw all the expansions
-  // have a button to switch between all cards and kingdom view
-  // have a global toggle for kingdom and all view
-  // Choose Kingdom and Show Cards. Switch to "Show Kingdom" when in the "All Cards" view
-  //                                Switch to "Redraw Kingdom" when in the "Kingdom" view
   var canvas = document.getElementById('cardCanvas');
   var context = canvas.getContext('2d');
   countSelected();
@@ -1003,13 +999,14 @@ function generate() {
         kingdom_cards[rand_i].selected = false;
         kingdom_cards.splice(rand_i, 1);
       }
-      // 
+      //
       while (kingdom_cards.length < 10) {
-        // choose random card and add it to the kingdom if it's not 
-        var rand_i = Math.floor(Math.random()*owned_cards.length);
-        if (!containsCard(kingdom_cards, owned_cards[rand_i])) {
-          if (owned_cards[rand_i].toggle < 2) {
-            kingdom_cards.push(owned_cards[rand_i]);
+        // choose random card and add it to the kingdom if it's not
+        // var rand_i = Math.floor(Math.random()*owned_cards.length);
+        var random_card = chooseRandomX(owned_cards, true);
+        if (!containsCard(kingdom_cards, random_card)) {
+          if (random_card.toggle < 2) {
+            kingdom_cards.push(random_card);
           }
         }
       }
@@ -1026,7 +1023,7 @@ function generate() {
     $$("redraw").show();
     recommendations();
     drawImages();
-  } 
+  }
   // else {
   //   $$("redraw").hide();
   //   if (kingdom_cards.length==0) {
@@ -1050,7 +1047,7 @@ function chooseKingdomEvents() {
       numEvents = 0;
     }
     // console.log("should have "+numEvents+" events");
-    
+
     // if the number of events is less than wanted
     if (kingdom_events.length < numEvents) {
       // make a list of required events
@@ -1071,46 +1068,30 @@ function chooseKingdomEvents() {
           kingdom_events.push(requiredEvents[i]);
         }
       } else if (requiredEvents.length > 0) {
+        // add some of the requiredEvents to the kingdom
         console.log("there are "+kingdom_events.length+" events already and " + requiredEvents.length +" required events so adding some of them");
-        while (kingdom_events.length < numEvents) {
+        while (kingdom_events.length < numEvents && requiredEvents.length > 0) {
           // choose a random required event from the list and add it to the kingdom
           var rand_i = Math.floor(Math.random()*requiredEvents.length);
           console.log("Choosing "+requiredEvents[rand_i].name+" to add to the kingdom")
           kingdom_events.push(requiredEvents[rand_i]);
           requiredEvents.splice(rand_i,1);
         }
-        
-        // add some of the requiredEvents to the kingdom
-      } 
 
-      // pick randomly from it
+      }
+
+      // pick randomly from list of required events
       // are there enough required events to make up the number
       // pick randomly from other events
       count=0;
       while (kingdom_events.length < numEvents && count < 1000) {
         console.log(kingdom_events.length +" < "+numEvents);
-        var rand_i = Math.floor(Math.random()*owned_events.length);
-        if (!containsCard(kingdom_events, owned_events[rand_i])) {
-          if (owned_events[rand_i].toggle < 2) {
-            console.log("adding event "+owned_events[rand_i].name);
-            kingdom_events.push(owned_events[rand_i]);
-          }
-        }
-        count++;
-      }
-
-      count=0;
-      while (kingdom_events.length < numEvents && count < 1000) {
-        console.log("events:" + kingdom_events.length +" < numEvents:"+numEvents);
-        var rand_i = Math.floor(Math.random()*owned_events.length);
-        if (!containsCard(kingdom_events, owned_events[rand_i])) {
-          console.log("adding event "+owned_events[rand_i].name);
-          if (owned_events[rand_i].hasOwnProperty("toggle")) {
-            if (owned_events[rand_i].toggle < 2) {
-              kingdom_events.push(owned_events[rand_i]);
-            }
-          } else {
-            kingdom_events.push(owned_events[rand_i]);
+        // var rand_i = Math.floor(Math.random()*owned_events.length);
+        var random_event = chooseRandomX(owned_events, true);
+        if (!containsCard(kingdom_events, random_event)) {  // not already in kingdom
+          if (random_event.toggle < 2) {                    // isn't banned
+            console.log("adding event "+random_event.name);
+            kingdom_events.push(random_event);
           }
         }
         count++;
@@ -1134,10 +1115,10 @@ function chooseKingdomEvents() {
         while (containsCard(requiredEvents, kingdom_events[rand_i])) {
           var rand_i = Math.floor(Math.random()*kingdom_events.length);
         }
-        kingdom_events.splice(rand_i, 1); 
+        kingdom_events.splice(rand_i, 1);
       } else {
         var rand_i = Math.floor(Math.random()*kingdom_events.length);
-        kingdom_events.splice(rand_i, 1); 
+        kingdom_events.splice(rand_i, 1);
       }
     }
 
@@ -1174,7 +1155,7 @@ function redrawSelected() {
     kingdom_cards=[];
     for(var i = 0 ; i < cardsToAdd.length; i++) {
       kingdom_cards.push(cardsToAdd[i]);
-    } 
+    }
     // choose new events that aren't in the list
     chooseKingdomEvents();
   } else {
@@ -1249,95 +1230,40 @@ function redrawSelected() {
   drawXTimes(3);
 }
 
-function oldredrawSelected() {
-  console.log("Redrawing selected cards");
-  // count how many cards are selected
-  // draw that many new, unique cards
-  // remove selected cards, deselect them, add new ones
-  var cardsToRemove = []; // list of cards, not list of card names
-  var cardsToAdd = []; // list of card objects, not strings of card names
-  for(var i = 0; i < kingdom_cards.length; i++) {
-    if (kingdom_cards[i].selected === true) {
-      cardsToRemove.push(kingdom_cards[i]);
+function chooseRandomX(array, weighted) { // returns card object
+  if (weighted===true && $$("history").getValue()===1) {
+    console.log("choosing random card from weighted list");
+    var count = 0;
+    var total = 0
+    for(var i = 0; i < array.length; i++) {
+      if (array[i].used) {
+        count = array[i].used;
+      } else {
+        count = 0;
+      }
+      total += 1.0/(count+1);
     }
-  }
-  if (countSelected()===0) { // non-selected
-    for(var i = 0; i < kingdom_cards.length; i++) {
-      cardsToRemove.push(kingdom_cards[i]);
-    }
-    console.log("Removing "+cardsToRemove.length+" cards with Redraw All");
-  }
-  var count = 0;
-  while (cardsToAdd.length < cardsToRemove.length && count < 1000) {
-    var rand_i = Math.floor(Math.random()*owned_cards.length);
-    var rand_card = owned_cards[rand_i];
-    // console.log("random card chosen is " + rand_card.name);
-    if (containsCard(kingdom_cards, rand_card)) {
-      // console.log(rand_card.name +" found in kingdom cards already");
-    } else if (containsCard(cardsToAdd, rand_card)) {
-      // console.log(rand_card.name +" found in cardsToAdd already");
-    } else {
-      cardsToAdd.push(rand_card);
-      //
-      // for(var x=0;x<kingdom_cards.length;x++) {
-        // console.log("kingdom: "+kingdom_cards[x].name);
-      // }
-      // for(var x=0;x<cardsToAdd.length;x++) {
-        // console.log("cardToAdd: "+cardsToAdd[x].name);
-      // }
-      //
-      // console.log(name + " not found in kingdomcards or cardsToAdd");
-      // console.log("cardsToAdd.length "+cardsToAdd.length);
-      // console.log("________");
-    }
-    count++;
-  } // end while
-  if (cardsToAdd.length < cardsToRemove.length) {
-    console.log("couldn't add cards because there are too few to choose from. count: "+count);
-    while (cardsToAdd.length < cardsToRemove.length) {
-      var rand_i = Math.floor(Math.random()*owned_cards.length);
-      var rand_card = owned_cards[rand_i];
-      if (!containsCard(cardsToAdd, rand_card)) {
-        if (rand_card.toggle < 2) {
-          cardsToAdd.push(rand_card);
-        }
+    var r = Math.random() * total;
+
+    var choose = -1;
+    total = 0;
+    for(var i = 0; i < array.length; i++) {
+      if (array[i].used) {
+        count = array[i].used;
+      } else {
+        count = 0;
+      }
+      total += 1.0/(count+1);
+      if (r < total) {
+        choose = i;
+        i = array.length;
       }
     }
+    return array[choose];
+  } else {
+    var rand_i = Math.floor(Math.random()*array.length);
+    return array[rand_i];
   }
-  // console.log("Removing: "+cardsToRemove.join()+" Adding:"+cardsToAdd.join());
-  var str = "Removing: ";
-  for(var x=0;x<cardsToRemove.length;x++) {
-    // console.log("kingdom: "+kingdom_cards[x].name);
-    str = str + cardsToRemove[x].name +" ";
-  }
-  str += ", Adding: ";
-  for(var x=0;x<cardsToAdd.length;x++) {
-    // console.log("cardToAdd: "+cardsToAdd[x].name);
-    str = str + cardsToAdd[x].name +" ";
-  }
-  console.log(str);
-  
-  // remove cards from kingdom
-  for(var i = 0; i < cardsToRemove.length; i++) {
-    for(var j = 0; j < kingdom_cards.length; j++) {
-      if (cardsToRemove[i].name === kingdom_cards[j].name) {
-        kingdom_cards[j].selected = false;
-        kingdom_cards.splice(j,1);
-        j--;
-      }
-    }
-  }
-  // console.log("Kingdom size: " + kingdom_cards.length);
-  // add new cards to kingdom
-  for(var i = 0; i < cardsToAdd.length; i++) {
-    for(var j = 0; j < owned_cards.length; j++) {
-      if (cardsToAdd[i].name === owned_cards[j].name) {
-        kingdom_cards.push(owned_cards[j]);
-      }
-    }
-  }
-  countSelected();
-  drawImages();   
 }
 
 function drawXTimes(x) {
@@ -1463,4 +1389,52 @@ function ResizeHandler(e) {
   canvasScroll = 0;
   context.setTransform(1, 0, 0, 1, 0, 0);
   drawXTimes(3);
+}
+
+function store() {
+  // stringify the kingdom as json
+
+  var answer = confirm("Would you like to store this Kingdom");
+  console.log(answer);
+  if (answer===true) {
+    var kingdom = [];
+
+    for(var i=0;i<kingdom_cards.length;i++) {
+      kingdom.push(kingdom_cards[i].name);
+    }
+    for(var i=0;i<kingdom_events.length;i++) {
+      kingdom.push(kingdom_events[i].name);
+    }
+    var string = JSON.stringify(kingdom);
+    console.log(string);
+
+    for(var i = 0; i<kingdom.length; i++) {
+      name = kingdom[i];
+      if (localStorage[name]) {
+        var value = parseInt(localStorage[name]);
+        value++;
+        localStorage[name]=value;
+      } else {
+        localStorage[name]=1;
+      }
+    }
+    console.log(localStorage);
+
+  } else {
+    console.log("Kingdom not stored");
+  }
+}
+
+function loadStorage() {
+  console.log("Local Storage");
+  for(var x in localStorage) {
+    for(var y = 0; y < owned_cards.length; y++) {
+      if (owned_cards[i].name === x) {
+        console.log(x+" "+localStorage[x]);
+        owned_cards[i]['used'] = localStorage[x];
+      }
+    }
+  }
+  console.log("loaded localStorage:");
+  console.log(localStorage);
 }
