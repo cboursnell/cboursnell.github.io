@@ -27,6 +27,7 @@ var mode = "Cards";
 var bottom = -1000;
 var difference = 0;
 var repeater = null;
+var ctrlKey = false;
 
 function load() {
   $$("redraw").hide();
@@ -201,9 +202,15 @@ function getOwnedCards() {
       supply = false;
     }
     if (text_filter.length > 0) {
-      console.log("text filter is "+text_filter);
-      if (card.name.toUpperCase().match(text_filter.toUpperCase())) {
-        console.log(card.name + " matches "+text_filter);
+      // console.log("text filter is "+text_filter);
+      var type_search = false;
+      for(var t=0;t<card.types.length;t++) { //mark
+        if (card.types[t].toUpperCase().match(text_filter.toUpperCase())) {
+          type_search = true;
+        }
+      }
+      if (card.name.toUpperCase().match(text_filter.toUpperCase()) || type_search === true) {
+        // console.log(card.name + " matches "+text_filter);
       } else {
         supply = false;
       }
@@ -218,7 +225,7 @@ function getOwnedCards() {
       }
       if (card.types.includes("Event") || card.types.includes("Landmark")) {
         owned_events.push(card);
-        console.log(card.name+" "+card.cost+" "+card.sets+" "+card.types+" "+card.group);
+        // console.log(card.name+" "+card.cost+" "+card.sets+" "+card.types+" "+card.group);
       } else {
         // console.log(card.name+" "+card.cost+" "+card.sets+" "+card.types+" "+card.group);
         owned_cards.push(card);
@@ -255,6 +262,8 @@ function addInputEvents() {
   canvas.addEventListener("touchend", TouchEndHandler, false);
 
   $$("check01").attachEvent("onChange", ChangeHandler);
+  // $$("check01").attachEvent("onItemClick", CheckBoxClickHandler);
+  // $$("check01").attachEvent("onKeyPress", CtrlKeyHandler);
   $$("check02").attachEvent("onChange", ChangeHandler);
   $$("check03").attachEvent("onChange", ChangeHandler);
   $$("check04").attachEvent("onChange", ChangeHandler);
@@ -272,11 +281,12 @@ function addInputEvents() {
   $$("search").attachEvent("onTimedKeyPress", TextChangeHandler);
 
   window.addEventListener("resize", ResizeHandler);
+  window.addEventListener("keydown", CtrlKeyDownHandler);
+  window.addEventListener("keyup", CtrlKeyUpHandler);
+
 
 }
 
-// var drawingTimer = null;
-// var cooldownTimer = 0;
 var canvasScroll=0;
 var scale=1.0;
 
@@ -329,7 +339,8 @@ function drawImages() {
       context.font = "28px Arial";
       context.fillStyle = 'black';
       // context.font("PT Sans");
-      context.fillText("Select Expansions", 30, 50);
+      // context.fillText("Select Expansions", 30, 50);
+      blankPage(context);
     }
     for(var i = 0; i < owned_cards.length; i++) {
       if (pos.y+pos.height+canvasScroll > 0 && pos.y+canvasScroll < window.innerHeight) {
@@ -388,9 +399,15 @@ function drawImages() {
       }
       pos.update(canvas);
     }
-    bottom = -pos.y + window.innerHeight - 250;
+    bottom = -pos.y + window.innerHeight - 320;
     if (bottom > 0) {
       bottom = 0;
+    }
+    if (pos.y < -canvasScroll) {
+      console.log("Y is less than -canvasScroll. Scrolling up");
+      canvasScroll = 0;
+      context.setTransform(1, 0, 0, 1, 0, 0);
+      context.translate(0, canvasScroll);
     }
     // console.log("drawImages setting bottom to "+bottom);
   } else { // mode === "Kingdom"
@@ -501,13 +518,23 @@ function drawImages() {
       drawExtra(pos, "Survivors");
     } //ruins
 
-    bottom = -pos.y + window.innerHeight - 280;
+    bottom = -pos.y + window.innerHeight - 320;
     if (bottom > 0) {
       bottom = 0;
     }
     // console.log("drawImages setting bottom to "+bottom);
 
   }
+}
+
+function blankPage(context) {
+  context.fillText("Select Expansions", 30, 50);
+  // view all cards from expansions
+  // mark cards as required (green) or banned (red)
+  // search for cards by name
+  // generate a kingdom
+  // select cards to replace them individually,
+  // or redraw all
 }
 
 function drawExtra(pos, name) {
@@ -634,22 +661,19 @@ function drawImagesFirst() {
 }
 
 function MouseWheelHandler(e) {
-  // var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
-  // console.log("mouse scrolling "+e.wheelDelta);
   var canvas = document.getElementById("cardCanvas");
-  var ctx = canvas.getContext("2d");
-  ctx.translate(0, e.wheelDelta);
+  var context = canvas.getContext("2d");
   canvasScroll += e.wheelDelta;
   if (canvasScroll > 0) {
-    ctx.translate(0,-canvasScroll);
     canvasScroll = 0;
   }
-  var bottom = -canvas.height+window.innerHeight-(320*scale);
-  // console.log("canvasScroll: " + canvasScroll+ "window height: "+window.innerHeight);
   if (canvasScroll < bottom) {
-    ctx.translate(0,-canvasScroll+bottom);
     canvasScroll = bottom;
+    console.log("setting canvasScroll to bottom: "+bottom);
   }
+  context.setTransform(1, 0, 0, 1, 0, 0);
+  context.translate(0, canvasScroll);
+
   // console.log("canvasScroll " + canvasScroll);
   drawImages();
 }
@@ -672,14 +696,14 @@ function TouchMoveHandler(e) {
     canvasScroll += difference;
     // context.translate(0, difference);
 
-    console.log("difference: "+difference+" canvasScroll: "+canvasScroll+" window.innerHeight:"+window.innerHeight);
+    // console.log("difference: "+difference+" canvasScroll: "+canvasScroll+" window.innerHeight:"+window.innerHeight);
     if (canvasScroll > 0) {
       // context.translate(0,-canvasScroll);
       canvasScroll = 0;
     }
     // var bottom = -canvas.height+window.innerHeight-(320*scale);
     // var bottom = -window.innerHeight+(320*scale);
-    console.log("bottom is "+bottom);
+    // console.log("bottom is "+bottom);
     if (canvasScroll < bottom) {
       // context.translate(0,-canvasScroll+bottom);
       canvasScroll = bottom;
@@ -688,7 +712,7 @@ function TouchMoveHandler(e) {
 
     context.setTransform(1, 0, 0, 1, 0, 0);
     context.translate(0, canvasScroll);
-    console.log("setting context translate to "+canvasScroll);
+    // console.log("setting context translate to "+canvasScroll);
 
     // console.log("canvasScroll " + canvasScroll);
     drawImages();
@@ -1360,13 +1384,60 @@ function momentum(speed) {
 
 }
 
-function ChangeHandler(e) {
+// function CheckBoxClickHandler(e) {
+//   console.log("click!")
+//   if (e.ctrlKey) {
+//     // console.log("ctrl key was pressed!");
+//   } else {
+//     console.log("ctrl key not detected");
+//   }
+// }
+
+function CtrlKeyDownHandler(e) {
+  // console.log("key press!");
+  if (e.ctrlKey) {
+    console.log("ctrl key was pressed!");
+    ctrlKey = true;
+  } else {
+    // console.log("ctrl key not detected");
+  }
+
+}
+function CtrlKeyUpHandler(e) {
+  // console.log("key press!");
+  ctrlKey = false;
+  console.log("key was released");
+  // if (e.ctrlKey) {
+    // console.log("ctrl key was pressed!");
+  // } else {
+    // console.log("ctrl key not detected");
+  // }
+
+}
+
+function ChangeHandler(e) { // for checkboxes
   // console.log("Change!");
-  // scroll to the top. 
   var canvas = document.getElementById('cardCanvas');
   var context = canvas.getContext('2d');
   context.translate(0, -canvasScroll);
   canvasScroll = 0;
+  console.log("ctrlKey:"+ctrlKey);
+  if (ctrlKey) {
+    // var target = e.target || e.srcElement;
+    // console.log("event:"+e);
+    // console.log("set all other checkboxes to be equal to the state of this check box: "+target.getValue());
+    $$("check01").setValue(e);
+    $$("check02").setValue(e);
+    $$("check03").setValue(e);
+    $$("check04").setValue(e);
+    $$("check05").setValue(e);
+    $$("check06").setValue(e);
+    $$("check07").setValue(e);
+    $$("check08").setValue(e);
+    $$("check09").setValue(e);
+    $$("check10").setValue(e);
+    $$("check11").setValue(e);
+  }
 
   getSets();
   getOwnedCards();
@@ -1382,6 +1453,7 @@ function EventCounterChangeHandler(e) {
 function TextChangeHandler(e) {
   console.log("text changed");
   getOwnedCards();
+  drawXTimes(1);
 }
 
 function ResizeHandler(e) {
