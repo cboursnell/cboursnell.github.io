@@ -476,12 +476,14 @@ function drawImages() {
     pos.height = 320*scale;
     // RECOMMENDED CARDS
     if (kingdom_bane!==null) {
-      // var tx=pos.x;
-      // var ty=pos.y;
+      var tx=pos.x;
+      var ty=pos.y;
       drawExtra(pos, kingdom_bane.name);
-      // context.font = "15px serif";
-      // context.fillStyle = 'black';
-      // context.fillText("BANE", tx+132, ty+303);
+      context.fillStyle="#000000";
+      context.fillRect(tx+75, ty+150-14, 50, 18);
+      context.font = "15px serif";
+      context.fillStyle = 'white';
+      context.fillText("BANE", tx+75, ty+150);
     }
     drawExtra(pos, "Copper");
     drawExtra(pos, "Silver");
@@ -515,6 +517,28 @@ function drawImages() {
       drawExtra(pos, "Ruined Market");
       drawExtra(pos, "Survivors");
     } //ruins
+
+    if (extras.hasOwnProperty("prizes") && extras.prizes === true) {
+      drawExtra(pos, "Bag of Gold")
+      drawExtra(pos, "Diadem");
+      drawExtra(pos, "Followers");
+      drawExtra(pos, "Princess");
+      drawExtra(pos, "Trusty Steed");
+    }
+
+    if (extras.hasOwnProperty("page") && extras.page === true) {
+      drawExtra(pos, "Treasure Hunter")
+      drawExtra(pos, "Warrior");
+      drawExtra(pos, "Hero");
+      drawExtra(pos, "Champion");
+    }
+
+    if (extras.hasOwnProperty("peasant") && extras.peasant === true) {
+      drawExtra(pos, "Soldier");
+      drawExtra(pos, "Fugitive");
+      drawExtra(pos, "Disciple")
+      drawExtra(pos, "Teacher");
+    }
 
     bottom = -pos.y + window.innerHeight - 360;
     if (bottom > 0) {
@@ -963,6 +987,23 @@ function recommendations() {
       extras['spoils']=true;
     }
   }
+
+  // tournament
+  // page
+  extras['prizes']=false;
+  extras['page']=false;
+  for(var i = 0; i < kingdom_cards.length; i++) {
+    if (kingdom_cards[i].name === "Tournament") {
+      extras['prizes']=true;
+    }
+    if (kingdom_cards[i].name === "Page") {
+      extras['page']=true;
+    }
+    if (kingdom_cards[i].name === "Peasant") {
+      extras['peasant']=true;
+    }
+  }
+
   // young witch / bane
   // console.log("Choose a kingdom card from the owned cards that is not in the kingdom that costs 2-3");
   return extras;
@@ -978,6 +1019,8 @@ function generate() {
   // else
   //   pick cards randomly from owned_cards (ignoring any with toggle===2)
   //   and add them to the kingdom
+  $$("search").setValue("");
+  getOwnedCards();
 
   var canvas = document.getElementById('cardCanvas');
   var context = canvas.getContext('2d');
@@ -1085,7 +1128,7 @@ function chooseKingdomEvents() {
       // pick randomly from other events
       count=0;
       while (kingdom_events.length < numEvents && count < 1000) {
-        console.log(kingdom_events.length +" < "+numEvents);
+        // console.log(kingdom_events.length +" < "+numEvents);
         // var rand_i = Math.floor(Math.random()*owned_events.length);
         var random_event = chooseRandomX(owned_events, true);
         if (!containsCard(kingdom_events, random_event)) {  // not already in kingdom
@@ -1142,16 +1185,29 @@ function redrawSelected() {
     count = 0;
     while (cardsToAdd.length < 10 && count < 1000) {
       // add more cards that aren't cardsToAdd, and aren't in kingdomCards
-      var rand_i = Math.floor(Math.random()*owned_cards.length);
-      if (!containsCard(cardsToAdd, owned_cards[rand_i])) {
-        if (!containsCard(kingdom_cards, owned_cards[rand_i])) {
-          if (owned_cards[rand_i].toggle < 2) {
-            cardsToAdd.push(owned_cards[rand_i]);
+      var card = chooseRandomX(owned_cards, true);
+      if (!containsCard(cardsToAdd, card)) {
+        if (!containsCard(kingdom_cards, card)) {
+          if (card.toggle < 2) {
+            cardsToAdd.push(card);
           }
         }
       }
       count++;
     }
+
+    count = 0;
+    while (cardsToAdd.length < 10 && count < 1000) {
+      // add more cards that aren't cardsToAdd, and might be in kingdomCards if there aren't enough 
+      var card = chooseRandomX(owned_cards, true);
+      if (!containsCard(cardsToAdd, card)) {
+        if (card.toggle < 2) {
+          cardsToAdd.push(card);
+        }
+      }
+      count++;
+    }
+
     kingdom_cards=[];
     for(var i = 0 ; i < cardsToAdd.length; i++) {
       kingdom_cards.push(cardsToAdd[i]);
@@ -1226,13 +1282,13 @@ function redrawSelected() {
   } else {
     kingdom_bane = null;
   }
+  countSelected();
   recommendations();
   drawXTimes(3);
 }
 
 function chooseRandomX(array, weighted) { // returns card object
   if (weighted===true && $$("history").getValue()===1) {
-    console.log("choosing random card from weighted list");
     var count = 0;
     var total = 0
     for(var i = 0; i < array.length; i++) {
@@ -1259,6 +1315,7 @@ function chooseRandomX(array, weighted) { // returns card object
         i = array.length;
       }
     }
+    console.log("choosing random card ("+array[choose].name+") from weighted list");
     return array[choose];
   } else {
     var rand_i = Math.floor(Math.random()*array.length);
