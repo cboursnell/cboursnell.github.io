@@ -256,7 +256,7 @@ function getOwnedCards() {
 function addInputEvents() {
   var canvas = document.getElementById("cardCanvas");
   var ctx = canvas.getContext("2d");
-  canvas.addEventListener("mousewheel", MouseWheelHandler, false);
+  canvas.addEventListener("mousewheel", _.throttle(MouseWheelHandler, 16));
   canvas.addEventListener("mousedown", MouseDownHandler, false);
   canvas.addEventListener("touchmove", TouchMoveHandler, false);
   canvas.addEventListener("touchend", TouchEndHandler, false);
