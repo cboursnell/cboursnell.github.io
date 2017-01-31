@@ -376,7 +376,9 @@ function drawImages() {
     pos.height = 200*scale;
     pos.x = 0;
     for(var i = 0; i < owned_events.length; i++) {
-      context.drawImage(owned_events[i].image, pos.x, pos.y, pos.width, pos.height);
+      if (pos.y+pos.height+canvasScroll > 0 && pos.y+canvasScroll < window.innerHeight) {
+        context.drawImage(owned_events[i].image, pos.x, pos.y, pos.width, pos.height);
+      }
       owned_events[i]['drawX']=pos.x
       owned_events[i]['drawY']=pos.y
       toggle = owned_events[i].toggle;
