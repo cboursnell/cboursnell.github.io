@@ -209,7 +209,7 @@ function getOwnedCards() {
           type_search = true;
         }
       }
-      if (card.name.toUpperCase().match(text_filter.toUpperCase()) || type_search === true) {
+      if (card.name.toUpperCase().match(text_filter.toUpperCase()) || type_search === true || card.cost.match(text_filter)) {
         // console.log(card.name + " matches "+text_filter);
       } else {
         supply = false;
