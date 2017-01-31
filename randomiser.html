@@ -46,11 +46,11 @@ webix.ui({
             { view: "checkbox", height:27, id: "history", label:"Use History", labelWidth:135, value:1, align:"center"},
             { view: "counter", id:"eventcounter", label:"Events", step:1, value:1, min:0, max:4},
             { view: "text", id:"search", keyPressTimeout:100},
-            { view: "button", id:"store", value: "Store", click: "store()" },
+            { view: "button", id:"store", value: "Save", click: "store()" },
           ]},
           {
             view: 'template',
-            template: "<canvas id='cardCanvas' height=100px width=400></canvas>"
+            template: "<canvas id='cardCanvas' height=600px width=600></canvas>"
           },
       	]
       }
