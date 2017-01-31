@@ -552,13 +552,25 @@ function drawImages() {
 }
 
 function blankPage(context) {
-  context.fillText("Select Expansions", 30, 50);
+  context.font = "28px Arial";
+  context.fillStyle = 'black';
+  // context.font("PT Sans");
+  context.fillText("Dominion Randomiser", 30, 50);
+  context.font = "16px Arial";
+  context.fillStyle = 'black';
   // view all cards from expansions
+  context.fillText("Select expansions to display cards", 30, 100);
   // mark cards as required (green) or banned (red)
-  // search for cards by name
+  context.fillText("Click on cards to mark them as required (green) or banned (red)", 30, 130);
   // generate a kingdom
+  context.fillText("Generate a kingdom of 10 cards and show other supply piles needed", 30, 400);
   // select cards to replace them individually,
-  // or redraw all
+  context.fillText("Select cards (yellow) and replace them individually", 30, 420);
+  // history
+  context.fillText("Remember what cards were used.", 30, 455);
+  context.fillText("Less likely to choose the same cards again next time", 30, 475);
+  // search for cards by name
+  context.fillText("Search for cards by name, cost or type (Attack, Duration etc)", 30, 510);
 }
 
 function drawExtra(pos, name) {
@@ -662,13 +674,13 @@ function drawImagesFirst() {
     // context.clearRect(0, 0, canvas.width, canvas.height);
     // console.log("drawing white rectangle for the first time");
     // context.restore();
-    if (owned_cards.length===0) {
-      context.clearRect(0, 0, canvas.width, canvas.height);
-      context.font = "28px Arial";
-      context.fillStyle = 'black';
-      // context.font("PT Sans");
-      context.fillText("Select Expansions", 30, 50);
-    }
+    // if (owned_cards.length===0) {
+    //   context.clearRect(0, 0, canvas.width, canvas.height);
+    //   context.font = "28px Arial";
+    //   context.fillStyle = 'black';
+    //   // context.font("PT Sans");
+    //   context.fillText("Select Expansions", 30, 50);
+    // }
     // for(var i = 0; i < owned_cards.length; i++) {
     //   context.drawImage(owned_cards[i].image, x, y, width, height);
     //   // there are the same number of images as owned cards and they are in the same order
