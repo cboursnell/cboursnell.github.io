@@ -1283,7 +1283,6 @@ function redrawSelected() {
         i--;
       }
     }
-
     chooseKingdomEvents();
   } // end if else
   if (containsCardName(kingdom_cards, "Young Witch")) {
