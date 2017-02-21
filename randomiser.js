@@ -582,25 +582,38 @@ function drawImages() {
 }
 
 function blankPage(context) {
-  context.font = "28px Arial";
-  context.fillStyle = 'black';
+  context.font = "28px Arial"
+;  context.fillStyle = 'black';
   // context.font("PT Sans");
-  context.fillText("Dominion Randomiser", 30, 50);
+  var x = 30;
+  var y = 50;
+  context.fillText("Dominion Randomiser", x,  y);
   context.font = "16px Arial";
   context.fillStyle = 'black';
   // view all cards from expansions
-  context.fillText("Select expansions to display cards", 30, 100);
+  y+=50;
+  context.fillText("Select expansions to display cards", x,  y);
   // mark cards as required (green) or banned (red)
-  context.fillText("Click on cards to mark them as required (green) or banned (red)", 30, 130);
+  y+=40;
+  context.fillText("Click on cards to mark them as required (green) or banned (red)", x,  y);
   // generate a kingdom
-  context.fillText("Generate a kingdom of 10 cards and show other supply piles needed", 30, 400);
+  y+=40;
+  context.fillText("Search for cards by name, cost or type (Attack, Duration etc)", x,  y);
+  y+=40;
+  context.fillText("Click the \"Generate Kingdom\" button to choose 10 cards randomly", x,  y);
+  // context.fillText("Generate a kingdom of 10 cards and show other supply piles needed", x,  400);
   // select cards to replace them individually,
-  context.fillText("Select cards (yellow) and replace them individually", 30, 420);
+  y+=60;
+  context.fillText("Select cards in the kingdom and replace them individually", x,  y); y+=20;
+  context.fillText("or select none and replace them all at once.", x,  y);
   // history
-  context.fillText("Remember what cards were used.", 30, 455);
-  context.fillText("Less likely to choose the same cards again next time", 30, 475);
+  y+=40;
+  context.fillText("Click the \"Store\" button to remember what cards were used.", x,  y);
+  y+=40;
+  context.fillText("Tick the \"Use History\" box and then those cards will be less likely to",x, y);
+  y+=20;
+  context.fillText("be chosen next time", x,  y);
   // search for cards by name
-  context.fillText("Search for cards by name, cost or type (Attack, Duration etc)", 30, 510);
 }
 
 function drawExtra(pos, name) {
