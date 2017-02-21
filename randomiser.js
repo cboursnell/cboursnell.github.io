@@ -1274,19 +1274,28 @@ function redrawSelected() {
     // REDRAW JUST SELECTED CARDS
     var cardsToRemove = []; // list of cards, not list of card names
     var cardsToAdd = []; // list of card objects, not strings of card names
+    // get list of cards to remove based on if they were selected yellow
     for(var i = 0; i < kingdom_cards.length; i++) {
       if (kingdom_cards[i].selected === true) {
         cardsToRemove.push(kingdom_cards[i]);
       }
     }
+    // choose from required cards that aren't in kingdom or were just removed
     count=0;
     while (cardsToAdd.length < cardsToRemove.length && count < 1000) {
-      var rand_i = Math.floor(Math.random()*owned_cards.length);
-      if (!containsCard(cardsToAdd, owned_cards[rand_i])) {
-        if (!containsCard(kingdom_cards, owned_cards[rand_i])) {
-          if(!containsCard(cardsToRemove, owned_cards[rand_i])) {
-            if (owned_cards[rand_i].toggle < 2) {
-              cardsToAdd.push(owned_cards[rand_i]);
+      // build list of required cards
+      var requiredCards = [];
+      for(var i = 0; i < owned_cards.length; i++) {
+        if (owned_cards[i].toggle === 1) {
+          requiredCards.push(owned_cards[i]);
+        }
+      }
+      var card = chooseRandomX(requiredCards, true);
+      if (!containsCard(cardsToAdd, card)) {
+        if (!containsCard(kingdom_cards, card)) {
+          if(!containsCard(cardsToRemove, card)) {
+            if (card.toggle === 1) {
+              cardsToAdd.push(card);
             }
           }
         }
@@ -1295,11 +1304,25 @@ function redrawSelected() {
     }
     count=0;
     while (cardsToAdd.length < cardsToRemove.length && count < 1000) {
-      var rand_i = Math.floor(Math.random()*owned_cards.length);
-      if (!containsCard(cardsToAdd, owned_cards[rand_i])) {
-        if (!containsCard(kingdom_cards, owned_cards[rand_i])) {
-          if (owned_cards[rand_i].toggle < 2) {
-            cardsToAdd.push(owned_cards[rand_i]);
+      var card = chooseRandomX(owned_cards, true);
+      if (!containsCard(cardsToAdd, card)) {
+        if (!containsCard(kingdom_cards, card)) {
+          if(!containsCard(cardsToRemove, card)) {
+            if (card.toggle < 2) {
+              cardsToAdd.push(card);
+            }
+          }
+        }
+      }
+      count++;
+    }
+    count=0;
+    while (cardsToAdd.length < cardsToRemove.length && count < 1000) {
+      var card = chooseRandomX(owned_cards, true);
+      if (!containsCard(cardsToAdd, card)) {
+        if (!containsCard(kingdom_cards, card)) {
+          if (card.toggle < 2) {
+            cardsToAdd.push(card);
           }
         }
       }
