@@ -87,6 +87,7 @@ function getSets() {
   if ($$("check11").getValue()===1) {
     sets.push("empires")
   }
+  sets.push("promo");
   var msg = "Owned sets: "
   for(var i = 0 ;  i < sets.length; i++) {
     msg = msg + sets[i] +" "
@@ -176,11 +177,35 @@ function getOwnedCards() {
       for(var k=0; k < sets.length; k++) {
         var owned_set = sets[k];
         // console.log(owned_set+" "+set);
-        if (owned_set === set) {
+        if (owned_set === set && owned_set != "promo") {
           supply = true
           // console.log(card.name+" "+card.cost+" "+card.sets+" "+card.types);
         }
       }
+    }
+    if ($$("checkBlackmarket").getValue()===1 && card.name === "Black Market") {
+      supply = true;
+    }
+    if ($$("checkEnvoy").getValue()===1 && card.name === "Envoy") {
+      supply = true;
+    }
+    if ($$("checkSauna").getValue()===1 && card.name === "Sauna") {
+      supply = true;
+    }
+    if ($$("checkWalledvillage").getValue()===1 && card.name === "Walled Village") {
+      supply = true;
+    }
+    if ($$("checkGovernor").getValue()===1 && card.name === "Governor") {
+      supply = true;
+    }
+    if ($$("checkStash").getValue()===1 && card.name === "Stash") {
+      supply = true;
+    }
+    if ($$("checkPrince").getValue()===1 && card.name === "Prince") {
+      supply = true;
+    }
+    if ($$("checkSummon").getValue()===1 && card.name === "Summon") {
+      supply = true;
     }
     if (card.sets.includes("base")) {
       supply = false;
@@ -274,6 +299,15 @@ function addInputEvents() {
   $$("check09").attachEvent("onChange", ChangeHandler);
   $$("check10").attachEvent("onChange", ChangeHandler);
   $$("check11").attachEvent("onChange", ChangeHandler);
+
+  $$("checkBlackmarket").attachEvent("onChange", ChangeHandler);
+  $$("checkEnvoy").attachEvent("onChange", ChangeHandler);
+  $$("checkSauna").attachEvent("onChange", ChangeHandler);
+  $$("checkWalledvillage").attachEvent("onChange", ChangeHandler);
+  $$("checkGovernor").attachEvent("onChange", ChangeHandler);
+  $$("checkStash").attachEvent("onChange", ChangeHandler);
+  $$("checkPrince").attachEvent("onChange", ChangeHandler);
+  $$("checkSummon").attachEvent("onChange", ChangeHandler);
 
   $$("eventcounter").attachEvent("onChange", EventCounterChangeHandler);
 
