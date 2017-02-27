@@ -346,15 +346,15 @@ function drawImages() {
     }
     if (this.y+this.height > canvas.height) {
       canvas.height += this.height;
-      console.log("Height of canvas increased to "+canvas.height);
+      // console.log("Height of canvas increased to "+canvas.height);
     }
     if (canvas.height < window.innerHeight) {
       canvas.height = window.innerHeight;
-      console.log("Height of canvas set to window height: " + window.innerHeight);
+      // console.log("Height of canvas set to window height: " + window.innerHeight);
     }
     if (this.x+this.width > canvas.width) {
       canvas.width += this.width;
-      console.log("Width of canvas increased to "+canvas.width);
+      // console.log("Width of canvas increased to "+canvas.width);
     }
   }
   var canvas = document.getElementById('cardCanvas');
@@ -1290,15 +1290,19 @@ function redrawSelected() {
           requiredCards.push(owned_cards[i]);
         }
       }
-      var card = chooseRandomX(requiredCards, true);
-      if (!containsCard(cardsToAdd, card)) {
-        if (!containsCard(kingdom_cards, card)) {
-          if(!containsCard(cardsToRemove, card)) {
-            if (card.toggle === 1) {
-              cardsToAdd.push(card);
+      if (requiredCards.length > 0) {
+        var card = chooseRandomX(requiredCards, true);
+        if (!containsCard(cardsToAdd, card)) {
+          if (!containsCard(kingdom_cards, card)) {
+            if(!containsCard(cardsToRemove, card)) {
+              if (card.toggle === 1) {
+                cardsToAdd.push(card);
+              }
             }
           }
         }
+      } else {
+        count = 1000;
       }
       count++;
     }
