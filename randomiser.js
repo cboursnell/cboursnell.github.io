@@ -287,8 +287,6 @@ function addInputEvents() {
   canvas.addEventListener("touchend", TouchEndHandler, false);
 
   $$("check01").attachEvent("onChange", ChangeHandler);
-  // $$("check01").attachEvent("onItemClick", CheckBoxClickHandler);
-  // $$("check01").attachEvent("onKeyPress", CtrlKeyHandler);
   $$("check02").attachEvent("onChange", ChangeHandler);
   $$("check03").attachEvent("onChange", ChangeHandler);
   $$("check04").attachEvent("onChange", ChangeHandler);
@@ -1099,15 +1097,25 @@ function generate() {
         kingdom_cards.splice(rand_i, 1);
       }
       //
-      while (kingdom_cards.length < 10) {
+      count = 0
+      while (kingdom_cards.length < 10 && count < 1000) {
         // choose random card and add it to the kingdom if it's not
-        // var rand_i = Math.floor(Math.random()*owned_cards.length);
         var random_card = chooseRandomX(owned_cards, true);
         if (!containsCard(kingdom_cards, random_card)) {
           if (random_card.toggle < 2) {
             kingdom_cards.push(random_card);
           }
         }
+        count++;
+      }
+      count = 0
+      while (kingdom_cards.length < 10 && count < 1000) {
+        // choose random card and add it to the kingdom if it's not
+        var random_card = chooseRandomX(owned_cards, true);
+        if (!containsCard(kingdom_cards, random_card)) {
+          kingdom_cards.push(random_card);
+        }
+        count++;
       }
 
       if (containsCardName(kingdom_cards, "Young Witch")) {
