@@ -14,6 +14,13 @@
 // when 10 cards are showing for a kingdom then show the 'replace selected' button
 // selecting cards in the kingdom screen gives them a yellow border
 
+// TODO if black market is in the game use the app to simulate a black market deck.
+// means players don't have to get 60 cards out of the box, but only have to when they buy a card
+
+String.prototype.replaceAll = function(search, replacement) {
+    var target = this;
+    return target.replace(new RegExp(search, 'g'), replacement);
+};
 // globals
 var sets = new Array();
 var all_cards = new Array();
@@ -28,6 +35,8 @@ var bottom = -1000;
 var difference = 0;
 var repeater = null;
 var ctrlKey = false;
+var loadedImages = 0;
+var numImages = 0;
 
 function load() {
   $$("redraw").hide();
@@ -315,8 +324,6 @@ function addInputEvents() {
   window.addEventListener("resize", ResizeHandler);
   window.addEventListener("keydown", CtrlKeyDownHandler);
   window.addEventListener("keyup", CtrlKeyUpHandler);
-
-
 }
 
 var canvasScroll=0;
@@ -580,8 +587,8 @@ function drawImages() {
 }
 
 function blankPage(context) {
-  context.font = "28px Arial"
-;  context.fillStyle = 'black';
+  context.font = "28px Arial";
+  context.fillStyle = 'black';
   // context.font("PT Sans");
   var x = 30;
   var y = 50;
@@ -602,8 +609,8 @@ function blankPage(context) {
   // context.fillText("Generate a kingdom of 10 cards and show other supply piles needed", x,  400);
   // select cards to replace them individually,
   y+=60;
-  context.fillText("Select cards in the kingdom and replace them individually", x,  y); y+=20;
-  context.fillText("or select none and replace them all at once.", x,  y);
+  context.fillText("Select cards in the kingdom and click \"Redraw Selected\" to replace them ", x,  y); y+=20;
+  context.fillText("individually or select none and replace them all at once.", x,  y);
   // history
   y+=40;
   context.fillText("Click the \"Store\" button to remember what cards were used.", x,  y);
@@ -612,6 +619,14 @@ function blankPage(context) {
   y+=20;
   context.fillText("be chosen next time", x,  y);
   // search for cards by name
+  y+=20;
+}
+
+function progressBar(context) {
+  context.fillStyle="#888888";
+  if (loadedImages < numImages) {
+    context.fillRect(0, 0, 4*loadedImages, 3);
+  }
 }
 
 function drawExtra(pos, name) {
@@ -674,67 +689,43 @@ function chooseBaneCard() {
 
 }
 
-// function loadImages() {
 function loadImages(callback) {
-  // var images = [];
-  var loadedImages = 0;
-  var numImages = 0;
-  // get num of sources
-  numImages = all_cards.length;
-  for(var i = 0 ; i < all_cards.length; i++) {
-    // console.log("Loading "+all_cards[i].name +" from "+all_cards[i].url);
-    all_cards[i]['image'] = new Image();
-    // images[i]['name'] = all_cards[i].name;
-    all_cards[i]['image'].onload = function() {
-      // console.log("loaded:"+loadedImages+"/"+numImages+" i:"+i+" card:"+all_cards[i].name);
-      if(++loadedImages >= numImages) {
-        // console.log("calling back to function");
-        callback(); // calling code in drawimagesfirst function
-      }
-      // TODO draw progress bar of cards loading
-    };
-    all_cards[i]['image'].src = all_cards[i].url;
-  }
-} // end
 
-function drawImagesFirst() {
-  // console.log("Drawing images for the first time <266>");
-  // console.log("Owned cards: "+ owned_cards.length);
-  // var x = 0;
-  // var y = 0;
-  // var width = 200*scale;
-  // var height = 320;
   var canvas = document.getElementById('cardCanvas');
   var context = canvas.getContext('2d');
+  numImages = 0;
+  numImages = all_cards.length;
+  for(var i = 0 ; i < all_cards.length; i++) {
+    all_cards[i]['image'] = new Image();
+    all_cards[i]['image'].onload = function() {
+      // console.log("loaded:"+loadedImages+"/"+numImages+" i:"+i+" card:"+all_cards[i].name);
+      progressBar(context);
+      if(++loadedImages >= numImages) {
+        callback(); // calling code in drawimagesfirst function
+      }
+    };
+    // var name = all_cards[i].name;
+    // name=name.replaceAll(" ", "_");
+    // all_cards[i]['image'].src = "dominion_cards/"+name+".jpg";
+    all_cards[i]['image'].src = all_cards[i].url;
+  }
+}
 
-  // loadImages();
-
-  loadImages(function() {
-    // context.save();
-    // context.setTransform(1, 0, 0, 1, 0, 0);
-    // context.clearRect(0, 0, canvas.width, canvas.height);
-    // console.log("drawing white rectangle for the first time");
-    // context.restore();
-    // if (owned_cards.length===0) {
-    //   context.clearRect(0, 0, canvas.width, canvas.height);
-    //   context.font = "28px Arial";
-    //   context.fillStyle = 'black';
-    //   // context.font("PT Sans");
-    //   context.fillText("Select Expansions", 30, 50);
-    // }
-    // for(var i = 0; i < owned_cards.length; i++) {
-    //   context.drawImage(owned_cards[i].image, x, y, width, height);
-    //   // there are the same number of images as owned cards and they are in the same order
-
-    //   // console.log("setting "+owned_cards[i].name+" to "+x+" "+y);
-    //   x += width;
-    //   if (x > 850) {
-    //     x = 0;
-    //     y += height;
-    //   }
-    // }
+function drawImagesFirst() {
+  loadImages(function(){
+    console.log("All images loaded");
+    $$("check01").enable();
+    $$("check02").enable();
+    $$("check03").enable();
+    $$("check04").enable();
+    $$("check05").enable();
+    $$("check06").enable();
+    $$("check07").enable();
+    $$("check08").enable();
+    $$("check09").enable();
+    $$("check10").enable();
+    $$("check11").enable();
   });
-
 }
 
 function MouseWheelHandler(e) {
