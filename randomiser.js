@@ -625,6 +625,9 @@ function progressBar(context) {
   context.fillStyle="#888888";
   if (loadedImages < numImages) {
     context.fillRect(0, 0, 4*loadedImages, 3);
+  } else {
+    context.fillStyle="#ffffff";
+    context.fillRect(0, 0, 4*numImages, 3);
   }
 }
 
@@ -867,10 +870,6 @@ function MouseDownHandler(e) {
         } else {
           kingdom_events[i]['selected'] = true;
         }
-        // kingdom_events[i].toggle++;
-        // kingdom_events[i].toggle = kingdom_events[i].toggle%3;
-        // console.log("Toggle set to " + kingdom_events[i].toggle);
-        // countSelected();
       }
 
     } // for in kingdom_events
@@ -938,7 +937,7 @@ function switchMode() {
     $$("generate").setValue("Show Kingdom");
     $$("generate").refresh();
     $$("redraw").hide();
-    $$("search").show();
+    $$("search").enable();
     $$("store").hide();
   } else if (mode === "Cards") {
     mode = "Kingdom";
@@ -946,7 +945,7 @@ function switchMode() {
     $$("generate").setValue("Show Cards");
     $$("generate").refresh();
     $$("redraw").show();
-    $$("search").hide();
+    $$("search").disable();
     $$("store").show();
     if (canvasScroll < -500) {
       var canvas = document.getElementById('cardCanvas');
@@ -1136,8 +1135,6 @@ function generate() {
 
 }
 
-// TODO add chooseRandomCard method
-
 function chooseKingdomEvents() {
 
     var numEvents = $$("eventcounter").getValue();
@@ -1233,6 +1230,7 @@ function redrawSelected() {
         cardsToAdd.push(owned_cards[i]);
       }
     }
+    // remove some if there are more than 10
     while (cardsToAdd.length > 10) {
       var rand_i = Math.floor(Math.random()*cardsToAdd.length);
       cardsToAdd.splice(rand_i, 1);
@@ -1267,6 +1265,7 @@ function redrawSelected() {
     for(var i = 0 ; i < cardsToAdd.length; i++) {
       kingdom_cards.push(cardsToAdd[i]);
     }
+    kingdom_events = [];
     // choose new events that aren't in the list
     chooseKingdomEvents();
   } else {
