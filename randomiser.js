@@ -45,7 +45,6 @@ function load() {
   // console.log("Calling load() method");
 	getSets();
 	loadCards();
-  loadStorage();
   addInputEvents();
   drawXTimes(10);
 }
@@ -1055,6 +1054,7 @@ function recommendations() {
 }
 
 function generate() {
+  loadStorage();
   //console.log("Pressed generate button");
   // go through the owned cards
   // pick out ones that have toggle === 1 (ie green)
@@ -1530,9 +1530,22 @@ function ResizeHandler(e) {
 }
 
 function store() {
-  // stringify the kingdom as json
+  // var answer = confirm("Would you like to store this Kingdom");
+  var date = new Date();
+  var year = date.getFullYear();
+  var month = date.getMonth()+1;
+  var day = date.getDate();
+  day = (day<10?"0":"") + day;
+  month = (month<10?"0":"") + month;
+  var minutes = date.getMinutes();
+  var hours = date.getHours();
+  var seconds = date.getSeconds();
+  minutes = (minutes<10?"0":"") + minutes;
+  hours = (hours<10?"0":"") + hours;
+  seconds = (seconds<10?"0":"") + seconds;
+  var time = year + "-" + month + "-" + day +"_"+hours+"-"+minutes+"-"+seconds;
 
-  var answer = confirm("Would you like to store this Kingdom");
+  var answer = true;
   //console.log(answer);
   if (answer===true) {
     var kingdom = [];
@@ -1543,20 +1556,10 @@ function store() {
     for(var i=0;i<kingdom_events.length;i++) {
       kingdom.push(kingdom_events[i].name);
     }
+    prompt("Kingdom:", kingdom.join(", "));
     var string = JSON.stringify(kingdom);
     //console.log(string);
-
-    for(var i = 0; i<kingdom.length; i++) {
-      name = kingdom[i];
-      if (localStorage[name]) {
-        var value = parseInt(localStorage[name]);
-        value++;
-        localStorage[name]=value;
-      } else {
-        localStorage[name]=1;
-      }
-    }
-    //console.log(localStorage);
+    localStorage[time] = string;
 
   } else {
     //console.log("Kingdom not stored");
@@ -1564,15 +1567,18 @@ function store() {
 }
 
 function loadStorage() {
-  //console.log("Local Storage");
-  for(var x in localStorage) {
-    for(var y = 0; y < owned_cards.length; y++) {
-      if (owned_cards[i].name === x) {
-        //console.log(x+" "+localStorage[x]);
-        owned_cards[i]['used'] = localStorage[x];
+  for(var y = 0; y < all_cards.length; y++) {
+    all_cards[y]['used'] = 0;
+  }
+  for(var d in localStorage) {
+    list = JSON.parse(localStorage[d]);
+    for(var i = 0; i < list.length; i++) {
+      for(var y = 0; y < all_cards.length; y++) {
+        if (all_cards[y].name === list[i]) {
+          all_cards[y]['used']++;
+        }
       }
     }
   }
-  console.log("loaded localStorage:");
   console.log(localStorage);
 }
