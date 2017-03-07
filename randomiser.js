@@ -698,10 +698,10 @@ function loadImages(callback) {
     all_cards[i]['image'] = new Image();
     all_cards[i]['image'].onload = function() {
       // console.log("loaded:"+loadedImages+"/"+numImages+" i:"+i+" card:"+all_cards[i].name);
-      progressBar(context);
       if(++loadedImages >= numImages) {
         callback(); // calling code in drawimagesfirst function
       }
+      progressBar(context);
     };
     // var name = all_cards[i].name;
     // name=name.replaceAll(" ", "_");
