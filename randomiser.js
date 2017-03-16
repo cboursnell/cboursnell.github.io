@@ -28,6 +28,9 @@ var owned_cards = new Array();
 var owned_events = new Array();
 var kingdom_cards = new Array();
 var kingdom_events = new Array();
+var blackMarketDeck = new Array();
+var blackMarketSelection = new Array();
+var bmcount = 0;
 var kingdom_bane = null;
 var extras = new Object();
 var mode = "Cards";
@@ -37,6 +40,7 @@ var repeater = null;
 var ctrlKey = false;
 var loadedImages = 0;
 var numImages = 0;
+var cardBack;
 
 function load() {
   $$("redraw").hide();
@@ -444,7 +448,7 @@ function drawImages() {
       context.translate(0, canvasScroll);
     }
     // console.log("drawImages setting bottom to "+bottom);
-  } else { // mode === "Kingdom"
+  } else if(mode === "Kingdom") { // mode === "Kingdom"
     kingdom_cards.sort(cardCompareCost);
     for(var i = 0; i < kingdom_cards.length; i++) {
       context.drawImage(kingdom_cards[i].image, pos.x, pos.y, pos.width, pos.height);
@@ -457,7 +461,7 @@ function drawImages() {
         var selected = false;
       }
       if (selected===true) {
-        // draw a yellow box - require
+        // draw a yellow box - selected
         context.beginPath();
         context.lineWidth="4";
         context.strokeStyle="yellow";
@@ -484,7 +488,7 @@ function drawImages() {
         var selected = false;
       }
       if (selected===true) {
-        // draw a yellow box - require
+        // draw a yellow box - selected
         context.beginPath();
         context.lineWidth="4";
         context.strokeStyle="yellow";
@@ -582,6 +586,40 @@ function drawImages() {
     }
     // console.log("drawImages setting bottom to "+bottom);
 
+  } else if (mode === "BlackMarket") {// end mode === "kingdom"
+    // console.log("drawing black market deck");
+    // http://wiki.dominionstrategy.com/images/c/ca/Card_back.jpg
+    context.drawImage(cardBack, 240,20, 200, 304);
+    context.fillStyle="#cc3333";
+    context.fillRect(235, 6, 30, 30);
+    context.font = "20px Arial";
+    context.fillStyle = 'black';
+    // console.log("deck length: "+blackMarketDeck.length);
+    var text = ""+blackMarketDeck.length;
+    context.fillText(text, 240, 28);
+    if (blackMarketSelection.length === 3) {
+      pos.x = 20;
+      pos.y = 334;
+      pos.width = 200;
+      pos.height = 304;
+      for(var i = 0; i < 3; i++) {
+        blackMarketSelection[i].drawX = pos.x;
+        blackMarketSelection[i].drawY = pos.y;
+
+        context.drawImage(blackMarketSelection[i].image, pos.x, pos.y, pos.width, pos.height);
+        if (canvas.width < 660) {
+          canvas.width = 660;
+        }
+        if (blackMarketSelection[i].selected===true) {
+          context.beginPath();
+          context.lineWidth="4";
+          context.strokeStyle="yellow";
+          context.rect(pos.x+2,pos.y+2,pos.width-4,pos.height-4);
+          context.stroke();
+        }
+        pos.x += 220;
+      }
+    }
   }
 }
 
@@ -711,6 +749,9 @@ function loadImages(callback) {
     // all_cards[i]['image'].src = "dominion_cards/"+name+".jpg";
     all_cards[i]['image'].src = all_cards[i].url;
   }
+  cardBack = new Image();
+  cardBack.onload = function() {};
+  cardBack.src = "http://wiki.dominionstrategy.com/images/c/ca/Card_back.jpg";
 }
 
 function drawImagesFirst() {
@@ -731,21 +772,23 @@ function drawImagesFirst() {
 }
 
 function MouseWheelHandler(e) {
-  var canvas = document.getElementById("cardCanvas");
-  var context = canvas.getContext("2d");
-  canvasScroll += e.wheelDelta;
-  if (canvasScroll > 0) {
-    canvasScroll = 0;
-  }
-  if (canvasScroll < bottom) {
-    canvasScroll = bottom;
-    //console.log("setting canvasScroll to bottom: "+bottom);
-  }
-  context.setTransform(1, 0, 0, 1, 0, 0);
-  context.translate(0, canvasScroll);
+  if (mode === "Cards" || mode === "Kingdom") {
+    var canvas = document.getElementById("cardCanvas");
+    var context = canvas.getContext("2d");
+    canvasScroll += e.wheelDelta;
+    if (canvasScroll > 0) {
+      canvasScroll = 0;
+    }
+    if (canvasScroll < bottom) {
+      canvasScroll = bottom;
+      //console.log("setting canvasScroll to bottom: "+bottom);
+    }
+    context.setTransform(1, 0, 0, 1, 0, 0);
+    context.translate(0, canvasScroll);
 
-  // console.log("canvasScroll " + canvasScroll);
-  drawImages();
+    // console.log("canvasScroll " + canvasScroll);
+    drawImages();
+  }
 }
 
 var prevY=null;
@@ -876,9 +919,33 @@ function MouseDownHandler(e) {
     countSelected();
 
     // console.log("selected count: "+selected_count);
+  } else if (mode === "BlackMarket") {
+    if (blackMarketSelection.length === 0) {
+      if (offX > 240 && offX < 440 && offY > 20 && offY < 324) {
+        // console.log("Clicked top of black market deck");
+        revealBlackMarket();
+      }
+    } else {
+      for(var j = 0; j < 3; j++) {
+        blackMarketSelection[j].selected = false;
+        // console.log("setting " + blackMarketSelection[j].name + " to not selected");
+      }
+      $$("buyBM").setValue("Buy None");
+      for(var i = 0 ; i < 3; i++) {
+        var x = blackMarketSelection[i].drawX;
+        var y = blackMarketSelection[i].drawY;
+        if (offX > x && offX < x+200 && offY > y && offY < y+304) {
+          console.log("clicked on "+blackMarketSelection[i].name);
+          blackMarketSelection[i].selected = true;
+          $$("buyBM").setValue("Buy "+blackMarketSelection[i].name);
+          console.log("setting " + blackMarketSelection[i].name + " to selected");
+        }
+      }
+      $$("buyBM").refresh();
+    }
   }
-  drawImages();
-}
+  drawXTimes(2);
+} // end mouseDownHandler
 
 function countSelected() {
   var selected_count = 0;
@@ -930,12 +997,64 @@ function cardCompareName(a, b) {
   return 0;
 }
 
+function buyBlackMarket() {
+  // console.log("buy the selected card from the black market and put the rest on the bottom of the deck");
+  for(var i = 0; i < 3; i++) {
+    if (blackMarketSelection[i].selected===false) {
+      blackMarketDeck.unshift(blackMarketSelection[i]);
+      console.log("adding "+blackMarketSelection[i].name + " to bottom of BM deck");
+    } else {
+      blackMarketSelection[i].selected = false;
+    }
+  }
+  blackMarketSelection = new Array();
+  $$("buyBM").setValue("Buy None");
+  $$("buyBM").refresh();
+  $$("buyBM").hide();
+  bmcount++;
+  if (bmcount>=20) {
+    bmcount = 0;
+    shuffle(blackMarketDeck);
+    console.log("Shuffle the Black Market deck as we have gone through it once");
+  }
+  drawXTimes(2);
+}
+
+// code from stackoverflow post 6274339
+// es6 version by Eric Chen
+function shuffle(a) {
+    for (let i = a.length; i; i--) {
+        let j = Math.floor(Math.random() * i);
+        [a[i - 1], a[j]] = [a[j], a[i - 1]];
+    }
+}
+
+function showBlackMarket() {
+  console.log("switching to black market mode");
+  if (mode === "Kingdom") {
+    console.log("  from Kingdom mode");
+    mode = "BlackMarket";
+    $$("generate").setValue("Show Kingdom");
+    $$("generate").refresh();
+    console.log("setting value of generate button to 'show kingdom'");
+    $$("blackMarket").hide();
+    $$("redraw").hide();
+    $$("store").hide();
+    blackMarket(); // generate
+    canvasScroll = 0;
+    drawImages();
+  } else {
+    console.log("I'm in " + mode + " mode so didn't change things");
+  }
+}
+
 function switchMode() {
   if (mode === "Kingdom") {
     mode = "Cards";
     //console.log("Switched to Cards mode");
     $$("generate").setValue("Show Kingdom");
     $$("generate").refresh();
+    $$("blackMarket").hide();
     $$("redraw").hide();
     $$("search").enable();
     $$("store").hide();
@@ -956,8 +1075,27 @@ function switchMode() {
       //console.log("when switching modes canvasScroll is " + canvasScroll);
     }
     generate();
+    if (containsCardName(kingdom_cards, "Black Market")) {
+      // console.log("Kingdom contains Black Market");
+      $$("blackMarket").show();
+    } else {
+      // console.log("Kingdom doesn't contain Black Market");
+      $$("blackMarket").hide();
+    }
+  } else if (mode === "BlackMarket") {
+    mode = "Kingdom";
+    //console.log("Switched to Kingdom mode");
+    $$("generate").setValue("Show Cards");
+    $$("generate").refresh();
+    $$("blackMarket").show();
+    $$("redraw").show();
+    $$("search").disable();
+    $$("store").show();
+    $$("redraw").show();
+    canvasScroll = 0;
+    generate();
   }
-  drawXTimes(15);
+  drawXTimes(8);
 }
 
 function containsCard(listOfCards, card) {
@@ -1362,9 +1500,50 @@ function redrawSelected() {
   } else {
     kingdom_bane = null;
   }
+  if (containsCardName(kingdom_cards, "Black Market")) {
+    console.log("Kingdom contains Black Market");
+    $$("blackMarket").show();
+  } else {
+    console.log("Kingdom doesn't contain Black Market");
+    $$("blackMarket").hide();
+  }
   countSelected();
   recommendations();
   drawXTimes(3);
+} // end redrawSelected
+
+function revealBlackMarket() {
+  // take the top 3 cards from the deck and store them
+  for(var i = 0; i < 3; i++) {
+    blackMarketSelection.push(blackMarketDeck.pop());
+  }
+  console.log("picked 3 cards from the top of the deck:");
+  for(var i = 0; i < blackMarketSelection.length; i++) {
+    blackMarketSelection[i].selected=false;
+    // console.log("  "+blackMarketSelection[i].name);
+  }
+  $$("buyBM").show();
+}
+
+function blackMarket() { // generate the black market deck
+  // only if the deck is empty
+  if (blackMarketDeck.length === 0) {
+    while (blackMarketDeck.length < 60 && count < 1000) {
+      var card = chooseRandomX(owned_cards, false);
+      if (!containsCard(kingdom_cards, card)) {
+        if (!containsCard(blackMarketDeck, card)) {
+          blackMarketDeck.push(card);
+          // console.log("Adding " + card.name + " to black market deck");
+        }
+      }
+      count++;
+    }
+  } else {
+    console.log("why is it not 0?");
+    for(var i = 0 ; i < blackMarketDeck.length ; i++) {
+      console.log(blackMarketDeck[i].name);
+    }
+  }
 }
 
 function chooseRandomX(array, weighted) { // returns card object
@@ -1401,7 +1580,7 @@ function chooseRandomX(array, weighted) { // returns card object
     var rand_i = Math.floor(Math.random()*array.length);
     return array[rand_i];
   }
-}
+} // end chooseRandomX
 
 function drawXTimes(x) {
   drawImages();

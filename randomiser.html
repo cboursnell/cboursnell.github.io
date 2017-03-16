@@ -21,7 +21,7 @@ webix.ui({
 rows:[
       { view:"template",
         type:"header",
-        template:"Header"
+        template:"Dominion Randomiser"
       },
       {
         cols:[
@@ -85,6 +85,8 @@ rows:[
                 {
                   rows: [
                     { view: "button", id:"generate", value: "Generate Kingdom", click: "switchMode()" },
+                    { view: "button", id:"blackMarket", hidden: true, value: "Black Market Deck", click: "showBlackMarket()" },
+                    { view: "button", id:"buyBM", hidden: true, value: "Buy None", click: "buyBlackMarket()" },
                     { view: "button", id:"redraw", value: "Redraw All", click: "redrawSelected()" },
                     { view: "button", id:"store", value: "Save", click: "store()" },
                   ]
