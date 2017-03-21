@@ -35,17 +35,31 @@ var promoCheckBoxNames = ["checkBlackMarket", "checkEnvoy",
 var promoCardNames = ["Black Market","Envoy","Sauna",
 "Walled Village","Governor","Stash","Prince","Summon"];
 
-
 function load() {
-  $$("redraw").hide();
-  $$("store").hide();
-  loadingScreen();
-  // console.log("Calling load() method");
-	getSets();
-	loadCards();
-  addInputEvents();
-  drawXTimes(10);
-  recallSets();
+  if (checkBrowser()) {
+    $$("redraw").hide();
+    $$("store").hide();
+    loadingScreen();
+    getSets();
+    loadCards();
+    addInputEvents();
+    drawXTimes(10);
+    recallSets();
+  }
+}
+
+function checkBrowser() {
+  if(bowser.msie) {
+    console.log("You need to use a better browser");
+    Array.prototype.includes = function(item) {
+      if (this.indexOf(item) >= 0) {
+        return true;
+      } else {
+        return false;
+      }
+    };
+  }
+  return true;
 }
 
 function loadingScreen() {
@@ -586,8 +600,8 @@ function blankPage(context) {
 }
 
 function progressBar(context) {
-  context.fillStyle="#888888";
   if (loadedImages < numImages) {
+    context.fillStyle="#888888";
     context.fillRect(0, 0, 4*loadedImages, 3);
   } else {
     context.fillStyle="#ffffff";
@@ -668,7 +682,7 @@ function loadImages(callback) {
         callback(); // calling code in drawimagesfirst function
       }
       progressBar(context);
-      drawXTimes(2);
+      drawXTimes(1);
     };
     // console.log("loaded:"+loadedImages+"/"+numImages+" i:"+i+" card:"+all_cards[i].name);
     var name = all_cards[i].name;
@@ -1591,8 +1605,8 @@ function rememberSets() {
 }
 
 function recallSets() {
-  if (localStorage.hasOwnProperty('sets')) {
-    list = localStorage['sets'].split(",")
+  if (localStorage && localStorage.hasOwnProperty('sets')) {
+    var list = localStorage['sets'].split(",");
     for(var i = 0 ; i < list.length; i++) {
       for(var j = 0; j < checkBoxNames.length; j++) {
         if (list[i] === setNames[j]) {
@@ -1672,6 +1686,7 @@ function loadStorage() {
   for(var y = 0; y < all_cards.length; y++) {
     all_cards[y]['used'] = 0;
   }
+  var list;
   for(var d in localStorage) {
     if (d === 'sets') {
     } else {
