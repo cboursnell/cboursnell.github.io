@@ -1,21 +1,3 @@
-// TODO
-// get mouse click coordinates in the canvas
-// relate those x and y to a card
-// draw a border around the card
-// allow for requiring and banning cards
-// add generate button
-// pick 10 cards from all the ones while adhering to rules
-
-// display the card images for dominion on startup
-// when a new expansion is selected or deselected
-// update the card list from the json file and display all cards from the selected sets
-// only have one button called 'generate kingdom' and it will pull from all the available cards
-
-// when 10 cards are showing for a kingdom then show the 'replace selected' button
-// selecting cards in the kingdom screen gives them a yellow border
-
-// TODO if black market is in the game use the app to simulate a black market deck.
-// means players don't have to get 60 cards out of the box, but only have to when they buy a card
 
 String.prototype.replaceAll = function(search, replacement) {
     var target = this;
@@ -41,6 +23,18 @@ var ctrlKey = false;
 var loadedImages = 0;
 var numImages = 0;
 var cardBack;
+var checkBoxNames = ["checkDominion", "checkIntrigue", "checkSeaside",
+"checkAlchemy",  "checkProsperity", "checkHinterlands", "checkCornucopia",
+"checkDarkAges",  "checkGuilds", "checkAdventures", "checkEmpires"];
+var setNames = ["dominion2ndEdition", "intrigue2ndEdition", "seaside",
+"alchemy", "prosperity", "hinterlands", "cornucopia", "dark ages",
+"guilds", "adventures", "empires"];
+var promoCheckBoxNames = ["checkBlackMarket", "checkEnvoy",
+"checkSauna", "checkWalledVillage", "checkGovernor", "checkStash",
+"checkPrince", "checkSummon"];
+var promoCardNames = ["Black Market","Envoy","Sauna",
+"Walled Village","Governor","Stash","Prince","Summon"];
+
 
 function load() {
   $$("redraw").hide();
@@ -51,6 +45,7 @@ function load() {
 	loadCards();
   addInputEvents();
   drawXTimes(10);
+  recallSets();
 }
 
 function loadingScreen() {
@@ -66,45 +61,13 @@ document.addEventListener("DOMContentLoaded", load);
 
 function getSets() {
   sets = [];
-  if ($$("check01").getValue()===1) {
-    sets.push("dominion2ndEdition")
-  }
-  if ($$("check02").getValue()===1) {
-    sets.push("intrigue2ndEdition")
-  }
-  if ($$("check03").getValue()===1) {
-    sets.push("seaside")
-  }
-  if ($$("check04").getValue()===1) {
-    sets.push("alchemy")
-  }
-  if ($$("check05").getValue()===1) {
-    sets.push("prosperity")
-  }
-  if ($$("check06").getValue()===1) {
-    sets.push("hinterlands")
-  }
-  if ($$("check07").getValue()===1) {
-    sets.push("cornucopia")
-  }
-  if ($$("check08").getValue()===1) {
-    sets.push("dark ages")
-  }
-  if ($$("check09").getValue()===1) {
-    sets.push("guilds")
-  }
-  if ($$("check10").getValue()===1) {
-    sets.push("adventures")
-  }
-  if ($$("check11").getValue()===1) {
-    sets.push("empires")
+
+  for(var i = 0; i < checkBoxNames.length; i++) {
+    if ($$(checkBoxNames[i]).getValue()===1) {
+      sets.push(setNames[i]);
+    }
   }
   sets.push("promo");
-  var msg = "Owned sets: "
-  for(var i = 0 ;  i < sets.length; i++) {
-    msg = msg + sets[i] +" "
-  }
-  console.log(msg);
 }
 
 function loadCards() {
@@ -195,29 +158,10 @@ function getOwnedCards() {
         }
       }
     }
-    if ($$("checkBlackmarket").getValue()===1 && card.name === "Black Market") {
-      supply = true;
-    }
-    if ($$("checkEnvoy").getValue()===1 && card.name === "Envoy") {
-      supply = true;
-    }
-    if ($$("checkSauna").getValue()===1 && card.name === "Sauna") {
-      supply = true;
-    }
-    if ($$("checkWalledvillage").getValue()===1 && card.name === "Walled Village") {
-      supply = true;
-    }
-    if ($$("checkGovernor").getValue()===1 && card.name === "Governor") {
-      supply = true;
-    }
-    if ($$("checkStash").getValue()===1 && card.name === "Stash") {
-      supply = true;
-    }
-    if ($$("checkPrince").getValue()===1 && card.name === "Prince") {
-      supply = true;
-    }
-    if ($$("checkSummon").getValue()===1 && card.name === "Summon") {
-      supply = true;
+    for(var p = 0; p < promoCheckBoxNames.length; p++) {
+      if ($$(promoCheckBoxNames[p]).getValue()===1 && card.name === promoCardNames[p]) {
+        supply = true;
+      }
     }
     if (card.sets.includes("base")) {
       supply = false;
@@ -273,8 +217,8 @@ function getOwnedCards() {
   for(var i = 0; i < owned_cards.length; i++) {
     owned_count++;
   }
-  console.log("There are " + owned_count + " cards that you own, out of " + card_count);
-  console.log("There are " + owned_events.length + " owned events");
+  // console.log("There are " + owned_count + " cards that you own, out of " + card_count);
+  // console.log("There are " + owned_events.length + " owned events");
   owned_cards.sort(cardCompareCost);
   owned_events.sort(cardCompareCost);
   if (owned_count===0) {
@@ -298,30 +242,15 @@ function addInputEvents() {
   canvas.addEventListener("touchmove", TouchMoveHandler, false);
   canvas.addEventListener("touchend", TouchEndHandler, false);
 
-  $$("check01").attachEvent("onChange", ChangeHandler);
-  $$("check02").attachEvent("onChange", ChangeHandler);
-  $$("check03").attachEvent("onChange", ChangeHandler);
-  $$("check04").attachEvent("onChange", ChangeHandler);
-  $$("check05").attachEvent("onChange", ChangeHandler);
-  $$("check06").attachEvent("onChange", ChangeHandler);
-  $$("check07").attachEvent("onChange", ChangeHandler);
-  $$("check08").attachEvent("onChange", ChangeHandler);
-  $$("check09").attachEvent("onChange", ChangeHandler);
-  $$("check10").attachEvent("onChange", ChangeHandler);
-  $$("check11").attachEvent("onChange", ChangeHandler);
-
-  $$("checkBlackmarket").attachEvent("onChange", ChangeHandler);
-  $$("checkEnvoy").attachEvent("onChange", ChangeHandler);
-  $$("checkSauna").attachEvent("onChange", ChangeHandler);
-  $$("checkWalledvillage").attachEvent("onChange", ChangeHandler);
-  $$("checkGovernor").attachEvent("onChange", ChangeHandler);
-  $$("checkStash").attachEvent("onChange", ChangeHandler);
-  $$("checkPrince").attachEvent("onChange", ChangeHandler);
-  $$("checkSummon").attachEvent("onChange", ChangeHandler);
+  for(var i = 0 ; i < checkBoxNames.length; i++) {
+    $$(checkBoxNames[i]).attachEvent("onChange", ChangeHandler);
+  }
+  for(var i = 0; i < promoCheckBoxNames.length; i++) {
+    $$(promoCheckBoxNames[i]).attachEvent("onChange", ChangeHandler);
+  }
 
   $$("eventcounter").attachEvent("onChange", EventCounterChangeHandler);
 
-  // $$("search").attachEvent("onChange", TextChangeHandler);
   $$("search").attachEvent("onTimedKeyPress", TextChangeHandler);
 
   window.addEventListener("resize", ResizeHandler);
@@ -329,8 +258,8 @@ function addInputEvents() {
   window.addEventListener("keyup", CtrlKeyUpHandler);
 }
 
-var canvasScroll=0;
-var scale=1.0;
+var canvasScroll = 0;
+var scale = 1.0;
 
 function drawImages() {
   // console.log("Calling drawImages()");
@@ -587,21 +516,18 @@ function drawImages() {
     // console.log("drawImages setting bottom to "+bottom);
 
   } else if (mode === "BlackMarket") {// end mode === "kingdom"
-    // console.log("drawing black market deck");
-    // http://wiki.dominionstrategy.com/images/c/ca/Card_back.jpg
-    context.drawImage(cardBack, 240,20, 200, 304);
+    context.drawImage(cardBack, 240,20, 200, 320);
     context.fillStyle="#cc3333";
     context.fillRect(235, 6, 30, 30);
     context.font = "20px Arial";
     context.fillStyle = 'black';
-    // console.log("deck length: "+blackMarketDeck.length);
     var text = ""+blackMarketDeck.length;
     context.fillText(text, 240, 28);
     if (blackMarketSelection.length === 3) {
       pos.x = 20;
-      pos.y = 334;
+      pos.y = 350;
       pos.width = 200;
-      pos.height = 304;
+      pos.height = 320;
       for(var i = 0; i < 3; i++) {
         blackMarketSelection[i].drawX = pos.x;
         blackMarketSelection[i].drawY = pos.y;
@@ -634,7 +560,7 @@ function blankPage(context) {
   context.fillStyle = 'black';
   // view all cards from expansions
   y+=50;
-  context.fillText("Select expansions to display cards", x,  y);
+  context.fillText("Select expansions to display cards. Ctrl-click to select all.", x,  y);
   // mark cards as required (green) or banned (red)
   y+=40;
   context.fillText("Click on cards to mark them as required (green) or banned (red)", x,  y);
@@ -738,36 +664,31 @@ function loadImages(callback) {
   for(var i = 0 ; i < all_cards.length; i++) {
     all_cards[i]['image'] = new Image();
     all_cards[i]['image'].onload = function() {
-      // console.log("loaded:"+loadedImages+"/"+numImages+" i:"+i+" card:"+all_cards[i].name);
       if(++loadedImages >= numImages) {
         callback(); // calling code in drawimagesfirst function
       }
       progressBar(context);
+      drawXTimes(2);
     };
-    // var name = all_cards[i].name;
-    // name=name.replaceAll(" ", "_");
-    // all_cards[i]['image'].src = "dominion_cards/"+name+".jpg";
-    all_cards[i]['image'].src = all_cards[i].url;
+    // console.log("loaded:"+loadedImages+"/"+numImages+" i:"+i+" card:"+all_cards[i].name);
+    var name = all_cards[i].name;
+    name = name.replaceAll(" ", "_");
+    // console.log("setting src to 'dominion_cards/"+name+".jpg'");
+    all_cards[i]['image'].src = "dominion_cards/"+name+".jpg";
+    // all_cards[i]['image'].src = all_cards[i].url;
   }
   cardBack = new Image();
   cardBack.onload = function() {};
-  cardBack.src = "http://wiki.dominionstrategy.com/images/c/ca/Card_back.jpg";
+  // cardBack.src = "http://wiki.dominionstrategy.com/images/c/ca/Card_back.jpg";
+  cardBack.src = "dominion_cards/Card_back.png"
 }
 
 function drawImagesFirst() {
   loadImages(function(){
     console.log("All images loaded");
-    $$("check01").enable();
-    $$("check02").enable();
-    $$("check03").enable();
-    $$("check04").enable();
-    $$("check05").enable();
-    $$("check06").enable();
-    $$("check07").enable();
-    $$("check08").enable();
-    $$("check09").enable();
-    $$("check10").enable();
-    $$("check11").enable();
+    for(var i = 0; i < checkBoxNames.length; i++) {
+      $$(checkBoxNames[i]).enable();
+    }
   });
 }
 
@@ -934,7 +855,7 @@ function MouseDownHandler(e) {
       for(var i = 0 ; i < 3; i++) {
         var x = blackMarketSelection[i].drawX;
         var y = blackMarketSelection[i].drawY;
-        if (offX > x && offX < x+200 && offY > y && offY < y+304) {
+        if (offX > x && offX < x+200 && offY > y && offY < y+320) {
           console.log("clicked on "+blackMarketSelection[i].name);
           blackMarketSelection[i].selected = true;
           $$("buyBM").setValue("Buy "+blackMarketSelection[i].name);
@@ -1259,18 +1180,6 @@ function generate() {
     recommendations();
     drawImages();
   }
-  // else {
-  //   $$("redraw").hide();
-  //   if (kingdom_cards.length==0) {
-  //     $$("generate").setValue("Generate Kingdom");
-  //     $$("generate").refresh();
-  //   } else {
-  //     $$("generate").setValue("Show Kingdom");
-  //     $$("generate").refresh();
-  //   }
-  //   drawImages();
-  // }
-
 }
 
 function chooseKingdomEvents() {
@@ -1636,25 +1545,16 @@ function momentum(speed) {
 // }
 
 function CtrlKeyDownHandler(e) {
-  // console.log("key press!");
+  // console.log("key down!");
   if (e.ctrlKey) {
-    //console.log("ctrl key was pressed!");
+    // console.log("ctrl key was pressed!");
     ctrlKey = true;
   } else {
     // console.log("ctrl key not detected");
   }
-
 }
 function CtrlKeyUpHandler(e) {
-  // console.log("key press!");
   ctrlKey = false;
-  //console.log("key was released");
-  // if (e.ctrlKey) {
-    // console.log("ctrl key was pressed!");
-  // } else {
-    // console.log("ctrl key not detected");
-  // }
-
 }
 
 function ChangeHandler(e) { // for checkboxes
@@ -1668,23 +1568,47 @@ function ChangeHandler(e) { // for checkboxes
     // var target = e.target || e.srcElement;
     // console.log("event:"+e);
     // console.log("set all other checkboxes to be equal to the state of this check box: "+target.getValue());
-    $$("check01").setValue(e);
-    $$("check02").setValue(e);
-    $$("check03").setValue(e);
-    $$("check04").setValue(e);
-    $$("check05").setValue(e);
-    $$("check06").setValue(e);
-    $$("check07").setValue(e);
-    $$("check08").setValue(e);
-    $$("check09").setValue(e);
-    $$("check10").setValue(e);
-    $$("check11").setValue(e);
+    for(var i = 0; i < checkBoxNames.length; i++) {
+      $$(checkBoxNames[i]).setValue(e);
+    }
   }
 
   getSets();
   getOwnedCards();
-  // drawImages();
-  drawXTimes(5);
+  rememberSets();
+  drawXTimes(3);
+}
+
+function rememberSets() {
+  var promos = [];
+  for(var i = 0; i < promoCheckBoxNames.length; i++) {
+    if ($$(promoCheckBoxNames[i]).getValue()===1) {
+      promos.push(promoCardNames[i]);
+    }
+  }
+  var cards = sets.concat(promos);
+  localStorage['sets'] = cards.join(",");
+}
+
+function recallSets() {
+  if (localStorage.hasOwnProperty('sets')) {
+    list = localStorage['sets'].split(",")
+    for(var i = 0 ; i < list.length; i++) {
+      for(var j = 0; j < checkBoxNames.length; j++) {
+        if (list[i] === setNames[j]) {
+          $$(checkBoxNames[j]).setValue(1);
+        }
+      }
+      for(var j = 0; j < promoCheckBoxNames.length; j++) {
+        if (list[i] === promoCardNames[j]) {
+          $$(promoCheckBoxNames[j]).setValue(1);
+        }
+      }
+    }
+    getSets();
+    getOwnedCards();
+    drawXTimes(3);
+  }
 }
 
 function EventCounterChangeHandler(e) {
@@ -1749,14 +1673,16 @@ function loadStorage() {
     all_cards[y]['used'] = 0;
   }
   for(var d in localStorage) {
-    list = JSON.parse(localStorage[d]);
-    for(var i = 0; i < list.length; i++) {
-      for(var y = 0; y < all_cards.length; y++) {
-        if (all_cards[y].name === list[i]) {
-          all_cards[y]['used']++;
+    if (d === 'sets') {
+    } else {
+      list = JSON.parse(localStorage[d]);
+      for(var i = 0; i < list.length; i++) {
+        for(var y = 0; y < all_cards.length; y++) {
+          if (all_cards[y].name === list[i]) {
+            all_cards[y]['used']++;
+          }
         }
       }
     }
   }
-  console.log(localStorage);
 }
