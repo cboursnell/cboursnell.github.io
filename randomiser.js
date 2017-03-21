@@ -603,27 +603,19 @@ function blankPage(context) {
     context.fillText("This website is not optimised for Microsoft browsers. Expect some problems.", x,  y);
     y+=60;
   }
+  if (loadedImages < numImages) {
+    context.fillStyle="#888888";
+    context.fillRect(x, y, 3*loadedImages, 3);
+  }
 
   if (window.innerHeight-20 > y) {
     y = window.innerHeight-20;
-    console.log(window.innerHeight-20);
     if (y > canvas.height) {
       canvas.height = y+60;
     }
   }
   context.font = "12px Arial";
   context.fillText("Thanks to the dominion strategy wiki for the card images. Thanks to sumpfork for card data.", x, y);
-
-}
-
-function progressBar(context) {
-  if (loadedImages < numImages) {
-    context.fillStyle="#888888";
-    context.fillRect(0, 0, 4*loadedImages, 3);
-  } else {
-    context.fillStyle="#ffffff";
-    context.fillRect(0, 0, 4*numImages, 3);
-  }
 }
 
 function drawExtra(pos, name) {
@@ -689,7 +681,6 @@ function chooseBaneCard() {
 }
 
 function loadImages(callback) {
-
   var canvas = document.getElementById('cardCanvas');
   var context = canvas.getContext('2d');
   numImages = 0;
@@ -700,7 +691,6 @@ function loadImages(callback) {
       if(++loadedImages >= numImages) {
         callback(); // calling code in drawimagesfirst function
       }
-      progressBar(context);
       drawXTimes(1);
     };
     // console.log("loaded:"+loadedImages+"/"+numImages+" i:"+i+" card:"+all_cards[i].name);
