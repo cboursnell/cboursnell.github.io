@@ -251,7 +251,7 @@ function getOwnedCards() {
 function addInputEvents() {
   var canvas = document.getElementById("cardCanvas");
   var ctx = canvas.getContext("2d");
-  canvas.addEventListener("mousewheel", _.throttle(MouseWheelHandler, 16));
+  canvas.addEventListener("wheel", _.throttle(MouseWheelHandler, 16));
   canvas.addEventListener("mousedown", MouseDownHandler, false);
   canvas.addEventListener("touchmove", TouchMoveHandler, false);
   canvas.addEventListener("touchend", TouchEndHandler, false);
@@ -596,7 +596,11 @@ function blankPage(context) {
   y+=20;
   context.fillText("be chosen next time", x,  y);
   // search for cards by name
-  y+=20;
+  y+=60;
+  if (bowser.msie || bowser.msedge) {
+    context.fillStyle="#cc0000";
+    context.fillText("This website is not optimised for Microsoft browsers. Expect some problems.", x,  y);
+  }
 }
 
 function progressBar(context) {
@@ -958,8 +962,8 @@ function buyBlackMarket() {
 // code from stackoverflow post 6274339
 // es6 version by Eric Chen
 function shuffle(a) {
-    for (let i = a.length; i; i--) {
-        let j = Math.floor(Math.random() * i);
+    for (var i = a.length; i; i--) {
+        var j = Math.floor(Math.random() * i);
         [a[i - 1], a[j]] = [a[j], a[i - 1]];
     }
 }
@@ -1011,10 +1015,8 @@ function switchMode() {
     }
     generate();
     if (containsCardName(kingdom_cards, "Black Market")) {
-      // console.log("Kingdom contains Black Market");
       $$("blackMarket").show();
     } else {
-      // console.log("Kingdom doesn't contain Black Market");
       $$("blackMarket").hide();
     }
   } else if (mode === "BlackMarket") {
@@ -1424,10 +1426,8 @@ function redrawSelected() {
     kingdom_bane = null;
   }
   if (containsCardName(kingdom_cards, "Black Market")) {
-    console.log("Kingdom contains Black Market");
     $$("blackMarket").show();
   } else {
-    console.log("Kingdom doesn't contain Black Market");
     $$("blackMarket").hide();
   }
   countSelected();
