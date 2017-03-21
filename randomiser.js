@@ -654,7 +654,9 @@ function chooseBaneCard() {
     if (iCost !== NaN) {
       if (iCost >= 2 && iCost <= 3) {
         if (!containsCard(kingdom_cards, owned_cards[i])) {
-          possible_bane.push(owned_cards[i]);
+          if (owned_cards[i].name !== "Black Market") {
+            possible_bane.push(owned_cards[i]);
+          }
         }
       }
     } else {
@@ -979,7 +981,10 @@ function showBlackMarket() {
     $$("blackMarket").hide();
     $$("redraw").hide();
     $$("store").hide();
-    blackMarket(); // generate
+    if (blackMarketSelection.length>0) {
+      $$("buyBM").show();
+    }
+    createBlackMarket(); // generate
     canvasScroll = 0;
     drawImages();
   } else {
@@ -997,6 +1002,7 @@ function switchMode() {
     $$("redraw").hide();
     $$("search").enable();
     $$("store").hide();
+    $$("buyBM").hide();
   } else if (mode === "Cards") {
     mode = "Kingdom";
     //console.log("Switched to Kingdom mode");
@@ -1019,6 +1025,7 @@ function switchMode() {
     } else {
       $$("blackMarket").hide();
     }
+    $$("buyBM").hide();
   } else if (mode === "BlackMarket") {
     mode = "Kingdom";
     //console.log("Switched to Kingdom mode");
@@ -1029,6 +1036,7 @@ function switchMode() {
     $$("search").disable();
     $$("store").show();
     $$("redraw").show();
+    $$("buyBM").hide();
     canvasScroll = 0;
     generate();
   }
@@ -1129,15 +1137,6 @@ function recommendations() {
 
 function generate() {
   loadStorage();
-  //console.log("Pressed generate button");
-  // go through the owned cards
-  // pick out ones that have toggle === 1 (ie green)
-  // add them to the kingdom
-  // if the kingdom size > 10 then
-  //   randomly remove cards until you have 10
-  // else
-  //   pick cards randomly from owned_cards (ignoring any with toggle===2)
-  //   and add them to the kingdom
   $$("search").setValue("");
   getOwnedCards();
 
@@ -1182,8 +1181,15 @@ function generate() {
         }
         count++;
       }
+      if (containsCardName(kingdom_cards, "Black Market")) {
+        createBlackMarket();
+      } else {
+        clearBlackMarket();
+      }
 
       if (containsCardName(kingdom_cards, "Young Witch")) {
+        kingdom_bane = chooseBaneCard();
+      } else if(blackMarketDeck && containsCardName(blackMarketDeck, "Young Witch")) {
         kingdom_bane = chooseBaneCard();
       } else {
         kingdom_bane = null;
@@ -1328,6 +1334,11 @@ function redrawSelected() {
     for(var i = 0 ; i < cardsToAdd.length; i++) {
       kingdom_cards.push(cardsToAdd[i]);
     }
+    if (containsCardName(kingdom_cards, "Black Market")) {
+      createBlackMarket();
+    } else {
+      clearBlackMarket();
+    }
     kingdom_events = [];
     // choose new events that aren't in the list
     chooseKingdomEvents();
@@ -1422,6 +1433,8 @@ function redrawSelected() {
   } // end if else
   if (containsCardName(kingdom_cards, "Young Witch")) {
     kingdom_bane = chooseBaneCard();
+  } else if(blackMarketDeck && containsCardName(blackMarketDeck, "Young Witch")) {
+    kingdom_bane = chooseBaneCard();
   } else {
     kingdom_bane = null;
   }
@@ -1448,7 +1461,7 @@ function revealBlackMarket() {
   $$("buyBM").show();
 }
 
-function blackMarket() { // generate the black market deck
+function createBlackMarket() { // generate the black market deck
   // only if the deck is empty
   if (blackMarketDeck.length === 0) {
     while (blackMarketDeck.length < 60 && count < 1000) {
@@ -1462,11 +1475,15 @@ function blackMarket() { // generate the black market deck
       count++;
     }
   } else {
-    console.log("why is it not 0?");
     for(var i = 0 ; i < blackMarketDeck.length ; i++) {
       console.log(blackMarketDeck[i].name);
     }
   }
+}
+
+function clearBlackMarket() {
+  blackMarketDeck = [];
+  blackMarketSelection = [];
 }
 
 function chooseRandomX(array, weighted) { // returns card object
