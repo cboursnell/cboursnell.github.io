@@ -23,11 +23,11 @@ var ctrlKey = false;
 var loadedImages = 0;
 var numImages = 0;
 var cardBack;
-var checkBoxNames = ["checkDominion", "checkIntrigue", "checkSeaside",
+var checkBoxNames = ["checkDominion1st", "checkDominion", "checkIntrigue1st", "checkIntrigue", "checkSeaside",
 "checkAlchemy",  "checkProsperity", "checkHinterlands", "checkCornucopia",
 "checkDarkAges",  "checkGuilds", "checkAdventures", "checkEmpires"];
-var setNames = ["dominion2ndEdition", "intrigue2ndEdition", "seaside",
-"alchemy", "prosperity", "hinterlands", "cornucopia", "dark ages",
+var setNames = ["dominion1stEdition", "dominion2ndEdition", "intrigue1stEdition", "intrigue2ndEdition",
+"seaside", "alchemy", "prosperity", "hinterlands", "cornucopia", "dark ages",
 "guilds", "adventures", "empires"];
 var promoCheckBoxNames = ["checkBlackMarket", "checkEnvoy",
 "checkSauna", "checkWalledVillage", "checkGovernor", "checkStash",
@@ -564,6 +564,7 @@ function drawImages() {
 }
 
 function blankPage(context) {
+  var canvas = document.getElementById("cardCanvas");
   context.font = "28px Arial";
   context.fillStyle = 'black';
   // context.font("PT Sans");
@@ -600,7 +601,19 @@ function blankPage(context) {
   if (bowser.msie || bowser.msedge) {
     context.fillStyle="#cc0000";
     context.fillText("This website is not optimised for Microsoft browsers. Expect some problems.", x,  y);
+    y+=60;
   }
+
+  if (window.innerHeight-20 > y) {
+    y = window.innerHeight-20;
+    console.log(window.innerHeight-20);
+    if (y > canvas.height) {
+      canvas.height = y+60;
+    }
+  }
+  context.font = "12px Arial";
+  context.fillText("Thanks to the dominion strategy wiki for the card images. Thanks to sumpfork for card data.", x, y);
+
 }
 
 function progressBar(context) {
