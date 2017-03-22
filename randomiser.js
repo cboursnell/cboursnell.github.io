@@ -233,8 +233,7 @@ function getOwnedCards() {
   }
   // console.log("There are " + owned_count + " cards that you own, out of " + card_count);
   // console.log("There are " + owned_events.length + " owned events");
-  owned_cards.sort(cardCompareCost);
-  owned_events.sort(cardCompareCost);
+  sortCards();
   if (owned_count===0) {
     $$("generate").disable();
   } else {
@@ -243,14 +242,12 @@ function getOwnedCards() {
   if (owned_events.length===0) {
     $$("eventcounter").hide();
   } else {
-    // $$("eventcounter").setValue(1);
     $$("eventcounter").show();
   }
 }
 
 function addInputEvents() {
   var canvas = document.getElementById("cardCanvas");
-  var ctx = canvas.getContext("2d");
   canvas.addEventListener("wheel", _.throttle(MouseWheelHandler, 16));
   canvas.addEventListener("mousedown", MouseDownHandler, false);
   canvas.addEventListener("touchmove", TouchMoveHandler, false);
@@ -266,6 +263,8 @@ function addInputEvents() {
   $$("eventcounter").attachEvent("onChange", EventCounterChangeHandler);
 
   $$("search").attachEvent("onTimedKeyPress", TextChangeHandler);
+
+  $$("sorting").attachEvent("onChange", SortingHandler);
 
   window.addEventListener("resize", ResizeHandler);
   window.addEventListener("keydown", CtrlKeyDownHandler);
@@ -390,9 +389,7 @@ function drawImages() {
       context.setTransform(1, 0, 0, 1, 0, 0);
       context.translate(0, canvasScroll);
     }
-    // console.log("drawImages setting bottom to "+bottom);
   } else if(mode === "Kingdom") { // mode === "Kingdom"
-    kingdom_cards.sort(cardCompareCost);
     for(var i = 0; i < kingdom_cards.length; i++) {
       context.drawImage(kingdom_cards[i].image, pos.x, pos.y, pos.width, pos.height);
 
@@ -788,7 +785,7 @@ function TouchEndHandler(e) {
 
 function MouseDownHandler(e) {
   var canvas = document.getElementById("cardCanvas");
-  var ctx = canvas.getContext("2d");
+  var context = canvas.getContext("2d");
 
   var offX = e.pageX - canvas.offsetLeft;
   var offY = e.pageY - canvas.offsetTop - canvasScroll;
@@ -927,6 +924,19 @@ function cardCompareCost(a,b) {
     if (a.name > b.name) {
       return 1;
     }
+  }
+  return 0;
+}
+
+function cardCompareExpansion(a,b) {
+  if (a.sets[0] < b.sets[0]) {
+    return -1;
+  }
+  if (a.sets[0] > b.sets[0]) {
+    return 1;
+  }
+  if (a.sets[0] === b.sets[0]) {
+    return cardCompareName(a, b);
   }
   return 0;
 }
@@ -1200,7 +1210,7 @@ function generate() {
         kingdom_bane = null;
       }
     } // end of when there are 0 cards in the kingdom
-
+    sortCards();
     // CHOOSING EVENTS ///////////////////////////
     chooseKingdomEvents();
     $$("redraw").show();
@@ -1347,6 +1357,7 @@ function redrawSelected() {
     kingdom_events = [];
     // choose new events that aren't in the list
     chooseKingdomEvents();
+    sortCards();
   } else {
     // REDRAW JUST SELECTED CARDS
     var cardsToRemove = []; // list of cards, not list of card names
@@ -1448,6 +1459,7 @@ function redrawSelected() {
   } else {
     $$("blackMarket").hide();
   }
+  sortCards();
   countSelected();
   recommendations();
   drawXTimes(3);
@@ -1613,6 +1625,25 @@ function ChangeHandler(e) { // for checkboxes
   getOwnedCards();
   rememberSets();
   drawXTimes(3);
+}
+
+function SortingHandler(e) {
+  sortCards();
+  drawXTimes(1);
+}
+
+function sortCards() {
+  if ($$("sorting").getValue()===0) {
+    kingdom_cards.sort(cardCompareCost);
+    owned_cards.sort(cardCompareCost);
+    kingdom_events.sort(cardCompareCost);
+    owned_events.sort(cardCompareCost);
+  } else {
+    kingdom_cards.sort(cardCompareExpansion);
+    owned_cards.sort(cardCompareExpansion);
+    kingdom_events.sort(cardCompareExpansion);
+    owned_events.sort(cardCompareExpansion);
+  }
 }
 
 function rememberSets() {
