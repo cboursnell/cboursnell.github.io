@@ -965,11 +965,13 @@ function buyBlackMarket() {
 }
 
 // code from stackoverflow post 6274339
-// es6 version by Eric Chen
 function shuffle(a) {
+    var x;
     for (var i = a.length; i; i--) {
         var j = Math.floor(Math.random() * i);
-        [a[i - 1], a[j]] = [a[j], a[i - 1]];
+        x = a[i - 1];
+        a[i - 1] = a[j];
+        a[j] = x;
     }
 }
 
