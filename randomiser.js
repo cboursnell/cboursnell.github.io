@@ -132,11 +132,12 @@ function parseJSON(req, url) {
       }
       card['toggle'] = 0;
       // console.log(card.name+" "+card.cost+" "+card.sets+" "+card.types);
-      if (card.url === undefined || card.url === null) {
-        console.log("Not adding "+card.name+" because it's undefined or null")
-      } else {
-        all_cards.push(card);
-      }
+      // if (card.url === null) {
+      //   console.log("Not adding "+card.name+" because it's undefined or null")
+      // } else {
+
+      // }
+      all_cards.push(card);
     }
   } else {
     confirm("There was a problem getting the JSON");
