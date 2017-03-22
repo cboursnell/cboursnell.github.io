@@ -8,8 +8,7 @@
     "group_tag": "adventures events",
     "types": [
       "Event"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/a/ac/Alms.jpg/320px-Alms.jpg"
+    ]
   },
   {
     "card_tag": "Amulet",
@@ -20,8 +19,7 @@
     "types": [
       "Action",
       "Duration"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/5/50/Amulet.jpg/200px-Amulet.jpg"
+    ]
   },
   {
     "card_tag": "Artificer",
@@ -31,8 +29,7 @@
     "cost": "5",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/0/01/Artificer.jpg/200px-Artificer.jpg"
+    ]
   },
   {
     "card_tag": "Ball",
@@ -43,8 +40,7 @@
     "group_tag": "adventures events",
     "types": [
       "Event"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/d/df/Ball.jpg/320px-Ball.jpg"
+    ]
   },
   {
     "card_tag": "Bonfire",
@@ -55,8 +51,7 @@
     "group_tag": "adventures events",
     "types": [
       "Event"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/9/90/Bonfire.jpg/320px-Bonfire.jpg"
+    ]
   },
   {
     "card_tag": "Borrow",
@@ -67,8 +62,7 @@
     "group_tag": "adventures events",
     "types": [
       "Event"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/8/88/Borrow.jpg/320px-Borrow.jpg"
+    ]
   },
   {
     "card_tag": "Bridge Troll",
@@ -80,8 +74,7 @@
       "Action",
       "Attack",
       "Duration"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/7/77/Bridge_Troll.jpg/200px-Bridge_Troll.jpg"
+    ]
   },
   {
     "card_tag": "Caravan Guard",
@@ -93,8 +86,7 @@
       "Action",
       "Duration",
       "Reaction"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/f/fa/Caravan_Guard.jpg/200px-Caravan_Guard.jpg"
+    ]
   },
   {
     "card_tag": "Champion",
@@ -107,8 +99,7 @@
     "types": [
       "Action",
       "Duration"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/4/41/Champion.jpg/200px-Champion.jpg"
+    ]
   },
   {
     "card_tag": "Coin of the Realm",
@@ -119,8 +110,7 @@
     "types": [
       "Treasure",
       "Reserve"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/7/76/Coin_of_the_Realm.jpg/200px-Coin_of_the_Realm.jpg"
+    ]
   },
   {
     "card_tag": "Disciple",
@@ -133,8 +123,7 @@
     "types": [
       "Action",
       "Traveller"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/9/92/Disciple.jpg/200px-Disciple.jpg"
+    ]
   },
   {
     "card_tag": "Distant Lands",
@@ -146,8 +135,7 @@
       "Action",
       "Reserve",
       "Victory"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/3/3e/Distant_Lands.jpg/200px-Distant_Lands.jpg"
+    ]
   },
   {
     "card_tag": "Dungeon",
@@ -158,8 +146,7 @@
     "types": [
       "Action",
       "Duration"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/1/1e/Dungeon.jpg/200px-Dungeon.jpg"
+    ]
   },
   {
     "card_tag": "Duplicate",
@@ -170,8 +157,7 @@
     "types": [
       "Action",
       "Reserve"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/5/59/Duplicate.jpg/200px-Duplicate.jpg"
+    ]
   },
   {
     "card_tag": "Expedition",
@@ -182,8 +168,7 @@
     "group_tag": "adventures events",
     "types": [
       "Event"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/e/e3/Expedition.jpg/320px-Expedition.jpg"
+    ]
   },
   {
     "card_tag": "Ferry",
@@ -194,8 +179,7 @@
     "group_tag": "adventures events",
     "types": [
       "Event"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/d/d9/Ferry.jpg/320px-Ferry.jpg"
+    ]
   },
   {
     "card_tag": "Fugitive",
@@ -208,8 +192,7 @@
     "types": [
       "Action",
       "Traveller"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/b/bd/Fugitive.jpg/200px-Fugitive.jpg"
+    ]
   },
   {
     "card_tag": "Gear",
@@ -220,8 +203,7 @@
     "types": [
       "Action",
       "Duration"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/e/ec/Gear.jpg/200px-Gear.jpg"
+    ]
   },
   {
     "card_tag": "Giant",
@@ -232,8 +214,7 @@
     "types": [
       "Action",
       "Attack"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/4/4c/Giant.jpg/200px-Giant.jpg"
+    ]
   },
   {
     "card_tag": "Guide",
@@ -244,8 +225,7 @@
     "types": [
       "Action",
       "Reserve"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/e/e1/Guide.jpg/200px-Guide.jpg"
+    ]
   },
   {
     "card_tag": "Haunted Woods",
@@ -257,8 +237,7 @@
       "Action",
       "Attack",
       "Duration"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/5/54/Haunted_Woods.jpg/200px-Haunted_Woods.jpg"
+    ]
   },
   {
     "card_tag": "Hero",
@@ -271,8 +250,7 @@
     "types": [
       "Action",
       "Traveller"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/2/26/Hero.jpg/200px-Hero.jpg"
+    ]
   },
   {
     "card_tag": "Hireling",
@@ -283,8 +261,7 @@
     "types": [
       "Action",
       "Duration"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/9/91/Hireling.jpg/200px-Hireling.jpg"
+    ]
   },
   {
     "card_tag": "Inheritance",
@@ -295,8 +272,7 @@
     "group_tag": "adventures events",
     "types": [
       "Event"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/0/02/Inheritance.jpg/320px-Inheritance.jpg"
+    ]
   },
   {
     "card_tag": "Lost Arts",
@@ -307,8 +283,7 @@
     "group_tag": "adventures events",
     "types": [
       "Event"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/4/4b/Lost_Arts.jpg/320px-Lost_Arts.jpg"
+    ]
   },
   {
     "card_tag": "Lost City",
@@ -318,8 +293,7 @@
     "cost": "5",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/9/9a/Lost_City.jpg/200px-Lost_City.jpg"
+    ]
   },
   {
     "card_tag": "Magpie",
@@ -329,8 +303,7 @@
     "cost": "4",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/1/10/Magpie.jpg/200px-Magpie.jpg"
+    ]
   },
   {
     "card_tag": "Messenger",
@@ -340,8 +313,7 @@
     "cost": "4",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/3/3c/Messenger.jpg/200px-Messenger.jpg"
+    ]
   },
   {
     "card_tag": "Miser",
@@ -351,8 +323,7 @@
     "cost": "4",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/f/f6/Miser.jpg/200px-Miser.jpg"
+    ]
   },
   {
     "card_tag": "Mission",
@@ -363,8 +334,7 @@
     "group_tag": "adventures events",
     "types": [
       "Event"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/3/34/Mission.jpg/320px-Mission.jpg"
+    ]
   },
   {
     "card_tag": "Page",
@@ -378,8 +348,7 @@
     "types": [
       "Action",
       "Traveller"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/6/60/Page.jpg/200px-Page.jpg"
+    ]
   },
   {
     "card_tag": "Pathfinding",
@@ -390,8 +359,7 @@
     "group_tag": "adventures events",
     "types": [
       "Event"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/2/28/Pathfinding.jpg/320px-Pathfinding.jpg"
+    ]
   },
   {
     "card_tag": "Peasant",
@@ -405,8 +373,7 @@
     "types": [
       "Action",
       "Traveller"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/7/70/Peasant.jpg/200px-Peasant.jpg"
+    ]
   },
   {
     "card_tag": "Pilgrimage",
@@ -417,8 +384,7 @@
     "group_tag": "adventures events",
     "types": [
       "Event"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/e/ee/Pilgrimage.jpg/320px-Pilgrimage.jpg"
+    ]
   },
   {
     "card_tag": "Plan",
@@ -429,8 +395,7 @@
     "group_tag": "adventures events",
     "types": [
       "Event"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/2/2c/Plan.jpg/320px-Plan.jpg"
+    ]
   },
   {
     "card_tag": "Port",
@@ -441,8 +406,7 @@
     "count": "12",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/d/d0/Port.jpg/200px-Port.jpg"
+    ]
   },
   {
     "card_tag": "Quest",
@@ -453,8 +417,7 @@
     "group_tag": "adventures events",
     "types": [
       "Event"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/3/36/Quest.jpg/320px-Quest.jpg"
+    ]
   },
   {
     "card_tag": "Raid",
@@ -465,8 +428,7 @@
     "group_tag": "adventures events",
     "types": [
       "Event"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/8/89/Raid.jpg/320px-Raid.jpg"
+    ]
   },
   {
     "card_tag": "Ranger",
@@ -476,8 +438,7 @@
     "cost": "4",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/3/37/Ranger.jpg/200px-Ranger.jpg"
+    ]
   },
   {
     "card_tag": "Ratcatcher",
@@ -488,8 +449,7 @@
     "types": [
       "Action",
       "Reserve"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/1/1d/Ratcatcher.jpg/200px-Ratcatcher.jpg"
+    ]
   },
   {
     "card_tag": "Raze",
@@ -499,8 +459,7 @@
     "cost": "2",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/d/d3/Raze.jpg/200px-Raze.jpg"
+    ]
   },
   {
     "card_tag": "Relic",
@@ -511,8 +470,7 @@
     "types": [
       "Treasure",
       "Attack"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/d/d3/Relic.jpg/200px-Relic.jpg"
+    ]
   },
   {
     "card_tag": "Royal Carriage",
@@ -523,8 +481,7 @@
     "types": [
       "Action",
       "Reserve"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/c/cf/Royal_Carriage.jpg/200px-Royal_Carriage.jpg"
+    ]
   },
   {
     "card_tag": "Save",
@@ -535,8 +492,7 @@
     "group_tag": "adventures events",
     "types": [
       "Event"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/2/2e/Save.jpg/320px-Save.jpg"
+    ]
   },
   {
     "card_tag": "Scouting Party",
@@ -547,8 +503,7 @@
     "group_tag": "adventures events",
     "types": [
       "Event"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/b/b2/Scouting_Party.jpg/320px-Scouting_Party.jpg"
+    ]
   },
   {
     "card_tag": "Seaway",
@@ -559,8 +514,7 @@
     "group_tag": "adventures events",
     "types": [
       "Event"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/d/df/Seaway.jpg/320px-Seaway.jpg"
+    ]
   },
   {
     "card_tag": "Soldier",
@@ -574,8 +528,7 @@
       "Action",
       "Attack",
       "Traveller"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/e/e3/Soldier.jpg/200px-Soldier.jpg"
+    ]
   },
   {
     "card_tag": "Storyteller",
@@ -585,8 +538,7 @@
     "cost": "5",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/6/6a/Storyteller.jpg/200px-Storyteller.jpg"
+    ]
   },
   {
     "card_tag": "Swamp Hag",
@@ -598,8 +550,7 @@
       "Action",
       "Attack",
       "Duration"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/d/db/Swamp_Hag.jpg/200px-Swamp_Hag.jpg"
+    ]
   },
   {
     "card_tag": "Teacher",
@@ -612,8 +563,7 @@
     "types": [
       "Action",
       "Reserve"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/2/27/Teacher.jpg/200px-Teacher.jpg"
+    ]
   },
   {
     "card_tag": "Trade",
@@ -624,8 +574,7 @@
     "group_tag": "adventures events",
     "types": [
       "Event"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/9/9d/Trade.jpg/320px-Trade.jpg"
+    ]
   },
   {
     "card_tag": "Training",
@@ -636,8 +585,7 @@
     "group_tag": "adventures events",
     "types": [
       "Event"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/9/99/Training.jpg/320px-Training.jpg"
+    ]
   },
   {
     "card_tag": "Transmogrify",
@@ -648,8 +596,7 @@
     "types": [
       "Action",
       "Reserve"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/a/a9/Transmogrify.jpg/200px-Transmogrify.jpg"
+    ]
   },
   {
     "card_tag": "Travelling Fair",
@@ -660,8 +607,7 @@
     "group_tag": "adventures events",
     "types": [
       "Event"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/b/be/Travelling_Fair.jpg/320px-Travelling_Fair.jpg"
+    ]
   },
   {
     "card_tag": "Treasure Hunter",
@@ -674,8 +620,7 @@
     "types": [
       "Action",
       "Traveller"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/c/ce/Treasure_Hunter.jpg/200px-Treasure_Hunter.jpg"
+    ]
   },
   {
     "card_tag": "Treasure Trove",
@@ -685,8 +630,7 @@
     "cost": "5",
     "types": [
       "Treasure"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/2/22/Treasure_Trove.jpg/200px-Treasure_Trove.jpg"
+    ]
   },
   {
     "card_tag": "Warrior",
@@ -700,8 +644,7 @@
       "Action",
       "Attack",
       "Traveller"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/9/95/Warrior.jpg/200px-Warrior.jpg"
+    ]
   },
   {
     "card_tag": "Wine Merchant",
@@ -712,8 +655,7 @@
     "types": [
       "Action",
       "Reserve"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/b/b2/Wine_Merchant.jpg/200px-Wine_Merchant.jpg"
+    ]
   },
   {
     "card_tag": "Alchemist",
@@ -724,8 +666,7 @@
     "potcost": "1",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/2/22/Alchemist.jpg/200px-Alchemist.jpg"
+    ]
   },
   {
     "card_tag": "Apothecary",
@@ -736,8 +677,7 @@
     "potcost": "1",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/6/69/Apothecary.jpg/200px-Apothecary.jpg"
+    ]
   },
   {
     "card_tag": "Apprentice",
@@ -747,8 +687,7 @@
     "cost": "5",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/2/20/Apprentice.jpg/200px-Apprentice.jpg"
+    ]
   },
   {
     "card_tag": "Familiar",
@@ -760,8 +699,7 @@
     "types": [
       "Action",
       "Attack"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/4/48/Familiar.jpg/200px-Familiar.jpg"
+    ]
   },
   {
     "card_tag": "Golem",
@@ -772,8 +710,7 @@
     "potcost": "1",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/d/dc/Golem.jpg/200px-Golem.jpg"
+    ]
   },
   {
     "card_tag": "Herbalist",
@@ -783,8 +720,7 @@
     "cost": "2",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/2/26/Herbalist.jpg/200px-Herbalist.jpg"
+    ]
   },
   {
     "card_tag": "Philosopher's Stone",
@@ -795,8 +731,7 @@
     "potcost": "1",
     "types": [
       "Treasure"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/3/32/Philosopher%27s_Stone.jpg/200px-Philosopher%27s_Stone.jpg"
+    ]
   },
   {
     "card_tag": "Possession",
@@ -807,8 +742,7 @@
     "potcost": "1",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/3/3b/Possession.jpg/200px-Possession.jpg"
+    ]
   },
   {
     "card_tag": "Scrying Pool",
@@ -820,8 +754,7 @@
     "types": [
       "Action",
       "Attack"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/7/79/Scrying_Pool.jpg/200px-Scrying_Pool.jpg"
+    ]
   },
   {
     "card_tag": "Transmute",
@@ -832,8 +765,7 @@
     "potcost": "1",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/2/22/Transmute.jpg/200px-Transmute.jpg"
+    ]
   },
   {
     "card_tag": "University",
@@ -844,8 +776,7 @@
     "potcost": "1",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/9/9b/University.jpg/200px-University.jpg"
+    ]
   },
   {
     "card_tag": "Vineyard",
@@ -856,8 +787,7 @@
     "potcost": "1",
     "types": [
       "Victory"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/c/c8/Vineyard.jpg/200px-Vineyard.jpg"
+    ]
   },
   {
     "card_tag": "Potion",
@@ -869,8 +799,7 @@
     "count": "16",
     "types": [
       "Treasure"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/c/c3/Potion.jpg/200px-Potion.jpg"
+    ]
   },
   {
     "card_tag": "Copper",
@@ -884,8 +813,7 @@
     "count": "60",
     "types": [
       "Treasure"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/f/fb/Copper.jpg/200px-Copper.jpg"
+    ]
   },
   {
     "card_tag": "Curse",
@@ -899,8 +827,7 @@
     "count": "30",
     "types": [
       "Curse"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/9/97/Curse.jpg/200px-Curse.jpg"
+    ]
   },
   {
     "card_tag": "Duchy",
@@ -913,8 +840,7 @@
     "cost": "5",
     "types": [
       "Victory"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/4/4a/Duchy.jpg/200px-Duchy.jpg"
+    ]
   },
   {
     "card_tag": "Estate",
@@ -928,8 +854,7 @@
     "count": "24",
     "types": [
       "Victory"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/9/91/Estate.jpg/200px-Estate.jpg"
+    ]
   },
   {
     "card_tag": "Gold",
@@ -943,8 +868,7 @@
     "count": "30",
     "types": [
       "Treasure"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/5/50/Gold.jpg/200px-Gold.jpg"
+    ]
   },
   {
     "card_tag": "Province",
@@ -957,8 +881,7 @@
     "cost": "8",
     "types": [
       "Victory"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/8/81/Province.jpg/200px-Province.jpg"
+    ]
   },
   {
     "card_tag": "Silver",
@@ -972,8 +895,7 @@
     "count": "40",
     "types": [
       "Treasure"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/5/5d/Silver.jpg/200px-Silver.jpg"
+    ]
   },
   {
     "card_tag": "Trash",
@@ -986,8 +908,7 @@
     "count": "1",
     "types": [
       "Trash"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/e/ef/Trash.jpg/200px-Trash.jpg"
+    ]
   },
   {
     "card_tag": "Colony",
@@ -998,8 +919,7 @@
     "cost": "11",
     "types": [
       "Victory"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/6/60/Colony.jpg/200px-Colony.jpg"
+    ]
   },
   {
     "card_tag": "Platinum",
@@ -1010,8 +930,7 @@
     "cost": "9",
     "types": [
       "Treasure"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/7/72/Platinum.jpg/200px-Platinum.jpg"
+    ]
   },
   {
     "card_tag": "Bag of Gold",
@@ -1024,8 +943,7 @@
     "types": [
       "Action",
       "Prize"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/b/b4/Bag_of_Gold.jpg/200px-Bag_of_Gold.jpg"
+    ]
   },
   {
     "card_tag": "Diadem",
@@ -1038,8 +956,7 @@
     "types": [
       "Treasure",
       "Prize"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/3/35/Diadem.jpg/200px-Diadem.jpg"
+    ]
   },
   {
     "card_tag": "Fairgrounds",
@@ -1049,8 +966,7 @@
     "cost": "6",
     "types": [
       "Victory"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/7/7e/Fairgrounds.jpg/200px-Fairgrounds.jpg"
+    ]
   },
   {
     "card_tag": "Farming Village",
@@ -1060,8 +976,7 @@
     "cost": "4",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/5/51/Farming_Village.jpg/200px-Farming_Village.jpg"
+    ]
   },
   {
     "card_tag": "Followers",
@@ -1075,8 +990,7 @@
       "Action",
       "Attack",
       "Prize"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/1/12/Followers.jpg/200px-Followers.jpg"
+    ]
   },
   {
     "card_tag": "Fortune Teller",
@@ -1087,8 +1001,7 @@
     "types": [
       "Action",
       "Attack"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/5/55/Fortune_Teller.jpg/200px-Fortune_Teller.jpg"
+    ]
   },
   {
     "card_tag": "Hamlet",
@@ -1098,8 +1011,7 @@
     "cost": "2",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/d/df/Hamlet.jpg/200px-Hamlet.jpg"
+    ]
   },
   {
     "card_tag": "Harvest",
@@ -1109,8 +1021,7 @@
     "cost": "5",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/1/1c/Harvest.jpg/200px-Harvest.jpg"
+    ]
   },
   {
     "card_tag": "Horn of Plenty",
@@ -1120,8 +1031,7 @@
     "cost": "5",
     "types": [
       "Treasure"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/2/20/Horn_of_Plenty.jpg/200px-Horn_of_Plenty.jpg"
+    ]
   },
   {
     "card_tag": "Horse Traders",
@@ -1132,8 +1042,7 @@
     "types": [
       "Action",
       "Reaction"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/c/c8/Horse_Traders.jpg/200px-Horse_Traders.jpg"
+    ]
   },
   {
     "card_tag": "Hunting Party",
@@ -1143,8 +1052,7 @@
     "cost": "5",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/a/ab/Hunting_Party.jpg/200px-Hunting_Party.jpg"
+    ]
   },
   {
     "card_tag": "Jester",
@@ -1155,8 +1063,7 @@
     "types": [
       "Action",
       "Attack"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/1/1b/Jester.jpg/200px-Jester.jpg"
+    ]
   },
   {
     "card_tag": "Menagerie",
@@ -1166,8 +1073,7 @@
     "cost": "3",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/7/71/Menagerie.jpg/200px-Menagerie.jpg"
+    ]
   },
   {
     "card_tag": "Princess",
@@ -1180,8 +1086,7 @@
     "types": [
       "Action",
       "Prize"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/4/42/Princess.jpg/200px-Princess.jpg"
+    ]
   },
   {
     "card_tag": "Remake",
@@ -1191,8 +1096,7 @@
     "cost": "4",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/2/2b/Remake.jpg/200px-Remake.jpg"
+    ]
   },
   {
     "card_tag": "Tournament",
@@ -1205,8 +1109,7 @@
     "group_top": true,
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/c/c4/Tournament.jpg/200px-Tournament.jpg"
+    ]
   },
   {
     "card_tag": "Trusty Steed",
@@ -1219,8 +1122,7 @@
     "types": [
       "Action",
       "Prize"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/1/12/Trusty_Steed.jpg/200px-Trusty_Steed.jpg"
+    ]
   },
   {
     "card_tag": "Young Witch",
@@ -1231,8 +1133,7 @@
     "types": [
       "Action",
       "Attack"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/9/9e/Young_Witch.jpg/200px-Young_Witch.jpg"
+    ]
   },
   {
     "card_tag": "Altar",
@@ -1242,8 +1143,7 @@
     "cost": "6",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/b/b3/Altar.jpg/200px-Altar.jpg"
+    ]
   },
   {
     "card_tag": "Armory",
@@ -1253,8 +1153,7 @@
     "cost": "4",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/a/a7/Armory.jpg/200px-Armory.jpg"
+    ]
   },
   {
     "card_tag": "Band of Misfits",
@@ -1264,8 +1163,7 @@
     "cost": "5",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/5/51/Band_of_Misfits.jpg/200px-Band_of_Misfits.jpg"
+    ]
   },
   {
     "card_tag": "Bandit Camp",
@@ -1275,8 +1173,7 @@
     "cost": "5",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/4/43/Bandit_Camp.jpg/200px-Bandit_Camp.jpg"
+    ]
   },
   {
     "card_tag": "Beggar",
@@ -1287,8 +1184,7 @@
     "types": [
       "Action",
       "Reaction"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/2/2f/Beggar.jpg/200px-Beggar.jpg"
+    ]
   },
   {
     "card_tag": "Catacombs",
@@ -1298,8 +1194,7 @@
     "cost": "5",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/c/cd/Catacombs.jpg/200px-Catacombs.jpg"
+    ]
   },
   {
     "card_tag": "Count",
@@ -1309,8 +1204,7 @@
     "cost": "5",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/a/a1/Count.jpg/200px-Count.jpg"
+    ]
   },
   {
     "card_tag": "Counterfeit",
@@ -1320,8 +1214,7 @@
     "cost": "5",
     "types": [
       "Treasure"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/2/28/Counterfeit.jpg/200px-Counterfeit.jpg"
+    ]
   },
   {
     "card_tag": "Cultist",
@@ -1333,8 +1226,7 @@
       "Action",
       "Attack",
       "Looter"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/1/18/Cultist.jpg/200px-Cultist.jpg"
+    ]
   },
   {
     "card_tag": "Death Cart",
@@ -1345,8 +1237,7 @@
     "types": [
       "Action",
       "Looter"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/5/50/Death_Cart.jpg/200px-Death_Cart.jpg"
+    ]
   },
   {
     "card_tag": "Feodum",
@@ -1356,8 +1247,7 @@
     "cost": "4",
     "types": [
       "Victory"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/1/1f/Feodum.jpg/200px-Feodum.jpg"
+    ]
   },
   {
     "card_tag": "Forager",
@@ -1367,8 +1257,7 @@
     "cost": "3",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/e/e6/Forager.jpg/200px-Forager.jpg"
+    ]
   },
   {
     "card_tag": "Fortress",
@@ -1378,8 +1267,7 @@
     "cost": "4",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/8/8a/Fortress.jpg/200px-Fortress.jpg"
+    ]
   },
   {
     "card_tag": "Graverobber",
@@ -1389,8 +1277,7 @@
     "cost": "5",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/1/13/Graverobber.jpg/200px-Graverobber.jpg"
+    ]
   },
   {
     "card_tag": "Hermit",
@@ -1402,8 +1289,7 @@
     "group_top": true,
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/8/8e/Hermit.jpg/200px-Hermit.jpg"
+    ]
   },
   {
     "card_tag": "Hovel",
@@ -1416,8 +1302,7 @@
     "types": [
       "Reaction",
       "Shelter"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/f/f0/Hovel.jpg/200px-Hovel.jpg"
+    ]
   },
   {
     "card_tag": "Hunting Grounds",
@@ -1427,8 +1312,7 @@
     "cost": "6",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/6/6a/Hunting_Grounds.jpg/200px-Hunting_Grounds.jpg"
+    ]
   },
   {
     "card_tag": "Ironmonger",
@@ -1438,8 +1322,7 @@
     "cost": "4",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/9/93/Ironmonger.jpg/200px-Ironmonger.jpg"
+    ]
   },
   {
     "card_tag": "Junk Dealer",
@@ -1449,8 +1332,7 @@
     "cost": "5",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/c/c2/Junk_Dealer.jpg/200px-Junk_Dealer.jpg"
+    ]
   },
   {
     "card_tag": "Knights",
@@ -1460,8 +1342,7 @@
     "cost": "5",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/9/9a/Knights.jpg/200px-Knights.jpg"
+    ]
   },
   {
     "card_tag": "Madman",
@@ -1472,8 +1353,7 @@
     "group_tag": "Hermit - Madman",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/1/19/Madman.jpg/200px-Madman.jpg"
+    ]
   },
   {
     "card_tag": "Marauder",
@@ -1485,8 +1365,7 @@
       "Action",
       "Attack",
       "Looter"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/5/5e/Marauder.jpg/200px-Marauder.jpg"
+    ]
   },
   {
     "card_tag": "Market Square",
@@ -1497,8 +1376,7 @@
     "types": [
       "Action",
       "Reaction"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/f/f1/Market_Square.jpg/200px-Market_Square.jpg"
+    ]
   },
   {
     "card_tag": "Mercenary",
@@ -1510,8 +1388,7 @@
     "types": [
       "Action",
       "Attack"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/c/c5/Mercenary.jpg/200px-Mercenary.jpg"
+    ]
   },
   {
     "card_tag": "Mystic",
@@ -1521,8 +1398,7 @@
     "cost": "5",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/3/37/Mystic.jpg/200px-Mystic.jpg"
+    ]
   },
   {
     "card_tag": "Necropolis",
@@ -1534,8 +1410,7 @@
     "types": [
       "Action",
       "Shelter"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/6/69/Necropolis.jpg/200px-Necropolis.jpg"
+    ]
   },
   {
     "card_tag": "Overgrown Estate",
@@ -1547,8 +1422,7 @@
     "types": [
       "Victory",
       "Shelter"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/3/36/Overgrown_Estate.jpg/200px-Overgrown_Estate.jpg"
+    ]
   },
   {
     "card_tag": "Pillage",
@@ -1559,8 +1433,7 @@
     "types": [
       "Action",
       "Attack"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/7/74/Pillage.jpg/200px-Pillage.jpg"
+    ]
   },
   {
     "card_tag": "Poor House",
@@ -1570,8 +1443,7 @@
     "cost": "1",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/d/d6/Poor_House.jpg/200px-Poor_House.jpg"
+    ]
   },
   {
     "card_tag": "Procession",
@@ -1581,8 +1453,7 @@
     "cost": "4",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/7/7a/Procession.jpg/200px-Procession.jpg"
+    ]
   },
   {
     "card_tag": "Rats",
@@ -1593,8 +1464,7 @@
     "count": "20",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/7/70/Rats.jpg/200px-Rats.jpg"
+    ]
   },
   {
     "card_tag": "Rebuild",
@@ -1604,8 +1474,7 @@
     "cost": "5",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/f/f8/Rebuild.jpg/200px-Rebuild.jpg"
+    ]
   },
   {
     "card_tag": "Rogue",
@@ -1616,8 +1485,7 @@
     "types": [
       "Action",
       "Attack"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/f/f6/Rogue.jpg/200px-Rogue.jpg"
+    ]
   },
   {
     "card_tag": "Abandoned Mine",
@@ -1629,8 +1497,7 @@
     "types": [
       "Action",
       "Ruins"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/6/6d/Abandoned_Mine.jpg/200px-Abandoned_Mine.jpg"
+    ]
   },
   {
     "card_tag": "Ruined Library",
@@ -1642,8 +1509,7 @@
     "types": [
       "Action",
       "Ruins"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/f/fe/Ruined_Library.jpg/200px-Ruined_Library.jpg"
+    ]
   },
   {
     "card_tag": "Ruined Market",
@@ -1655,8 +1521,7 @@
     "types": [
       "Action",
       "Ruins"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/f/f2/Ruined_Market.jpg/200px-Ruined_Market.jpg"
+    ]
   },
   {
     "card_tag": "Ruined Village",
@@ -1668,8 +1533,7 @@
     "types": [
       "Action",
       "Ruins"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/a/ae/Ruined_Village.jpg/200px-Ruined_Village.jpg"
+    ]
   },
   {
     "card_tag": "Survivors",
@@ -1681,8 +1545,7 @@
     "types": [
       "Action",
       "Ruins"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/7/7a/Survivors.jpg/200px-Survivors.jpg"
+    ]
   },
   {
     "card_tag": "Sage",
@@ -1692,8 +1555,7 @@
     "cost": "3",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/7/70/Sage.jpg/200px-Sage.jpg"
+    ]
   },
   {
     "card_tag": "Scavenger",
@@ -1703,8 +1565,7 @@
     "cost": "4",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/d/d9/Scavenger.jpg/200px-Scavenger.jpg"
+    ]
   },
   {
     "card_tag": "Spoils",
@@ -1715,8 +1576,7 @@
     "count": "15",
     "types": [
       "Treasure"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/9/9f/Spoils.jpg/200px-Spoils.jpg"
+    ]
   },
   {
     "card_tag": "Squire",
@@ -1726,8 +1586,7 @@
     "cost": "2",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/7/79/Squire.jpg/200px-Squire.jpg"
+    ]
   },
   {
     "card_tag": "Storeroom",
@@ -1737,8 +1596,7 @@
     "cost": "3",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/b/b4/Storeroom.jpg/200px-Storeroom.jpg"
+    ]
   },
   {
     "card_tag": "Urchin",
@@ -1751,8 +1609,7 @@
     "types": [
       "Action",
       "Attack"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/7/74/Urchin.jpg/200px-Urchin.jpg"
+    ]
   },
   {
     "card_tag": "Vagrant",
@@ -1762,8 +1619,7 @@
     "cost": "2",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/3/3f/Vagrant.jpg/200px-Vagrant.jpg"
+    ]
   },
   {
     "card_tag": "Wandering Minstrel",
@@ -1773,8 +1629,7 @@
     "cost": "4",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/f/f9/Wandering_Minstrel.jpg/200px-Wandering_Minstrel.jpg"
+    ]
   },
   {
     "card_tag": "Adventurer",
@@ -1784,8 +1639,7 @@
     "cost": "6",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/7/71/Adventurer.jpg/200px-Adventurer.jpg"
+    ]
   },
   {
     "card_tag": "Chancellor",
@@ -1795,8 +1649,7 @@
     "cost": "3",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/b/b7/Chancellor.jpg/200px-Chancellor.jpg"
+    ]
   },
   {
     "card_tag": "Feast",
@@ -1806,8 +1659,7 @@
     "cost": "4",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/9/9c/Feast.jpg/200px-Feast.jpg"
+    ]
   },
   {
     "card_tag": "Spy",
@@ -1818,8 +1670,7 @@
     "types": [
       "Action",
       "Attack"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/c/cb/Spy.jpg/200px-Spy.jpg"
+    ]
   },
   {
     "card_tag": "Thief",
@@ -1830,8 +1681,7 @@
     "types": [
       "Action",
       "Attack"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/f/f5/Thief.jpg/200px-Thief.jpg"
+    ]
   },
   {
     "card_tag": "Woodcutter",
@@ -1841,8 +1691,7 @@
     "cost": "3",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/d/d6/Woodcutter.jpg/200px-Woodcutter.jpg"
+    ]
   },
   {
     "card_tag": "Bureaucrat",
@@ -1854,8 +1703,7 @@
     "types": [
       "Action",
       "Attack"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/4/4d/Bureaucrat.jpg/200px-Bureaucrat.jpg"
+    ]
   },
   {
     "card_tag": "Cellar",
@@ -1866,8 +1714,7 @@
     "cost": "2",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/1/1c/Cellar.jpg/200px-Cellar.jpg"
+    ]
   },
   {
     "card_tag": "Chapel",
@@ -1878,8 +1725,7 @@
     "cost": "2",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/2/29/Chapel.jpg/200px-Chapel.jpg"
+    ]
   },
   {
     "card_tag": "Council Room",
@@ -1890,8 +1736,7 @@
     "cost": "5",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/e/e0/Council_Room.jpg/200px-Council_Room.jpg"
+    ]
   },
   {
     "card_tag": "Festival",
@@ -1902,8 +1747,7 @@
     "cost": "5",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/e/ec/Festival.jpg/200px-Festival.jpg"
+    ]
   },
   {
     "card_tag": "Gardens",
@@ -1914,8 +1758,7 @@
     "cost": "4",
     "types": [
       "Victory"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/8/8c/Gardens.jpg/200px-Gardens.jpg"
+    ]
   },
   {
     "card_tag": "Laboratory",
@@ -1926,8 +1769,7 @@
     "cost": "5",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/0/0c/Laboratory.jpg/200px-Laboratory.jpg"
+    ]
   },
   {
     "card_tag": "Library",
@@ -1938,8 +1780,7 @@
     "cost": "5",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/9/98/Library.jpg/200px-Library.jpg"
+    ]
   },
   {
     "card_tag": "Market",
@@ -1950,8 +1791,7 @@
     "cost": "5",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/7/7e/Market.jpg/200px-Market.jpg"
+    ]
   },
   {
     "card_tag": "Militia",
@@ -1963,8 +1803,7 @@
     "types": [
       "Action",
       "Attack"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/a/a0/Militia.jpg/200px-Militia.jpg"
+    ]
   },
   {
     "card_tag": "Mine",
@@ -1975,8 +1814,7 @@
     "cost": "5",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/8/8e/Mine.jpg/200px-Mine.jpg"
+    ]
   },
   {
     "card_tag": "Moat",
@@ -1988,8 +1826,7 @@
     "types": [
       "Action",
       "Reaction"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/f/fe/Moat.jpg/200px-Moat.jpg"
+    ]
   },
   {
     "card_tag": "Moneylender",
@@ -2000,8 +1837,7 @@
     "cost": "4",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/7/70/Moneylender.jpg/200px-Moneylender.jpg"
+    ]
   },
   {
     "card_tag": "Remodel",
@@ -2012,8 +1848,7 @@
     "cost": "4",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/2/2e/Remodel.jpg/200px-Remodel.jpg"
+    ]
   },
   {
     "card_tag": "Smithy",
@@ -2024,8 +1859,7 @@
     "cost": "4",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/3/36/Smithy.jpg/200px-Smithy.jpg"
+    ]
   },
   {
     "card_tag": "Throne Room",
@@ -2036,8 +1870,7 @@
     "cost": "4",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/d/d1/Throne_Room.jpg/200px-Throne_Room.jpg"
+    ]
   },
   {
     "card_tag": "Village",
@@ -2048,8 +1881,7 @@
     "cost": "3",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/5/5a/Village.jpg/200px-Village.jpg"
+    ]
   },
   {
     "card_tag": "Witch",
@@ -2061,8 +1893,7 @@
     "types": [
       "Action",
       "Attack"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/f/f3/Witch.jpg/200px-Witch.jpg"
+    ]
   },
   {
     "card_tag": "Workshop",
@@ -2073,8 +1904,7 @@
     "cost": "3",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/5/50/Workshop.jpg/200px-Workshop.jpg"
+    ]
   },
   {
     "card_tag": "Artisan",
@@ -2085,8 +1915,7 @@
     "cost": "6",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/1/1d/Artisan.jpg/200px-Artisan.jpg"
+    ]
   },
   {
     "card_tag": "Bandit",
@@ -2098,8 +1927,7 @@
     "types": [
       "Action",
       "Attack"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/4/46/Bandit.jpg/200px-Bandit.jpg"
+    ]
   },
   {
     "card_tag": "Harbinger",
@@ -2111,8 +1939,7 @@
     "count": "10",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/3/32/Harbinger.jpg/200px-Harbinger.jpg"
+    ]
   },
   {
     "card_tag": "Merchant",
@@ -2123,8 +1950,7 @@
     "cost": "3",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/7/78/Merchant.jpg/200px-Merchant.jpg"
+    ]
   },
   {
     "card_tag": "Poacher",
@@ -2135,8 +1961,7 @@
     "cost": "4",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/a/a0/Poacher.jpg/200px-Poacher.jpg"
+    ]
   },
   {
     "card_tag": "Sentry",
@@ -2147,8 +1972,7 @@
     "cost": "5",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/4/4c/Sentry.jpg/200px-Sentry.jpg"
+    ]
   },
   {
     "card_tag": "Vassal",
@@ -2159,8 +1983,7 @@
     "cost": "3",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/0/0b/Vassal.jpg/200px-Vassal.jpg"
+    ]
   },
   {
     "card_tag": "Advance",
@@ -2171,8 +1994,7 @@
     "group_tag": "empires events",
     "types": [
       "Event"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/3/37/Advance.jpg/320px-Advance.jpg"
+    ]
   },
   {
     "card_tag": "Annex",
@@ -2184,8 +2006,7 @@
     "group_tag": "empires events",
     "types": [
       "Event"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/b/be/Annex.jpg/320px-Annex.jpg"
+    ]
   },
   {
     "card_tag": "Aqueduct",
@@ -2196,8 +2017,7 @@
     "group_tag": "empires landmarks",
     "types": [
       "Landmark"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/3/3f/Aqueduct.jpg/320px-Aqueduct.jpg"
+    ]
   },
   {
     "card_tag": "Archive",
@@ -2208,8 +2028,7 @@
     "types": [
       "Action",
       "Duration"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/2/26/Archive.jpg/200px-Archive.jpg"
+    ]
   },
   {
     "card_tag": "Arena",
@@ -2220,8 +2039,7 @@
     "group_tag": "empires landmarks",
     "types": [
       "Landmark"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/3/36/Arena.jpg/320px-Arena.jpg"
+    ]
   },
   {
     "card_tag": "Bandit Fort",
@@ -2232,8 +2050,7 @@
     "group_tag": "empires landmarks",
     "types": [
       "Landmark"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/4/42/Bandit_Fort.jpg/320px-Bandit_Fort.jpg"
+    ]
   },
   {
     "card_tag": "Banquet",
@@ -2244,8 +2061,7 @@
     "group_tag": "empires events",
     "types": [
       "Event"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/e/e4/Banquet.jpg/320px-Banquet.jpg"
+    ]
   },
   {
     "card_tag": "Basilica",
@@ -2256,8 +2072,7 @@
     "group_tag": "empires landmarks",
     "types": [
       "Landmark"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/5/54/Basilica.jpg/320px-Basilica.jpg"
+    ]
   },
   {
     "card_tag": "Baths",
@@ -2268,8 +2083,7 @@
     "group_tag": "empires landmarks",
     "types": [
       "Landmark"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/a/a9/Baths.jpg/320px-Baths.jpg"
+    ]
   },
   {
     "card_tag": "Battlefield",
@@ -2280,8 +2094,7 @@
     "group_tag": "empires landmarks",
     "types": [
       "Landmark"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/b/b0/Battlefield.jpg/320px-Battlefield.jpg"
+    ]
   },
   {
     "card_tag": "Bustling Village",
@@ -2293,8 +2106,7 @@
     "group_tag": "Settlers - Bustling Village",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/c/c6/Bustling_Village.jpg/200px-Bustling_Village.jpg"
+    ]
   },
   {
     "card_tag": "Capital",
@@ -2304,8 +2116,7 @@
     "cost": "5",
     "types": [
       "Treasure"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/e/eb/Capital.jpg/200px-Capital.jpg"
+    ]
   },
   {
     "card_tag": "Castles",
@@ -2317,8 +2128,7 @@
     "types": [
       "Victory",
       "Castle"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/d/df/Castles.jpg/200px-Castles.jpg"
+    ]
   },
   {
     "card_tag": "Catapult",
@@ -2332,8 +2142,7 @@
     "types": [
       "Action",
       "Attack"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/2/25/Catapult.jpg/200px-Catapult.jpg"
+    ]
   },
   {
     "card_tag": "Chariot Race",
@@ -2343,8 +2152,7 @@
     "cost": "3",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/7/7c/Chariot_Race.jpg/200px-Chariot_Race.jpg"
+    ]
   },
   {
     "card_tag": "Charm",
@@ -2354,8 +2162,7 @@
     "cost": "5",
     "types": [
       "Treasure"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/d/de/Charm.jpg/200px-Charm.jpg"
+    ]
   },
   {
     "card_tag": "City Quarter",
@@ -2366,8 +2173,7 @@
     "debtcost": "8",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/4/4e/City_Quarter.jpg/200px-City_Quarter.jpg"
+    ]
   },
   {
     "card_tag": "Colonnade",
@@ -2378,8 +2184,7 @@
     "group_tag": "empires landmarks",
     "types": [
       "Landmark"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/e/e3/Colonnade.jpg/320px-Colonnade.jpg"
+    ]
   },
   {
     "card_tag": "Conquest",
@@ -2390,8 +2195,7 @@
     "group_tag": "empires events",
     "types": [
       "Event"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/0/08/Conquest.jpg/320px-Conquest.jpg"
+    ]
   },
   {
     "card_tag": "Crown",
@@ -2402,8 +2206,7 @@
     "types": [
       "Action",
       "Treasure"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/9/91/Crown.jpg/200px-Crown.jpg"
+    ]
   },
   {
     "card_tag": "Defiled Shrine",
@@ -2414,8 +2217,7 @@
     "group_tag": "empires landmarks",
     "types": [
       "Landmark"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/d/dd/Defiled_Shrine.jpg/320px-Defiled_Shrine.jpg"
+    ]
   },
   {
     "card_tag": "Delve",
@@ -2426,8 +2228,7 @@
     "group_tag": "empires events",
     "types": [
       "Event"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/9/9d/Delve.jpg/320px-Delve.jpg"
+    ]
   },
   {
     "card_tag": "Dominate",
@@ -2438,8 +2239,7 @@
     "group_tag": "empires events",
     "types": [
       "Event"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/c/c9/Dominate.jpg/320px-Dominate.jpg"
+    ]
   },
   {
     "card_tag": "Donate",
@@ -2451,8 +2251,7 @@
     "group_tag": "empires events",
     "types": [
       "Event"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/4/42/Donate.jpg/320px-Donate.jpg"
+    ]
   },
   {
     "card_tag": "Emporium",
@@ -2464,8 +2263,7 @@
     "group_tag": "Patrician - Emporium",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/f/fe/Emporium.jpg/200px-Emporium.jpg"
+    ]
   },
   {
     "card_tag": "Encampment",
@@ -2478,8 +2276,7 @@
     "group_top": true,
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/4/4e/Encampment.jpg/200px-Encampment.jpg"
+    ]
   },
   {
     "card_tag": "Enchantress",
@@ -2491,8 +2288,7 @@
       "Action",
       "Attack",
       "Duration"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/b/bb/Enchantress.jpg/200px-Enchantress.jpg"
+    ]
   },
   {
     "card_tag": "Engineer",
@@ -2503,8 +2299,7 @@
     "debtcost": "4",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/a/ab/Engineer.jpg/200px-Engineer.jpg"
+    ]
   },
   {
     "card_tag": "Farmers' Market",
@@ -2515,8 +2310,7 @@
     "types": [
       "Action",
       "Gathering"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/3/37/Farmers%27_Market.jpg/200px-Farmers%27_Market.jpg"
+    ]
   },
   {
     "card_tag": "Fortune",
@@ -2529,8 +2323,7 @@
     "group_tag": "Gladiator - Fortune",
     "types": [
       "Treasure"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/0/05/Fortune.jpg/200px-Fortune.jpg"
+    ]
   },
   {
     "card_tag": "Forum",
@@ -2540,8 +2333,7 @@
     "cost": "5",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/1/15/Forum.jpg/200px-Forum.jpg"
+    ]
   },
   {
     "card_tag": "Fountain",
@@ -2552,8 +2344,7 @@
     "group_tag": "empires landmarks",
     "types": [
       "Landmark"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/e/ee/Fountain.jpg/320px-Fountain.jpg"
+    ]
   },
   {
     "card_tag": "Gladiator",
@@ -2566,8 +2357,7 @@
     "group_top": true,
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/e/e9/Gladiator.jpg/200px-Gladiator.jpg"
+    ]
   },
   {
     "card_tag": "Groundskeeper",
@@ -2577,8 +2367,7 @@
     "cost": "5",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/3/33/Groundskeeper.jpg/200px-Groundskeeper.jpg"
+    ]
   },
   {
     "card_tag": "Keep",
@@ -2589,8 +2378,7 @@
     "group_tag": "empires landmarks",
     "types": [
       "Landmark"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/4/4b/Keep.jpg/320px-Keep.jpg"
+    ]
   },
   {
     "card_tag": "Labyrinth",
@@ -2601,8 +2389,7 @@
     "group_tag": "empires landmarks",
     "types": [
       "Landmark"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/c/c0/Labyrinth.jpg/320px-Labyrinth.jpg"
+    ]
   },
   {
     "card_tag": "Legionary",
@@ -2613,8 +2400,7 @@
     "types": [
       "Action",
       "Attack"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/6/64/Legionary.jpg/200px-Legionary.jpg"
+    ]
   },
   {
     "card_tag": "Mountain Pass",
@@ -2625,8 +2411,7 @@
     "group_tag": "empires landmarks",
     "types": [
       "Landmark"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/d/d5/Mountain_Pass.jpg/320px-Mountain_Pass.jpg"
+    ]
   },
   {
     "card_tag": "Museum",
@@ -2637,8 +2422,7 @@
     "group_tag": "empires landmarks",
     "types": [
       "Landmark"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/b/b2/Museum.jpg/320px-Museum.jpg"
+    ]
   },
   {
     "card_tag": "Obelisk",
@@ -2649,8 +2433,7 @@
     "group_tag": "empires landmarks",
     "types": [
       "Landmark"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/c/c6/Obelisk.jpg/320px-Obelisk.jpg"
+    ]
   },
   {
     "card_tag": "Orchard",
@@ -2661,8 +2444,7 @@
     "group_tag": "empires landmarks",
     "types": [
       "Landmark"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/8/80/Orchard.jpg/320px-Orchard.jpg"
+    ]
   },
   {
     "card_tag": "Overlord",
@@ -2673,8 +2455,7 @@
     "debtcost": "8",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/5/5e/Overlord.jpg/200px-Overlord.jpg"
+    ]
   },
   {
     "card_tag": "Palace",
@@ -2685,8 +2466,7 @@
     "group_tag": "empires landmarks",
     "types": [
       "Landmark"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/c/c4/Palace.jpg/320px-Palace.jpg"
+    ]
   },
   {
     "card_tag": "Patrician",
@@ -2699,8 +2479,7 @@
     "group_top": true,
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/f/fb/Patrician.jpg/200px-Patrician.jpg"
+    ]
   },
   {
     "card_tag": "Plunder",
@@ -2712,8 +2491,7 @@
     "group_tag": "Encampment - Plunder",
     "types": [
       "Treasure"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/d/da/Plunder.jpg/200px-Plunder.jpg"
+    ]
   },
   {
     "card_tag": "Ritual",
@@ -2724,8 +2502,7 @@
     "group_tag": "empires events",
     "types": [
       "Event"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/d/d1/Ritual.jpg/320px-Ritual.jpg"
+    ]
   },
   {
     "card_tag": "Rocks",
@@ -2737,8 +2514,7 @@
     "group_tag": "Catapult - Rocks",
     "types": [
       "Treasure"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/2/2e/Rocks.jpg/200px-Rocks.jpg"
+    ]
   },
   {
     "card_tag": "Royal Blacksmith",
@@ -2749,8 +2525,7 @@
     "debtcost": "8",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/c/cb/Royal_Blacksmith.jpg/200px-Royal_Blacksmith.jpg"
+    ]
   },
   {
     "card_tag": "Sacrifice",
@@ -2760,8 +2535,7 @@
     "cost": "4",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/5/51/Sacrifice.jpg/200px-Sacrifice.jpg"
+    ]
   },
   {
     "card_tag": "Salt the Earth",
@@ -2772,8 +2546,7 @@
     "group_tag": "empires events",
     "types": [
       "Event"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/6/66/Salt_the_Earth.jpg/320px-Salt_the_Earth.jpg"
+    ]
   },
   {
     "card_tag": "Settlers",
@@ -2786,8 +2559,7 @@
     "group_top": true,
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/1/14/Settlers.jpg/200px-Settlers.jpg"
+    ]
   },
   {
     "card_tag": "Tax",
@@ -2798,8 +2570,7 @@
     "group_tag": "empires events",
     "types": [
       "Event"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/9/9d/Tax.jpg/320px-Tax.jpg"
+    ]
   },
   {
     "card_tag": "Temple",
@@ -2810,8 +2581,7 @@
     "types": [
       "Action",
       "Gathering"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/9/9f/Temple.jpg/200px-Temple.jpg"
+    ]
   },
   {
     "card_tag": "Tomb",
@@ -2822,8 +2592,7 @@
     "group_tag": "empires landmarks",
     "types": [
       "Landmark"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/7/71/Tomb.jpg/320px-Tomb.jpg"
+    ]
   },
   {
     "card_tag": "Tower",
@@ -2834,8 +2603,7 @@
     "group_tag": "empires landmarks",
     "types": [
       "Landmark"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/2/29/Tower.jpg/320px-Tower.jpg"
+    ]
   },
   {
     "card_tag": "Triumph",
@@ -2847,8 +2615,7 @@
     "group_tag": "empires events",
     "types": [
       "Event"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/c/c9/Triumph.jpg/320px-Triumph.jpg"
+    ]
   },
   {
     "card_tag": "Triumphal Arch",
@@ -2859,8 +2626,7 @@
     "group_tag": "empires landmarks",
     "types": [
       "Landmark"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/7/7a/Triumphal_Arch.jpg/320px-Triumphal_Arch.jpg"
+    ]
   },
   {
     "card_tag": "Villa",
@@ -2870,8 +2636,7 @@
     "cost": "4",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/f/f7/Villa.jpg/200px-Villa.jpg"
+    ]
   },
   {
     "card_tag": "Wall",
@@ -2882,8 +2647,7 @@
     "group_tag": "empires landmarks",
     "types": [
       "Landmark"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/6/67/Wall.jpg/320px-Wall.jpg"
+    ]
   },
   {
     "card_tag": "Wedding",
@@ -2895,8 +2659,7 @@
     "group_tag": "empires events",
     "types": [
       "Event"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/b/b6/Wedding.jpg/320px-Wedding.jpg"
+    ]
   },
   {
     "card_tag": "Wild Hunt",
@@ -2907,8 +2670,7 @@
     "types": [
       "Action",
       "Gathering"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/4/48/Wild_Hunt.jpg/200px-Wild_Hunt.jpg"
+    ]
   },
   {
     "card_tag": "Windfall",
@@ -2919,8 +2681,7 @@
     "group_tag": "empires events",
     "types": [
       "Event"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/f/f8/Windfall.jpg/320px-Windfall.jpg"
+    ]
   },
   {
     "card_tag": "Wolf Den",
@@ -2931,8 +2692,7 @@
     "group_tag": "empires landmarks",
     "types": [
       "Landmark"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/c/ca/Wolf_Den.jpg/320px-Wolf_Den.jpg"
+    ]
   },
   {
     "card_tag": "Advisor",
@@ -2942,8 +2702,7 @@
     "cost": "4",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/5/5e/Advisor.jpg/200px-Advisor.jpg"
+    ]
   },
   {
     "card_tag": "Baker",
@@ -2953,8 +2712,7 @@
     "cost": "5",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/b/b9/Baker.jpg/200px-Baker.jpg"
+    ]
   },
   {
     "card_tag": "Butcher",
@@ -2964,8 +2722,7 @@
     "cost": "5",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/e/ed/Butcher.jpg/200px-Butcher.jpg"
+    ]
   },
   {
     "card_tag": "Candlestick Maker",
@@ -2975,8 +2732,7 @@
     "cost": "2",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/2/2c/Candlestick_Maker.jpg/200px-Candlestick_Maker.jpg"
+    ]
   },
   {
     "card_tag": "Doctor",
@@ -2986,8 +2742,7 @@
     "cost": "3+",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/b/b2/Doctor.jpg/200px-Doctor.jpg"
+    ]
   },
   {
     "card_tag": "Herald",
@@ -2997,8 +2752,7 @@
     "cost": "4+",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/c/c1/Herald.jpg/200px-Herald.jpg"
+    ]
   },
   {
     "card_tag": "Journeyman",
@@ -3008,8 +2762,7 @@
     "cost": "5",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/8/82/Journeyman.jpg/200px-Journeyman.jpg"
+    ]
   },
   {
     "card_tag": "Masterpiece",
@@ -3019,8 +2772,7 @@
     "cost": "3+",
     "types": [
       "Treasure"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/0/09/Masterpiece.jpg/200px-Masterpiece.jpg"
+    ]
   },
   {
     "card_tag": "Merchant Guild",
@@ -3030,8 +2782,7 @@
     "cost": "5",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/a/af/Merchant_Guild.jpg/200px-Merchant_Guild.jpg"
+    ]
   },
   {
     "card_tag": "Plaza",
@@ -3041,8 +2792,7 @@
     "cost": "4",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/f/fc/Plaza.jpg/200px-Plaza.jpg"
+    ]
   },
   {
     "card_tag": "Soothsayer",
@@ -3053,8 +2803,7 @@
     "types": [
       "Action",
       "Attack"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/0/01/Soothsayer.jpg/200px-Soothsayer.jpg"
+    ]
   },
   {
     "card_tag": "Stonemason",
@@ -3064,8 +2813,7 @@
     "cost": "2+",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/d/d2/Stonemason.jpg/200px-Stonemason.jpg"
+    ]
   },
   {
     "card_tag": "Taxman",
@@ -3076,8 +2824,7 @@
     "types": [
       "Action",
       "Attack"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/e/e0/Taxman.jpg/200px-Taxman.jpg"
+    ]
   },
   {
     "card_tag": "Border Village",
@@ -3087,8 +2834,7 @@
     "cost": "6",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/d/dd/Border_Village.jpg/200px-Border_Village.jpg"
+    ]
   },
   {
     "card_tag": "Cache",
@@ -3098,8 +2844,7 @@
     "cost": "5",
     "types": [
       "Treasure"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/6/66/Cache.jpg/200px-Cache.jpg"
+    ]
   },
   {
     "card_tag": "Cartographer",
@@ -3109,8 +2854,7 @@
     "cost": "5",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/d/d6/Cartographer.jpg/200px-Cartographer.jpg"
+    ]
   },
   {
     "card_tag": "Crossroads",
@@ -3120,8 +2864,7 @@
     "cost": "2",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/c/cd/Crossroads.jpg/200px-Crossroads.jpg"
+    ]
   },
   {
     "card_tag": "Develop",
@@ -3131,8 +2874,7 @@
     "cost": "3",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/f/f7/Develop.jpg/200px-Develop.jpg"
+    ]
   },
   {
     "card_tag": "Duchess",
@@ -3142,8 +2884,7 @@
     "cost": "2",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/d/df/Duchess.jpg/200px-Duchess.jpg"
+    ]
   },
   {
     "card_tag": "Embassy",
@@ -3153,8 +2894,7 @@
     "cost": "5",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/2/2f/Embassy.jpg/200px-Embassy.jpg"
+    ]
   },
   {
     "card_tag": "Farmland",
@@ -3164,8 +2904,7 @@
     "cost": "6",
     "types": [
       "Victory"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/e/ea/Farmland.jpg/200px-Farmland.jpg"
+    ]
   },
   {
     "card_tag": "Fool's Gold",
@@ -3176,8 +2915,7 @@
     "types": [
       "Treasure",
       "Reaction"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/e/ed/Fool%27s_Gold.jpg/200px-Fool%27s_Gold.jpg"
+    ]
   },
   {
     "card_tag": "Haggler",
@@ -3187,8 +2925,7 @@
     "cost": "5",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/9/96/Haggler.jpg/200px-Haggler.jpg"
+    ]
   },
   {
     "card_tag": "Highway",
@@ -3198,8 +2935,7 @@
     "cost": "5",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/2/29/Highway.jpg/200px-Highway.jpg"
+    ]
   },
   {
     "card_tag": "Ill-Gotten Gains",
@@ -3209,8 +2945,7 @@
     "cost": "5",
     "types": [
       "Treasure"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/9/91/Ill-Gotten_Gains.jpg/200px-Ill-Gotten_Gains.jpg"
+    ]
   },
   {
     "card_tag": "Inn",
@@ -3220,8 +2955,7 @@
     "cost": "5",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/1/1f/Inn.jpg/200px-Inn.jpg"
+    ]
   },
   {
     "card_tag": "Jack of all Trades",
@@ -3231,8 +2965,7 @@
     "cost": "4",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/3/38/Jack_of_all_Trades.jpg/200px-Jack_of_all_Trades.jpg"
+    ]
   },
   {
     "card_tag": "Mandarin",
@@ -3242,8 +2975,7 @@
     "cost": "5",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/6/68/Mandarin.jpg/200px-Mandarin.jpg"
+    ]
   },
   {
     "card_tag": "Margrave",
@@ -3254,8 +2986,7 @@
     "types": [
       "Action",
       "Attack"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/0/06/Margrave.jpg/200px-Margrave.jpg"
+    ]
   },
   {
     "card_tag": "Noble Brigand",
@@ -3266,8 +2997,7 @@
     "types": [
       "Action",
       "Attack"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/6/63/Noble_Brigand.jpg/200px-Noble_Brigand.jpg"
+    ]
   },
   {
     "card_tag": "Nomad Camp",
@@ -3277,8 +3007,7 @@
     "cost": "4",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/8/89/Nomad_Camp.jpg/200px-Nomad_Camp.jpg"
+    ]
   },
   {
     "card_tag": "Oasis",
@@ -3288,8 +3017,7 @@
     "cost": "3",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/f/fc/Oasis.jpg/200px-Oasis.jpg"
+    ]
   },
   {
     "card_tag": "Oracle",
@@ -3300,8 +3028,7 @@
     "types": [
       "Action",
       "Attack"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/9/97/Oracle.jpg/200px-Oracle.jpg"
+    ]
   },
   {
     "card_tag": "Scheme",
@@ -3311,8 +3038,7 @@
     "cost": "3",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/8/8d/Scheme.jpg/200px-Scheme.jpg"
+    ]
   },
   {
     "card_tag": "Silk Road",
@@ -3322,8 +3048,7 @@
     "cost": "4",
     "types": [
       "Victory"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/f/f6/Silk_Road.jpg/200px-Silk_Road.jpg"
+    ]
   },
   {
     "card_tag": "Spice Merchant",
@@ -3333,8 +3058,7 @@
     "cost": "4",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/e/e2/Spice_Merchant.jpg/200px-Spice_Merchant.jpg"
+    ]
   },
   {
     "card_tag": "Stables",
@@ -3344,8 +3068,7 @@
     "cost": "5",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/3/35/Stables.jpg/200px-Stables.jpg"
+    ]
   },
   {
     "card_tag": "Trader",
@@ -3356,8 +3079,7 @@
     "types": [
       "Action",
       "Reaction"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/1/12/Trader.jpg/200px-Trader.jpg"
+    ]
   },
   {
     "card_tag": "Tunnel",
@@ -3368,8 +3090,7 @@
     "types": [
       "Victory",
       "Reaction"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/c/c2/Tunnel.jpg/200px-Tunnel.jpg"
+    ]
   },
   {
     "card_tag": "Coppersmith",
@@ -3379,8 +3100,7 @@
     "cost": "4",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/4/40/Coppersmith.jpg/200px-Coppersmith.jpg"
+    ]
   },
   {
     "card_tag": "Great Hall",
@@ -3391,8 +3111,7 @@
     "types": [
       "Action",
       "Victory"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/9/95/Great_Hall.jpg/200px-Great_Hall.jpg"
+    ]
   },
   {
     "card_tag": "Saboteur",
@@ -3403,8 +3122,7 @@
     "types": [
       "Action",
       "Attack"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/6/60/Saboteur.jpg/200px-Saboteur.jpg"
+    ]
   },
   {
     "card_tag": "Scout",
@@ -3414,8 +3132,7 @@
     "cost": "4",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/4/46/Scout.jpg/200px-Scout.jpg"
+    ]
   },
   {
     "card_tag": "Secret Chamber",
@@ -3426,8 +3143,7 @@
     "types": [
       "Action",
       "Reaction"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/b/b3/Secret_Chamber.jpg/200px-Secret_Chamber.jpg"
+    ]
   },
   {
     "card_tag": "Tribute",
@@ -3437,8 +3153,7 @@
     "cost": "5",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/0/00/Tribute.jpg/200px-Tribute.jpg"
+    ]
   },
   {
     "card_tag": "Baron",
@@ -3449,8 +3164,7 @@
     "cost": "4",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/7/73/Baron.jpg/200px-Baron.jpg"
+    ]
   },
   {
     "card_tag": "Bridge",
@@ -3461,8 +3175,7 @@
     "cost": "4",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/3/39/Bridge.jpg/200px-Bridge.jpg"
+    ]
   },
   {
     "card_tag": "Conspirator",
@@ -3473,8 +3186,7 @@
     "cost": "4",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/4/42/Conspirator.jpg/200px-Conspirator.jpg"
+    ]
   },
   {
     "card_tag": "Courtyard",
@@ -3485,8 +3197,7 @@
     "cost": "2",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/3/30/Courtyard.jpg/200px-Courtyard.jpg"
+    ]
   },
   {
     "card_tag": "Duke",
@@ -3497,8 +3208,7 @@
     "cost": "5",
     "types": [
       "Victory"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/1/10/Duke.jpg/200px-Duke.jpg"
+    ]
   },
   {
     "card_tag": "Harem",
@@ -3510,8 +3220,7 @@
     "types": [
       "Treasure",
       "Victory"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/9/9d/Harem.jpg/200px-Harem.jpg"
+    ]
   },
   {
     "card_tag": "Ironworks",
@@ -3522,8 +3231,7 @@
     "cost": "4",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/7/76/Ironworks.jpg/200px-Ironworks.jpg"
+    ]
   },
   {
     "card_tag": "Masquerade",
@@ -3534,8 +3242,7 @@
     "cost": "3",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/0/0e/Masquerade.jpg/200px-Masquerade.jpg"
+    ]
   },
   {
     "card_tag": "Mining Village",
@@ -3546,8 +3253,7 @@
     "cost": "4",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/7/7f/Mining_Village.jpg/200px-Mining_Village.jpg"
+    ]
   },
   {
     "card_tag": "Minion",
@@ -3559,8 +3265,7 @@
     "types": [
       "Action",
       "Attack"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/4/47/Minion.jpg/200px-Minion.jpg"
+    ]
   },
   {
     "card_tag": "Nobles",
@@ -3572,8 +3277,7 @@
     "types": [
       "Action",
       "Victory"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/b/b6/Nobles.jpg/200px-Nobles.jpg"
+    ]
   },
   {
     "card_tag": "Pawn",
@@ -3584,8 +3288,7 @@
     "cost": "2",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/0/0f/Pawn.jpg/200px-Pawn.jpg"
+    ]
   },
   {
     "card_tag": "Shanty Town",
@@ -3596,8 +3299,7 @@
     "cost": "3",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/8/8e/Shanty_Town.jpg/200px-Shanty_Town.jpg"
+    ]
   },
   {
     "card_tag": "Steward",
@@ -3608,8 +3310,7 @@
     "cost": "3",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/8/88/Steward.jpg/200px-Steward.jpg"
+    ]
   },
   {
     "card_tag": "Swindler",
@@ -3621,8 +3322,7 @@
     "types": [
       "Action",
       "Attack"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/e/e7/Swindler.jpg/200px-Swindler.jpg"
+    ]
   },
   {
     "card_tag": "Torturer",
@@ -3634,8 +3334,7 @@
     "types": [
       "Action",
       "Attack"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/a/a9/Torturer.jpg/200px-Torturer.jpg"
+    ]
   },
   {
     "card_tag": "Trading Post",
@@ -3646,8 +3345,7 @@
     "cost": "5",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/3/36/Trading_Post.jpg/200px-Trading_Post.jpg"
+    ]
   },
   {
     "card_tag": "Upgrade",
@@ -3658,8 +3356,7 @@
     "cost": "5",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/d/d3/Upgrade.jpg/200px-Upgrade.jpg"
+    ]
   },
   {
     "card_tag": "Wishing Well",
@@ -3670,8 +3367,7 @@
     "cost": "3",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/f/f7/Wishing_Well.jpg/200px-Wishing_Well.jpg"
+    ]
   },
   {
     "card_tag": "Courtier",
@@ -3682,8 +3378,7 @@
     "cost": "5",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/7/7c/Courtier.jpg/200px-Courtier.jpg"
+    ]
   },
   {
     "card_tag": "Diplomat",
@@ -3695,8 +3390,7 @@
     "types": [
       "Action",
       "Reaction"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/8/85/Diplomat.jpg/200px-Diplomat.jpg"
+    ]
   },
   {
     "card_tag": "Lurker",
@@ -3707,8 +3401,7 @@
     "cost": "2",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/f/f7/Lurker.jpg/200px-Lurker.jpg"
+    ]
   },
   {
     "card_tag": "Mill",
@@ -3720,8 +3413,7 @@
     "types": [
       "Action",
       "Victory"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/1/10/Mill.jpg/200px-Mill.jpg"
+    ]
   },
   {
     "card_tag": "Patrol",
@@ -3732,8 +3424,7 @@
     "cost": "5",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/c/c8/Patrol.jpg/200px-Patrol.jpg"
+    ]
   },
   {
     "card_tag": "Replace",
@@ -3745,8 +3436,7 @@
     "types": [
       "Action",
       "Attack"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/2/27/Replace.jpg/200px-Replace.jpg"
+    ]
   },
   {
     "card_tag": "Secret Passage",
@@ -3757,8 +3447,7 @@
     "cost": "4",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/b/b4/Secret_Passage.jpg/200px-Secret_Passage.jpg"
+    ]
   },
   {
     "card_tag": "Avanto",
@@ -3770,8 +3459,7 @@
     "group_tag": "Sauna - Avanto",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/3/36/Avanto.jpg/200px-Avanto.jpg"
+    ]
   },
   {
     "card_tag": "Black Market",
@@ -3782,8 +3470,7 @@
     "image": "black_market_set.png",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/f/fa/Black_Market.jpg/200px-Black_Market.jpg"
+    ]
   },
   {
     "card_tag": "Envoy",
@@ -3794,8 +3481,7 @@
     "image": "envoy_set.png",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/0/0c/Envoy.jpg/200px-Envoy.jpg"
+    ]
   },
   {
     "card_tag": "Governor",
@@ -3806,8 +3492,7 @@
     "image": "governor_set.png",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/a/a2/Governor.jpg/200px-Governor.jpg"
+    ]
   },
   {
     "card_tag": "Prince",
@@ -3818,8 +3503,7 @@
     "image": "prince_set.png",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/e/ea/Prince.jpg/200px-Prince.jpg"
+    ]
   },
   {
     "card_tag": "Sauna",
@@ -3832,8 +3516,7 @@
     "group_top": true,
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/3/3c/Sauna.jpg/200px-Sauna.jpg"
+    ]
   },
   {
     "card_tag": "Stash",
@@ -3844,8 +3527,7 @@
     "image": "stash_set.png",
     "types": [
       "Treasure"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/2/23/Stash.jpg/200px-Stash.jpg"
+    ]
   },
   {
     "card_tag": "Summon",
@@ -3856,8 +3538,7 @@
     "group_tag": "promo events",
     "types": [
       "Event"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/e/ee/Summon.jpg/320px-Summon.jpg"
+    ]
   },
   {
     "card_tag": "Walled Village",
@@ -3868,8 +3549,7 @@
     "image": "walled_village_set.png",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/6/6c/Walled_Village.jpg/200px-Walled_Village.jpg"
+    ]
   },
   {
     "card_tag": "Bank",
@@ -3879,8 +3559,7 @@
     "cost": "7",
     "types": [
       "Treasure"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/7/78/Bank.jpg/200px-Bank.jpg"
+    ]
   },
   {
     "card_tag": "Bishop",
@@ -3890,8 +3569,7 @@
     "cost": "4",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/b/b4/Bishop.jpg/200px-Bishop.jpg"
+    ]
   },
   {
     "card_tag": "City",
@@ -3901,8 +3579,7 @@
     "cost": "5",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/3/30/City.jpg/200px-City.jpg"
+    ]
   },
   {
     "card_tag": "Contraband",
@@ -3912,8 +3589,7 @@
     "cost": "5",
     "types": [
       "Treasure"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/5/58/Contraband.jpg/200px-Contraband.jpg"
+    ]
   },
   {
     "card_tag": "Counting House",
@@ -3923,8 +3599,7 @@
     "cost": "5",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/5/5d/Counting_House.jpg/200px-Counting_House.jpg"
+    ]
   },
   {
     "card_tag": "Expand",
@@ -3934,8 +3609,7 @@
     "cost": "7",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/d/dc/Expand.jpg/200px-Expand.jpg"
+    ]
   },
   {
     "card_tag": "Forge",
@@ -3945,8 +3619,7 @@
     "cost": "7",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/d/d7/Forge.jpg/200px-Forge.jpg"
+    ]
   },
   {
     "card_tag": "Goons",
@@ -3957,8 +3630,7 @@
     "types": [
       "Action",
       "Attack"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/e/e2/Goons.jpg/200px-Goons.jpg"
+    ]
   },
   {
     "card_tag": "Grand Market",
@@ -3968,8 +3640,7 @@
     "cost": "6",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/8/81/Grand_Market.jpg/200px-Grand_Market.jpg"
+    ]
   },
   {
     "card_tag": "Hoard",
@@ -3979,8 +3650,7 @@
     "cost": "6",
     "types": [
       "Treasure"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/d/d1/Hoard.jpg/200px-Hoard.jpg"
+    ]
   },
   {
     "card_tag": "King's Court",
@@ -3990,8 +3660,7 @@
     "cost": "7",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/8/8d/King%27s_Court.jpg/200px-King%27s_Court.jpg"
+    ]
   },
   {
     "card_tag": "Loan",
@@ -4001,8 +3670,7 @@
     "cost": "3",
     "types": [
       "Treasure"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/1/11/Loan.jpg/200px-Loan.jpg"
+    ]
   },
   {
     "card_tag": "Mint",
@@ -4012,8 +3680,7 @@
     "cost": "5",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/b/bc/Mint.jpg/200px-Mint.jpg"
+    ]
   },
   {
     "card_tag": "Monument",
@@ -4023,8 +3690,7 @@
     "cost": "4",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/a/ad/Monument.jpg/200px-Monument.jpg"
+    ]
   },
   {
     "card_tag": "Mountebank",
@@ -4035,8 +3701,7 @@
     "types": [
       "Action",
       "Attack"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/8/89/Mountebank.jpg/200px-Mountebank.jpg"
+    ]
   },
   {
     "card_tag": "Peddler",
@@ -4046,8 +3711,7 @@
     "cost": "8*",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/6/6f/Peddler.jpg/200px-Peddler.jpg"
+    ]
   },
   {
     "card_tag": "Quarry",
@@ -4057,8 +3721,7 @@
     "cost": "4",
     "types": [
       "Treasure"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/6/65/Quarry.jpg/200px-Quarry.jpg"
+    ]
   },
   {
     "card_tag": "Rabble",
@@ -4069,8 +3732,7 @@
     "types": [
       "Action",
       "Attack"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/f/f1/Rabble.jpg/200px-Rabble.jpg"
+    ]
   },
   {
     "card_tag": "Royal Seal",
@@ -4080,8 +3742,7 @@
     "cost": "5",
     "types": [
       "Treasure"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/d/dd/Royal_Seal.jpg/200px-Royal_Seal.jpg"
+    ]
   },
   {
     "card_tag": "Talisman",
@@ -4091,8 +3752,7 @@
     "cost": "4",
     "types": [
       "Treasure"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/c/cf/Talisman.jpg/200px-Talisman.jpg"
+    ]
   },
   {
     "card_tag": "Trade Route",
@@ -4102,8 +3762,7 @@
     "cost": "3",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/a/a7/Trade_Route.jpg/200px-Trade_Route.jpg"
+    ]
   },
   {
     "card_tag": "Vault",
@@ -4113,8 +3772,7 @@
     "cost": "5",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/6/62/Vault.jpg/200px-Vault.jpg"
+    ]
   },
   {
     "card_tag": "Venture",
@@ -4124,8 +3782,7 @@
     "cost": "5",
     "types": [
       "Treasure"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/e/ef/Venture.jpg/200px-Venture.jpg"
+    ]
   },
   {
     "card_tag": "Watchtower",
@@ -4135,8 +3792,7 @@
     "cost": "3",
     "types": [
       "Reaction"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/c/c2/Watchtower.jpg/200px-Watchtower.jpg"
+    ]
   },
   {
     "card_tag": "Worker's Village",
@@ -4146,8 +3802,7 @@
     "cost": "4",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/1/12/Worker%27s_Village.jpg/200px-Worker%27s_Village.jpg"
+    ]
   },
   {
     "card_tag": "Ambassador",
@@ -4158,8 +3813,7 @@
     "types": [
       "Action",
       "Attack"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/7/74/Ambassador.jpg/200px-Ambassador.jpg"
+    ]
   },
   {
     "card_tag": "Bazaar",
@@ -4169,8 +3823,7 @@
     "cost": "5",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/f/f7/Bazaar.jpg/200px-Bazaar.jpg"
+    ]
   },
   {
     "card_tag": "Caravan",
@@ -4181,8 +3834,7 @@
     "types": [
       "Action",
       "Duration"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/c/c8/Caravan.jpg/200px-Caravan.jpg"
+    ]
   },
   {
     "card_tag": "Cutpurse",
@@ -4193,8 +3845,7 @@
     "types": [
       "Action",
       "Attack"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/7/7d/Cutpurse.jpg/200px-Cutpurse.jpg"
+    ]
   },
   {
     "card_tag": "Embargo",
@@ -4204,8 +3855,7 @@
     "cost": "2",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/f/fb/Embargo.jpg/200px-Embargo.jpg"
+    ]
   },
   {
     "card_tag": "Explorer",
@@ -4215,8 +3865,7 @@
     "cost": "5",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/3/3a/Explorer.jpg/200px-Explorer.jpg"
+    ]
   },
   {
     "card_tag": "Fishing Village",
@@ -4227,8 +3876,7 @@
     "types": [
       "Action",
       "Duration"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/3/3b/Fishing_Village.jpg/200px-Fishing_Village.jpg"
+    ]
   },
   {
     "card_tag": "Ghost Ship",
@@ -4239,8 +3887,7 @@
     "types": [
       "Action",
       "Attack"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/0/0a/Ghost_Ship.jpg/200px-Ghost_Ship.jpg"
+    ]
   },
   {
     "card_tag": "Haven",
@@ -4251,8 +3898,7 @@
     "types": [
       "Action",
       "Duration"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/c/c9/Haven.jpg/200px-Haven.jpg"
+    ]
   },
   {
     "card_tag": "Island",
@@ -4263,8 +3909,7 @@
     "types": [
       "Action",
       "Victory"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/f/fd/Island.jpg/200px-Island.jpg"
+    ]
   },
   {
     "card_tag": "Lighthouse",
@@ -4275,8 +3920,7 @@
     "types": [
       "Action",
       "Duration"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/4/4f/Lighthouse.jpg/200px-Lighthouse.jpg"
+    ]
   },
   {
     "card_tag": "Lookout",
@@ -4286,8 +3930,7 @@
     "cost": "3",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/c/c6/Lookout.jpg/200px-Lookout.jpg"
+    ]
   },
   {
     "card_tag": "Merchant Ship",
@@ -4298,8 +3941,7 @@
     "types": [
       "Action",
       "Duration"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/9/92/Merchant_Ship.jpg/200px-Merchant_Ship.jpg"
+    ]
   },
   {
     "card_tag": "Native Village",
@@ -4309,8 +3951,7 @@
     "cost": "2",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/6/67/Native_Village.jpg/200px-Native_Village.jpg"
+    ]
   },
   {
     "card_tag": "Navigator",
@@ -4320,8 +3961,7 @@
     "cost": "4",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/d/dd/Navigator.jpg/200px-Navigator.jpg"
+    ]
   },
   {
     "card_tag": "Outpost",
@@ -4332,8 +3972,7 @@
     "types": [
       "Action",
       "Duration"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/b/b4/Outpost.jpg/200px-Outpost.jpg"
+    ]
   },
   {
     "card_tag": "Pearl Diver",
@@ -4343,8 +3982,7 @@
     "cost": "2",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/5/56/Pearl_Diver.jpg/200px-Pearl_Diver.jpg"
+    ]
   },
   {
     "card_tag": "Pirate Ship",
@@ -4355,8 +3993,7 @@
     "types": [
       "Action",
       "Attack"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/4/42/Pirate_Ship.jpg/200px-Pirate_Ship.jpg"
+    ]
   },
   {
     "card_tag": "Salvager",
@@ -4366,8 +4003,7 @@
     "cost": "4",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/8/89/Salvager.jpg/200px-Salvager.jpg"
+    ]
   },
   {
     "card_tag": "Sea Hag",
@@ -4378,8 +4014,7 @@
     "types": [
       "Action",
       "Attack"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/8/8d/Sea_Hag.jpg/200px-Sea_Hag.jpg"
+    ]
   },
   {
     "card_tag": "Smugglers",
@@ -4389,8 +4024,7 @@
     "cost": "3",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/0/05/Smugglers.jpg/200px-Smugglers.jpg"
+    ]
   },
   {
     "card_tag": "Tactician",
@@ -4401,8 +4035,7 @@
     "types": [
       "Action",
       "Duration"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/e/ed/Tactician.jpg/200px-Tactician.jpg"
+    ]
   },
   {
     "card_tag": "Treasure Map",
@@ -4412,8 +4045,7 @@
     "cost": "4",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/6/61/Treasure_Map.jpg/200px-Treasure_Map.jpg"
+    ]
   },
   {
     "card_tag": "Treasury",
@@ -4423,8 +4055,7 @@
     "cost": "5",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/f/fd/Treasury.jpg/200px-Treasury.jpg"
+    ]
   },
   {
     "card_tag": "Warehouse",
@@ -4434,8 +4065,7 @@
     "cost": "3",
     "types": [
       "Action"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/6/6d/Warehouse.jpg/200px-Warehouse.jpg"
+    ]
   },
   {
     "card_tag": "Wharf",
@@ -4446,7 +4076,6 @@
     "types": [
       "Action",
       "Duration"
-    ],
-    "url": "http://wiki.dominionstrategy.com/images/thumb/c/cc/Wharf.jpg/200px-Wharf.jpg"
+    ]
   }
 ]
