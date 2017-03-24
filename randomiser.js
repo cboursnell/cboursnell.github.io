@@ -1134,6 +1134,7 @@ function recommendations() {
   // page
   extras['prizes']=false;
   extras['page']=false;
+  extras['peasant']=false;
   for(var i = 0; i < kingdom_cards.length; i++) {
     if (kingdom_cards[i].name === "Tournament") {
       extras['prizes']=true;
