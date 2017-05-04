@@ -19,49 +19,42 @@
         <script type="text/javascript" charset="utf-8">
 
 webix.ui({
-rows:[
-      // { view:"template",
-      //   type:"header",
-      //   template:"Dominion Randomiser"
-      // },
-      {
         cols:[
           {
             view:"accordion",
-            width:220,
-            height:"100%",
+            width:200,
             multi:true, // TODO can we make this scrollable?
             rows:[ //or rows
               { header:"Expansions", body:
                 {
                   rows: [
-                    { view: "checkbox", height:27, id: "checkDominion1st", disabled: true, label:"Dominion 1st Ed", labelWidth:135, value:0, align:"center"},
-                    { view: "checkbox", height:27, id: "checkDominion", disabled: true, label:"Dominion 2nd Ed", labelWidth:135, value:0, align:"center"},
-                    { view: "checkbox", height:27, id: "checkIntrigue1st", disabled: true, label:"Intrigue 1st Ed", labelWidth:135, value:0, align:"center"},
-                    { view: "checkbox", height:27, id: "checkIntrigue", disabled: true, label:"Intrigue 2nd Ed", labelWidth:135, value:0, align:"center"},
-                    { view: "checkbox", height:27, id: "checkSeaside", disabled: true, label:"Seaside", labelWidth:135, value:0, align:"center"},
-                    { view: "checkbox", height:27, id: "checkAlchemy", disabled: true, label:"Alchemy", labelWidth:135, value:0, align:"center"},
-                    { view: "checkbox", height:27, id: "checkProsperity", disabled: true, label:"Prosperity", labelWidth:135, value:0, align:"center"},
-                    { view: "checkbox", height:27, id: "checkCornucopia", disabled: true, label:"Cornucopia", labelWidth:135, value:0, align:"center"},
-                    { view: "checkbox", height:27, id: "checkHinterlands", disabled: true, label:"Hinterlands", labelWidth:135, value:0, align:"center"},
-                    { view: "checkbox", height:27, id: "checkDarkAges", disabled: true, label:"Dark Ages", labelWidth:135, value:0, align:"center"},
-                    { view: "checkbox", height:27, id: "checkGuilds", disabled: true, label:"Guilds", labelWidth:135, value:0, align:"center"},
-                    { view: "checkbox", height:27, id: "checkAdventures", disabled: true, label:"Adventures", labelWidth:135, value:0, align:"center"},
-                    { view: "checkbox", height:27, id: "checkEmpires", disabled: true, label:"Empires", labelWidth:135, value:0, align:"center"},
+                    { view: "checkbox", height:27, id: "checkDominion1st", disabled: true, label:"Dominion 1st Ed", labelWidth:160, value:0, align:"center"},
+                    { view: "checkbox", height:27, id: "checkDominion", disabled: true, label:"Dominion 2nd Ed", labelWidth:160, value:0, align:"center"},
+                    { view: "checkbox", height:27, id: "checkIntrigue1st", disabled: true, label:"Intrigue 1st Ed", labelWidth:160, value:0, align:"center"},
+                    { view: "checkbox", height:27, id: "checkIntrigue", disabled: true, label:"Intrigue 2nd Ed", labelWidth:160, value:0, align:"center"},
+                    { view: "checkbox", height:27, id: "checkSeaside", disabled: true, label:"Seaside", labelWidth:160, value:0, align:"center"},
+                    { view: "checkbox", height:27, id: "checkAlchemy", disabled: true, label:"Alchemy", labelWidth:160, value:0, align:"center"},
+                    { view: "checkbox", height:27, id: "checkProsperity", disabled: true, label:"Prosperity", labelWidth:160, value:0, align:"center"},
+                    { view: "checkbox", height:27, id: "checkCornucopia", disabled: true, label:"Cornucopia", labelWidth:160, value:0, align:"center"},
+                    { view: "checkbox", height:27, id: "checkHinterlands", disabled: true, label:"Hinterlands", labelWidth:160, value:0, align:"center"},
+                    { view: "checkbox", height:27, id: "checkDarkAges", disabled: true, label:"Dark Ages", labelWidth:160, value:0, align:"center"},
+                    { view: "checkbox", height:27, id: "checkGuilds", disabled: true, label:"Guilds", labelWidth:160, value:0, align:"center"},
+                    { view: "checkbox", height:27, id: "checkAdventures", disabled: true, label:"Adventures", labelWidth:160, value:0, align:"center"},
+                    { view: "checkbox", height:27, id: "checkEmpires", disabled: true, label:"Empires", labelWidth:160, value:0, align:"center"},
                   ]
                 }
               },
               { header:"Promo Cards", body:
                 {
                   rows: [
-                    { view: "checkbox", height:27, id: "checkBlackMarket", label:"Black Market", labelWidth:135, value:0, align:"center"},
-                    { view: "checkbox", height:27, id: "checkEnvoy", label:"Envoy", labelWidth:135, value:0, align:"center"},
-                    { view: "checkbox", height:27, id: "checkSauna", label:"Sauna/Avanto", labelWidth:135, value:0, align:"center"},
-                    { view: "checkbox", height:27, id: "checkWalledVillage", label:"Walled Village", labelWidth:135, value:0, align:"center"},
-                    { view: "checkbox", height:27, id: "checkGovernor", label:"Governor", labelWidth:135, value:0, align:"center"},
-                    { view: "checkbox", height:27, id: "checkStash", label:"Stash", labelWidth:135, value:0, align:"center"},
-                    { view: "checkbox", height:27, id: "checkPrince", label:"Prince", labelWidth:135, value:0, align:"center"},
-                    { view: "checkbox", height:27, id: "checkSummon", label:"Summon", labelWidth:135, value:0, align:"center"},
+                    { view: "checkbox", height:27, id: "checkBlackMarket", label:"Black Market", labelWidth:160, value:0, align:"center"},
+                    { view: "checkbox", height:27, id: "checkEnvoy", label:"Envoy", labelWidth:160, value:0, align:"center"},
+                    { view: "checkbox", height:27, id: "checkSauna", label:"Sauna/Avanto", labelWidth:160, value:0, align:"center"},
+                    { view: "checkbox", height:27, id: "checkWalledVillage", label:"Walled Village", labelWidth:160, value:0, align:"center"},
+                    { view: "checkbox", height:27, id: "checkGovernor", label:"Governor", labelWidth:160, value:0, align:"center"},
+                    { view: "checkbox", height:27, id: "checkStash", label:"Stash", labelWidth:160, value:0, align:"center"},
+                    { view: "checkbox", height:27, id: "checkPrince", label:"Prince", labelWidth:160, value:0, align:"center"},
+                    { view: "checkbox", height:27, id: "checkSummon", label:"Summon", labelWidth:160, value:0, align:"center"},
                   ]
                 }
               },
@@ -75,8 +68,8 @@ rows:[
                       ]
                     },
 
-                    { view: "checkbox", height:27, id: "history", label:"Use History", labelWidth:135, value:1, align:"center"},
-                    { view: "checkbox", height:27, id: "sorting", label:"Sort by expansion", labelWidth:135, value:0, align:"center"},
+                    { view: "checkbox", height:27, id: "history", label:"Use History", labelWidth:160, value:1, align:"center"},
+                    { view: "checkbox", height:27, id: "sorting", label:"Sort by expansion", labelWidth:160, value:0, align:"center"},
 
                     { view: "counter", id:"eventcounter", label:"Events", step:1, value:1, min:0, max:4},
                   ]
@@ -90,18 +83,22 @@ rows:[
                     { view: "button", id:"buyBM", hidden: true, value: "Buy None", click: "buyBlackMarket()" },
                     { view: "button", id:"redraw", value: "Redraw All", click: "redrawSelected()" },
                     { view: "button", id:"store", value: "Save", click: "store()" },
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
                   ]
                 }
               }
-            ]
+            ] // end of rows
           },
           {
             view: 'template',
             template: "<canvas id='cardCanvas' height=600px width=600></canvas>"
           }
-        ]
-      }
-    ]
+        ] // end of cols
 });
 
 
