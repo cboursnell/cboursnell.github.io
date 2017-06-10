@@ -15,6 +15,7 @@ var blackMarketSelection = new Array();
 var bmcount = 0;
 var kingdom_bane = null;
 var extras = new Object();
+var splitPiles = new Array(); // cards at the bottom of split piles (and madman etc)
 var mode = "Cards";
 var bottom = -1000;
 var difference = 0;
@@ -516,6 +517,10 @@ function drawImages() {
       drawExtra(pos, "Fugitive");
       drawExtra(pos, "Disciple")
       drawExtra(pos, "Teacher");
+    }
+
+    for(var s = 0; s < splitPiles.length; s++) {
+      drawExtra(pos, splitPiles[s]);
     }
 
     bottom = -pos.y + window.innerHeight - 360;
@@ -1081,6 +1086,7 @@ function containsCardName(listOfCards, cardName) {
 }
 
 function recommendations() {
+  splitPiles = new Array();
   // console.log("getting recommendations");
   // var extras = {}
   // shelters
@@ -1141,6 +1147,14 @@ function recommendations() {
     }
     if (kingdom_cards[i].name === "Peasant") {
       extras['peasant']=true;
+    }
+
+    // split plies
+    if (kingdom_cards[i].hasOwnProperty("group") && kingdom_cards[i].group.indexOf(" - ") >= 0) {
+      var bottom = kingdom_cards[i].group.split(" - ")[1]
+      // console.log("bottom: "+bottom);
+      // if (card.hasOwnProperty("group") && card.group.indexOf("-") >= 0) { // is a traveler or hermit/madman
+      splitPiles.push(bottom);
     }
   }
 
