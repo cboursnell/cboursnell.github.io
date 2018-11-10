@@ -225,7 +225,7 @@ function getOwnedCards() {
       }
     }
     if (supply===true) {
-      if (card.types.includes("Event") || card.types.includes("Landmark")) {
+      if (card.types.includes("Event") || card.types.includes("Landmark") || card.types.includes("Project")) {
         owned_events.push(card);
       } else {
         owned_cards.push(card);
@@ -524,6 +524,9 @@ function drawImages() {
       drawExtra(pos, "Disciple");
       drawExtra(pos, "Teacher");
     }
+    for(var s = 0; s < splitPiles.length; s++) {
+      drawExtra(pos, splitPiles[s]);
+    }
     if (extras.hasOwnProperty("wisp") && extras.wisp === true) {
       drawExtra(pos, "Will-O'-Wisp");
     }
@@ -541,10 +544,21 @@ function drawImages() {
       drawExtra(pos, "Zombie Mason");
       drawExtra(pos, "Zombie Spy");
     }
-    
-    for(var s = 0; s < splitPiles.length; s++) {
-      drawExtra(pos, splitPiles[s]);
+    // projects
+    if (extras.hasOwnProperty("flag") && extras.flag === true) {
+      drawExtra(pos, "Flag");
     }
+    if (extras.hasOwnProperty("borderguard") && extras.borderguard === true) {
+      drawExtra(pos, "Horn");
+      drawExtra(pos, "Lantern");
+    }
+    if (extras.hasOwnProperty("key") && extras.key === true) {
+      drawExtra(pos, "Key");
+    }
+    if (extras.hasOwnProperty("chest") && extras.chest === true) {
+      drawExtra(pos, "Treasure Chest");
+    }
+    
 
     bottom = -pos.y + window.innerHeight - 360;
     if (bottom > 0) {
@@ -1158,6 +1172,14 @@ function recommendations() {
     if (kingdom_cards[i].name === "Bandit Camp" || kingdom_cards[i].name === "Marauder" || kingdom_cards[i].name === "Pillage") {
       extras['spoils']=true;
     }
+
+    // split plies
+    if (kingdom_cards[i].hasOwnProperty("group") && kingdom_cards[i].group.indexOf(" - ") >= 0) {
+      var bottom = kingdom_cards[i].group.split(" - ")[1]
+      // console.log("bottom: "+bottom);
+      // if (card.hasOwnProperty("group") && card.group.indexOf("-") >= 0) { // is a traveler or hermit/madman
+      splitPiles.push(bottom);
+    }
   }
 
   // tournament
@@ -1190,13 +1212,18 @@ function recommendations() {
     if (kingdom_cards[i].name === "Necromancer") {
       extras['zombies']=true;
     }
-
-    // split plies
-    if (kingdom_cards[i].hasOwnProperty("group") && kingdom_cards[i].group.indexOf(" - ") >= 0) {
-      var bottom = kingdom_cards[i].group.split(" - ")[1]
-      // console.log("bottom: "+bottom);
-      // if (card.hasOwnProperty("group") && card.group.indexOf("-") >= 0) { // is a traveler or hermit/madman
-      splitPiles.push(bottom);
+    // artifacts
+    if (kingdom_cards[i].name === "Flag Bearer") {
+      extras['flag']=true;
+    }
+    if (kingdom_cards[i].name === "Border Guard") {
+      extras['borderguard']=true;
+    }
+    if (kingdom_cards[i].name === "Treasurer") {
+      extras['key']=true;
+    }
+    if (kingdom_cards[i].name === "Swashbulker") {
+      extras['chest']=true;
     }
   }
 
