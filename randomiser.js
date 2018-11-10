@@ -545,6 +545,12 @@ function drawImages() {
       drawExtra(pos, "Zombie Spy");
     }
     // projects
+    if (pos.x>0) {
+      pos.y += pos.height; // for if the last row wasn't finished
+    }
+    pos.x = 0;
+    pos.width = 320*scale;
+    pos.height = 200*scale;
     if (extras.hasOwnProperty("flag") && extras.flag === true) {
       drawExtra(pos, "Flag");
     }
