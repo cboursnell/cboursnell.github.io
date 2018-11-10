@@ -1753,14 +1753,24 @@ function loadStorage() {
     all_cards[y]['used'] = 0;
   }
   var list;
+  var ok = false;
   for(var d in localStorage) {
     if (d === 'sets') {
     } else {
-      list = JSON.parse(localStorage[d]);
-      for(var i = 0; i < list.length; i++) {
-        for(var y = 0; y < all_cards.length; y++) {
-          if (all_cards[y].name === list[i]) {
-            all_cards[y]['used']++;
+      try {
+        list = JSON.parse(localStorage[d]);
+        ok = true;
+      }
+      catch(SyntaxError) {
+        console.log("found a syntax error in localStorage");
+        ok = false;
+      }
+      if (ok == true) {
+        for(var i = 0; i < list.length; i++) {
+          for(var y = 0; y < all_cards.length; y++) {
+            if (all_cards[y].name === list[i]) {
+              all_cards[y]['used']++;
+            }
           }
         }
       }
