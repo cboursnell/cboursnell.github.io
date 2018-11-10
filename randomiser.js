@@ -177,7 +177,7 @@ function getOwnedCards() {
     }
     for(var j=0; j < card.types.length; j++) {
       var type = card.types[j];
-      if (type === "Ruins" || type === "Shelter" || type === "Prize") {
+      if (type === "Ruins" || type === "Shelter" || type === "Prize" || type === "Artifact") {
         supply = false;
       }
     }
