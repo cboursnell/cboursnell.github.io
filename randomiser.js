@@ -26,15 +26,15 @@ var numImages = 0;
 var cardBack;
 var checkBoxNames = ["checkDominion1st", "checkDominion", "checkIntrigue1st", "checkIntrigue", "checkSeaside",
 "checkAlchemy",  "checkProsperity", "checkHinterlands", "checkCornucopia",
-"checkDarkAges",  "checkGuilds", "checkAdventures", "checkEmpires"];
+"checkDarkAges",  "checkGuilds", "checkAdventures", "checkEmpires", "checkNocturne", "checkRenaissance"];
 var setNames = ["dominion1stEdition", "dominion2ndEdition", "intrigue1stEdition", "intrigue2ndEdition",
 "seaside", "alchemy", "prosperity", "hinterlands", "cornucopia", "dark ages",
-"guilds", "adventures", "empires"];
+"guilds", "adventures", "empires", "nocturne", "renaissance"];
 var promoCheckBoxNames = ["checkBlackMarket", "checkEnvoy",
 "checkSauna", "checkWalledVillage", "checkGovernor", "checkStash",
-"checkPrince", "checkSummon"];
+"checkPrince", "checkSummon", "checkDismantle"];
 var promoCardNames = ["Black Market","Envoy","Sauna",
-"Walled Village","Governor","Stash","Prince","Summon"];
+"Walled Village","Governor","Stash","Prince","Summon", "Dismantle"];
 
 function load() {
   if (checkBrowser()) {
