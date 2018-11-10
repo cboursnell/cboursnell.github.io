@@ -15,6 +15,7 @@ var blackMarketSelection = new Array();
 var bmcount = 0;
 var kingdom_bane = null;
 var extras = new Object();
+var splitPiles = new Array(); // cards at the bottom of split piles (and madman etc)
 var mode = "Cards";
 var bottom = -1000;
 var difference = 0;
@@ -131,22 +132,12 @@ function parseJSON(req, url) {
         card['url'] = obj["url"];
       }
       card['toggle'] = 0;
-      // console.log(card.name+" "+card.cost+" "+card.sets+" "+card.types);
-      // if (card.url === null) {
-      //   console.log("Not adding "+card.name+" because it's undefined or null")
-      // } else {
-
-      // }
       all_cards.push(card);
     }
   } else {
     confirm("There was a problem getting the JSON");
   }
-  // confirm("Info for "+all_cards.length+" cards was loaded");
-  // console.log(all_cards);
   getOwnedCards();
-  // console.log("All cards:" + all_cards.length +" owned_cards:"+owned_cards.length);
-  // console.log("<parseJSON> drawing images for the first time");
   drawImagesFirst();
 }
 
@@ -198,32 +189,39 @@ function getOwnedCards() {
       supply = false;
     }
     if (text_filter.length > 0) {
-      // console.log("text filter is "+text_filter);
       var type_search = false;
-      for(var t=0;t<card.types.length;t++) { //mark
+      for(var t=0;t<card.types.length;t++) {
         if (card.types[t].toUpperCase().match(text_filter.toUpperCase())) {
           type_search = true;
         }
       }
-      if (card.name.toUpperCase().match(text_filter.toUpperCase()) || type_search === true || card.cost.match(text_filter)) {
-        // console.log(card.name + " matches "+text_filter);
+      // if (card.name.toUpperCase().match(text_filter.toUpperCase()) || type_search === true || card.cost.match(text_filter)) {
+      //   console.log(card.name + " matches "+text_filter);
+      // } else {
+      //   supply = false;
+      // }
+      var text_filter_list = text_filter.split(",");
+      var found = false;
+      for(var c=0; c < text_filter_list.length; c++) {
+        // console.log("text filter: "+text_filter_list[c] + " of " + text_filter_list.length);
+        if (card.name.toUpperCase().match(text_filter_list[c].toUpperCase())) {
+          found = true;
+          console.log("found match between card " + card.name +" and filter "+ text_filter_list[c]);
+        }
+      }
+      // if (found===false) {
+      //   supply = false;
+      // }
+      if (found || type_search === true || card.cost.match(text_filter)) {
+        console.log(card.name + " matches "+text_filter);
       } else {
         supply = false;
       }
     }
     if (supply===true) {
-      // console.log("  This card goes into thate owned set: "+card.name);
-      // console.log(card);
-      if (card.hasOwnProperty("image")) {
-        // that's good
-      } else {
-
-      }
       if (card.types.includes("Event") || card.types.includes("Landmark")) {
         owned_events.push(card);
-        // console.log(card.name+" "+card.cost+" "+card.sets+" "+card.types+" "+card.group);
       } else {
-        // console.log(card.name+" "+card.cost+" "+card.sets+" "+card.types+" "+card.group);
         owned_cards.push(card);
       }
     }
@@ -519,6 +517,10 @@ function drawImages() {
       drawExtra(pos, "Fugitive");
       drawExtra(pos, "Disciple")
       drawExtra(pos, "Teacher");
+    }
+
+    for(var s = 0; s < splitPiles.length; s++) {
+      drawExtra(pos, splitPiles[s]);
     }
 
     bottom = -pos.y + window.innerHeight - 360;
@@ -1084,6 +1086,7 @@ function containsCardName(listOfCards, cardName) {
 }
 
 function recommendations() {
+  splitPiles = new Array();
   // console.log("getting recommendations");
   // var extras = {}
   // shelters
@@ -1144,6 +1147,14 @@ function recommendations() {
     }
     if (kingdom_cards[i].name === "Peasant") {
       extras['peasant']=true;
+    }
+
+    // split plies
+    if (kingdom_cards[i].hasOwnProperty("group") && kingdom_cards[i].group.indexOf(" - ") >= 0) {
+      var bottom = kingdom_cards[i].group.split(" - ")[1]
+      // console.log("bottom: "+bottom);
+      // if (card.hasOwnProperty("group") && card.group.indexOf("-") >= 0) { // is a traveler or hermit/madman
+      splitPiles.push(bottom);
     }
   }
 
