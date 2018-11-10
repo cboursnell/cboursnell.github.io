@@ -3741,7 +3741,7 @@
           "nocturne"
       ],
       "cost": "4",
-      "group_tag": "Necromancer - Zombies",
+      "group_tag": "Necromancer",
       "group_top": true,
       "types": [
           "Action"
@@ -3945,7 +3945,7 @@
       ],
       "cost": "3",
       "count": "1",
-      "group_tag": "Necromancer - Zombies",
+      "group_tag": "Necromancer",
       "randomizer": false,
       "types": [
           "Action",
@@ -3958,7 +3958,7 @@
       ],
       "cost": "3",
       "count": "1",
-      "group_tag": "Necromancer - Zombies",
+      "group_tag": "Necromancer",
       "randomizer": false,
       "types": [
           "Action",
@@ -3971,7 +3971,7 @@
       ],
       "cost": "3",
       "count": "1",
-      "group_tag": "Necromancer - Zombies",
+      "group_tag": "Necromancer",
       "randomizer": false,
       "types": [
           "Action",

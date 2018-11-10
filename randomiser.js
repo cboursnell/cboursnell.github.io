@@ -131,6 +131,9 @@ function parseJSON(req, url) {
       if (obj.hasOwnProperty("url")) {
         card['url'] = obj["url"];
       }
+      if (obj.hasOwnProperty("randomizer")) {
+        card['randomizer'] = obj["randomizer"];
+      }
       card['toggle'] = 0;
       all_cards.push(card);
     }
@@ -184,6 +187,9 @@ function getOwnedCards() {
       } else {
         supply = false;
       }
+    }
+    if (card.hasOwnProperty("randomizer") && card.randomizer == false) {
+      supply = false;
     }
     if (card.name === "Spoils") {
       supply = false;
@@ -515,10 +521,27 @@ function drawImages() {
     if (extras.hasOwnProperty("peasant") && extras.peasant === true) {
       drawExtra(pos, "Soldier");
       drawExtra(pos, "Fugitive");
-      drawExtra(pos, "Disciple")
+      drawExtra(pos, "Disciple");
       drawExtra(pos, "Teacher");
     }
-
+    if (extras.hasOwnProperty("wisp") && extras.wisp === true) {
+      drawExtra(pos, "Will-O'-Wisp");
+    }
+    if (extras.hasOwnProperty("imp") && extras.imp === true) {
+      drawExtra(pos, "Imp");
+    }
+    if (extras.hasOwnProperty("ghost") && extras.ghost === true) {
+      drawExtra(pos, "Ghost");
+    }
+    if (extras.hasOwnProperty("wish") && extras.wish === true) {
+      drawExtra(pos, "Wish");
+    }
+    if (extras.hasOwnProperty("zombies") && extras.zombies === true) {
+      drawExtra(pos, "Zombie Apprentice");
+      drawExtra(pos, "Zombie Mason");
+      drawExtra(pos, "Zombie Spy");
+    }
+    
     for(var s = 0; s < splitPiles.length; s++) {
       drawExtra(pos, splitPiles[s]);
     }
@@ -1101,9 +1124,13 @@ function recommendations() {
   }
   // ruins
   extras['ruins']=false;
+  extras['wisp']=false;
   for(var i = 0; i < kingdom_cards.length; i++) {
     if (kingdom_cards[i].types.includes("Looter")) {
       extras['ruins']=true;
+    }
+    if (kingdom_cards[i].types.includes("Fate")) {
+      extras['wisp']=true;
     }
   }
   // curses - always use curses
@@ -1138,6 +1165,9 @@ function recommendations() {
   extras['prizes']=false;
   extras['page']=false;
   extras['peasant']=false;
+  extras['imp']=false;
+  extras['ghost']=false;
+  extras['wish']=false;
   for(var i = 0; i < kingdom_cards.length; i++) {
     if (kingdom_cards[i].name === "Tournament") {
       extras['prizes']=true;
@@ -1147,6 +1177,18 @@ function recommendations() {
     }
     if (kingdom_cards[i].name === "Peasant") {
       extras['peasant']=true;
+    }
+    if (kingdom_cards[i].name === "Devil's Workshop") {
+      extras['imp']=true;
+    }
+    if (kingdom_cards[i].name === "Cemetery") {
+      extras['ghost']=true;
+    }
+    if (kingdom_cards[i].name === "Leprechaun") {
+      extras['wish']=true;
+    }
+    if (kingdom_cards[i].name === "Necromancer") {
+      extras['zombies']=true;
     }
 
     // split plies
