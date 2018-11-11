@@ -1786,12 +1786,6 @@ function ResizeHandler(e) {
   drawXTimes(3);
 }
 
-function fullscreen() {
-  if (screenfull.enabled) {
-    screenfull.toggle();
-  }
-}
-
 function store() {
   // var answer = confirm("Would you like to store this Kingdom");
   var date = new Date();
