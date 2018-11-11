@@ -564,7 +564,7 @@ function drawImages() {
     if (extras.hasOwnProperty("chest") && extras.chest === true) {
       drawExtra(pos, "Treasure Chest");
     }
-    
+
 
     bottom = -pos.y + window.innerHeight - 360;
     if (bottom > 0) {
@@ -1784,6 +1784,12 @@ function ResizeHandler(e) {
   canvasScroll = 0;
   context.setTransform(1, 0, 0, 1, 0, 0);
   drawXTimes(3);
+}
+
+function fullscreen() {
+  if (screenfull.enabled) {
+    screenfull.toggle();
+  }
 }
 
 function store() {
